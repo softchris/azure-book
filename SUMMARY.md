@@ -5,3 +5,5 @@
 
 ## Concepts
 
+* [Azure Services](concepts/azure-services.md)
+
