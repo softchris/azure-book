@@ -100,6 +100,8 @@ We need to do the following:
 - **create a resource group**, this is needed if you need a new logical grouping for what we are about to do
 - **create a service plan**, we will need this to specify how we will be charged for this and what kind of container we will create
 - **create the web app**, we will need to run a command to create the actual web app and we will need to state here how we deploy it, we will choose git deploy, more on that below
+- **visit** the generated web site
+- **push to the site**, using git deploy
 
 ### Download and run sample app
 
@@ -165,6 +167,48 @@ Below is the command for creating the web app. We will need to state the `resour
 ```
 az webapp create --resource-group resourceForStorageAccount --plan myAppServicePlan --name <app_name> --runtime "PYTHON|3.7" --deployment-local-git
 ```
+A comment on the above command is that the `app name` will need to be globally unique. So let's try the followibf
 
+```
+az webapp create --resource-group resourceForStorageAccount --plan myAppServicePlan --name python-app-chris --runtime "PYTHON|3.7" --deployment-local-git
+```
+
+In the JSON response to this we are looking for two interesting pieces of information:
+
+- the name of the git repository, look for key called `deploymentLocalGitUrl` . 
+- the public url, look for a key called `defaultHostName`
+
+What you've accomplished is an empty web app with git deployment enabled. What does that mean though?
+
+### visit the web site
+to visit the web site go to `http://<app name>.azurewebsites.net`
+
+This should show you a default site looking like this:
+
+![](/assets/Screen Shot 2019-01-10 at 22.35.25.png)
+
+That seems to work, great !
+
+### push the code to the web site
+ok last step is to set up the git deploy properly and push the code and see the site being updated with your code. 
+We set up the git deploy by typing the following:
+
+```
+git remote add azure <deploymentLocalGitUrl-from-create-step>
+```
+
+Now it's time to push the code so we simply type:
+
+```
+git push azure master
+```
+This will prompt you for your deployment users password. Just type it and your deployment are under way.
+
+This will take a little while so go and have a warm beverage :)
+It should finally dump out a long list of logs ending with:
+![](/assets/Screen Shot 2019-01-10 at 22.44.29.png)
+
+That means that your app deployed successfully and you can now go back to your app url and you should see this:
+![](/assets/Screen Shot 2019-01-10 at 22.45.44.png)
 
 
