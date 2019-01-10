@@ -49,4 +49,8 @@ az find -q secret
 ## Interactive mode
 The CLI offers an interactive mode that automatically displays help information and makes it easier to select subcommands.
 
+To use type:
+```
+az interactive
+```
 
