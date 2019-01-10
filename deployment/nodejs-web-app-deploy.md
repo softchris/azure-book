@@ -36,6 +36,35 @@ The command above will output a JSON response containing the key `app_url`. Take
 ![](/assets/Screen Shot 2019-01-10 at 23.31.00.png)
 
 ## manage the app
-of course we know we have gone for a quick and dirty way of creating our app and deployed it to azure. How do we change in the source code and redeploy it?   
+of course we know we have gone for a quick and dirty way of creating our app and deployed it to azure. How do we change in the source code and redeploy it? 
+
+Well that is really easy. We just need to do the following:
+
+- change the code and save it
+- run our azure command again and wait for it to be updated
+
+### Change and save the code
+Let's add the following change and have it output `hello chris` instead:
+![](/assets/Screen Shot 2019-01-10 at 23.34.44.png)   
+
+### redploy the app
+
+Let's run our command again:
+
+```
+az webapp up -n <app_name>
+```
+
+Let's inspect the web site when the command has run to a finish:
+![](/assets/Screen Shot 2019-01-10 at 23.37.15.png)
+
+Boom, there it is. Our site is updated. Almost too easy :)
+
+## Summary
+
+we have managed to create a Node.js app from a sample repository and we have also deployed said app to azure. We have used a short cut for deploying namely the command `az webapp up`. That command has set some defaults for us on resource group as well as pricing plan and also set our deployment type to `zip deploy`, which essentially zips up our files and send them to the deployment server. 
+
+In a real scenario we would need to use a little bit different approach as described in this article [](/deployment/python-web-app-deploy.md), where we create our own deployment user, resource group, price plan etc. This is definitely a good approach if you want to code up something quick and dirty and deploy it and show people.
+
 
 
