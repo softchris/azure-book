@@ -124,13 +124,13 @@ To create our deployment user we need to use the command `az webapp deployment`.
 ```
 az webapp deployment user set --user-name <username> --password <password>
 ```
-Let's call the user `deployment-user` and give it the password `test1234`. Thereby our command now looks like this:
+Let's call the user `deployment-user-chris` and give it the password `test1234`. Thereby our command now looks like this:
 
 ```
-```
-az webapp deployment user set --user-name deployment-user --password test1234
+az webapp deployment user set --user-name deployment-user-chris --password test1234
 ```
 
-```
+This should give you an output looking like this:
+![](/assets/Screen Shot 2019-01-10 at 22.15.38.png)
 
 
