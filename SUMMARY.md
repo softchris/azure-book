@@ -7,7 +7,7 @@
 
 * [Resource Group](resource-group.md)
 * [Microsoft Azure Portal](concepts/microsoft-azure-portal.md)
-* Azure CLI
+* [Azure CLI](azure-cli.md)
 * App Service
 * Cognitive Services
 * [Azure Services](concepts/azure-services.md)
