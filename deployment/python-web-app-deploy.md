@@ -132,7 +132,7 @@ This is quite easy now that we have git deploy activated. Let's do the following
 Let's go into `application.py` and change it to this:
 ![](/assets/Screen Shot 2019-01-10 at 22.51.01.png)
 
-### commit
+### commit changes
 We commit as we would normally do in git with:
 ```
 git commit -am "changed text"
