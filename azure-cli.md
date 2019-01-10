@@ -97,7 +97,8 @@ We need to do the following:
 - **download** a sample app
 - **run the app** locally just to ensure it works
 - **configure a deployment user**, this deployment user is required for `FTP` and `local Git deployment` to a web app
-- create a resource group, this is needed if you need a new logical grouping for what we are about to do
+- **create a resource group**, this is needed if you need a new logical grouping for what we are about to do
+- create a service plan, we will need this to specify how we will be charged for this and what kind of container we will create
 
 ### Download and run sample app
 
@@ -145,5 +146,6 @@ az group create \
 
 ```
 This will create a group called `resourceForStorageAccount`
+
 
 
