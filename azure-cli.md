@@ -156,5 +156,7 @@ az appservice plan create --name myAppServicePlan --resource-group resourceForSt
 ```
 The value `B1` means we are on a basic service plan and `--is-linux` means we will get a linux container
 
+We are using the `appservice` command above and the sub command `plan` to create our service plan.
+
 
 
