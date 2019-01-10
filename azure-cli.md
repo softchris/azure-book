@@ -81,6 +81,8 @@ Storage account names needs to be lowercase
 Also this one will answer with a long JSON response. Ensure the `provisioningState` says `Succeeded`
 
 Let's have a look at our resource group in our Azure portal
+![](/assets/Screen Shot 2019-01-10 at 01.11.59.png)
+We can click `Resource groups` in the menu to the left and on the top middle we can search for our resource group `resourceForStorageAccount`. Doing so leads to a search list and as you can see from the image above we are looking at the detail page for the resource group. One thing that is listed is all the things associated with it. For now that's only our storage account `storageaccount666`. So now we clearly see the `azure cli` is working well.
 
 Now that we are done we can either choose to let everything remain as it is or we can clean up our used resource. If we opt for the latter we should type the following:
 ```
