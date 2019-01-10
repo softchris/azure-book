@@ -67,3 +67,15 @@ az group create \
 The results of running it should look something like this:
 ![](/assets/Screen Shot 2019-01-10 at 01.01.22.png)
 `provisioningState` should say `Succeeded`
+
+Next up let's create the actual storage account:
+```
+az storage account create \
+    --name storageaccount666 \
+    --resource-group resourceForStorageAccount \
+    --location westeurope \
+    --sku Standard_LRS \
+    --kind StorageV2
+```
+Storage account names needs to be lowercase
+Also this one will answer with a long JSON response. Ensure the `provisioningState` says `Succeeded`
