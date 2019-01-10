@@ -32,3 +32,10 @@ Let's give it a unique name. This will create the following for us:
 
 This will attempt to create the default `resource group` and the default `price plan` but will most likely say they already exist and carry on creating the web app. This might take a little while
 
+The command above will output a JSON response containing the key `app_url`. Take that value and enter the URL in your browser. It should look like this:
+![](/assets/Screen Shot 2019-01-10 at 23.31.00.png)
+
+## manage the app
+of course we know we have gone for a quick and dirty way of creating our app and deployed it to azure. How do we change in the source code and redeploy it?   
+
+
