@@ -88,3 +88,7 @@ Now that we are done we can either choose to let everything remain as it is or w
 ```
 az group delete --name resourceForStorageAccount
 ```
+
+## Create a Web App and deploy it to Azure
+TODO
+Here we will look how we can create a webapp and deploy it all the way to azure. 
