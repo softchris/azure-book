@@ -155,11 +155,11 @@ We have learned how to deploy an app to azure and even update it and redeploy. T
 
 - **downloaded** a sample app. Obviously in a real scenario we would have created our own code and not as in this case use a sample app with Python and Flask
 
-- **created a `deployment user`** that we would need for our deployment. That also made us choose deployment type which we chose to be `git deployment`.
+- **created a deployment user** that we would need for our deployment. That also made us choose deployment type which we chose to be `git deployment`.
 
-- **created a `resource group`**. This created a logical group for our app. This is a group we can reuse for other things like adding a database our something else the app might need to exist.
+- **created a resource group**. This created a logical group for our app. This is a group we can reuse for other things like adding a database our something else the app might need to exist.
 
-- **created a `service plan`**. This meant that we decided how we want to be billed for this as well as what kind of container we wanted the app to run in.
+- **created a service plan**. This meant that we decided how we want to be billed for this as well as what kind of container we wanted the app to run in.
 
 - **created the web site itself**, or rather a placeholder where our app could live.
 
