@@ -159,5 +159,12 @@ The value `B1` means we are on a basic service plan and `--is-linux` means we wi
 
 We are using the `appservice` command above and the sub command `plan` to create our service plan. This should also give us a JSON response back with `provisioningState` key having value `Succeeded`
 
+### create the web app
+Below is the command for creating the web app. We will need to state the `resource group` also the `pricing plan` the `name` of the app, the version of Python and lastly how we will deploy it, which is `git deploy`:
+
+```
+az webapp create --resource-group resourceForStorageAccount --plan myAppServicePlan --name <app_name> --runtime "PYTHON|3.7" --deployment-local-git
+```
+
 
 
