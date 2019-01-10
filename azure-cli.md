@@ -13,5 +13,11 @@ Can be used in two different ways:
 * installed locally
 * used from a browser through the Azure Cloud Shell
 
+Example of installing it for Mac:
+
+```
+brew update && brew install azure-cli
+```
+
 
 
