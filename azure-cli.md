@@ -98,6 +98,8 @@ We need to do the following:
 - **run the app** locally just to ensure it works
 - **configure a deployment user**, this deployment user is required for `FTP` and `local Git deployment` to a web app
 
+### Download and run sample app
+
 Let's get a sample app first:
 
 ```
@@ -114,4 +116,21 @@ pip install -r requirements.txt
 FLASK_APP=application.py flask run
 ```
 This should run the application and host it on `http://localhost:5000`
+
+### Configure a deployment user
+
+To create our deployment user we need to use the command `az webapp deployment`. Then we need to provide a user after the `--user-name` flag and a password after the `--password` flag. The password needs to be at least 8 characters long and contain two of the following three elements: letters, numbers, symbols. The full command we nee to run looks therefore like this:
+
+```
+az webapp deployment user set --user-name <username> --password <password>
+```
+Let's call the user `deployment-user` and give it the password `test1234`. Thereby our command now looks like this:
+
+```
+```
+az webapp deployment user set --user-name deployment-user --password test1234
+```
+
+```
+
 
