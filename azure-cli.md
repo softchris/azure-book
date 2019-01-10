@@ -90,5 +90,20 @@ az group delete --name resourceForStorageAccount
 ```
 
 ## Create a Web App and deploy it to Azure
-TODO
-Here we will look how we can create a webapp and deploy it all the way to azure. 
+Here we will look how we can create a webapp and deploy it to azure. 
+
+Let's get a sample app first:
+
+```
+git clone https://github.com/Azure-Samples/python-docs-hello-world
+cd python-docs-hello-world
+```
+
+if we want to run it locally we type:
+
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+FLASK_APP=application.py flask run
+```
