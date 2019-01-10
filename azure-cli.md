@@ -99,6 +99,7 @@ We need to do the following:
 - **configure a deployment user**, this deployment user is required for `FTP` and `local Git deployment` to a web app
 - **create a resource group**, this is needed if you need a new logical grouping for what we are about to do
 - **create a service plan**, we will need this to specify how we will be charged for this and what kind of container we will create
+- create the web app, we will need to run a command to create the actual web app and we will need to state here how we deploy it, we will choose git deploy, more on that below
 
 ### Download and run sample app
 
