@@ -98,7 +98,7 @@ We need to do the following:
 - **run the app** locally just to ensure it works
 - **configure a deployment user**, this deployment user is required for `FTP` and `local Git deployment` to a web app
 - **create a resource group**, this is needed if you need a new logical grouping for what we are about to do
-- create a service plan, we will need this to specify how we will be charged for this and what kind of container we will create
+- **create a service plan**, we will need this to specify how we will be charged for this and what kind of container we will create
 
 ### Download and run sample app
 
@@ -146,6 +146,15 @@ az group create \
 
 ```
 This will create a group called `resourceForStorageAccount`
+
+### create a service plan
+
+The full command for creating a service plan is this:
+
+```
+az appservice plan create --name myAppServicePlan --resource-group resourceForStorageAccount --sku B1 --is-linux
+```
+The value `B1` means we are on a basic service plan and `--is-linux` means we will get a linux container
 
 
 
