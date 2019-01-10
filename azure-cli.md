@@ -97,6 +97,7 @@ We need to do the following:
 - **download** a sample app
 - **run the app** locally just to ensure it works
 - **configure a deployment user**, this deployment user is required for `FTP` and `local Git deployment` to a web app
+- create a resource group, this is needed if you need a new logical grouping for what we are about to do
 
 ### Download and run sample app
 
@@ -118,6 +119,7 @@ FLASK_APP=application.py flask run
 This should run the application and host it on `http://localhost:5000`
 
 ### Configure a deployment user
+This deployment user will need to have a name that is globally unique
 
 To create our deployment user we need to use the command `az webapp deployment`. Then we need to provide a user after the `--user-name` flag and a password after the `--password` flag. The password needs to be at least 8 characters long and contain two of the following three elements: letters, numbers, symbols. The full command we nee to run looks therefore like this:
 
@@ -132,5 +134,16 @@ az webapp deployment user set --user-name deployment-user-chris --password test1
 
 This should give you an output looking like this:
 ![](/assets/Screen Shot 2019-01-10 at 22.15.38.png)
+
+### create a resource group
+If you want a new group, type the following:
+
+```
+az group create \
+    --name resourceForStorageAccount \
+    --location westeurope
+
+```
+This will create a group called `resourceForStorageAccount`
 
 
