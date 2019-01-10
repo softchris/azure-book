@@ -4,3 +4,11 @@ The Azure CLI is a command-line program to connect to Azure and execute administ
 
 
 
+Example command that restarts a virtual machine:
+
+```
+az vm restart -g MyResourceGroup -n MyVm
+```
+
+
+
