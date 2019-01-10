@@ -25,7 +25,13 @@ To sign in we type:
 az login
 ```
 
-typing the above will take you to a browser where you are asked to login. Once that is done you are good to go. Next up let's see what commands we have at our disposal:
+typing the above will take you to a browser where you are asked to login. Once that is done you are good to go. 
+
+## Commands
+
+Commands in the CLI are organized as _commands _of _groups_
+
+Next up let's see what commands we have at our disposal:
 
 * `az group`, for resource groups
 * `az vm` , for virtual machines
@@ -34,10 +40,6 @@ typing the above will take you to a browser where you are asked to login. Once t
 * `az webapp`, for managing webapps
 * `az sql server`, for managing sql server databases
 * `az cosmosdb`, for managing cosmosdb
-
-
-
-
 
 
 
