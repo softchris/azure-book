@@ -19,5 +19,11 @@ Example of installing it for Mac:
 brew update && brew install azure-cli
 ```
 
+To sign in we type:
+
+```
+az login
+```
+
 
 
