@@ -92,6 +92,12 @@ az group delete --name resourceForStorageAccount
 ## Create a Web App and deploy it to Azure
 Here we will look how we can create a webapp and deploy it to azure. 
 
+We need to do the following:
+
+- **download** a sample app
+- **run the app** locally just to ensure it works
+- **configure a deployment user**, this deployment user is required for `FTP` and `local Git deployment` to a web app
+
 Let's get a sample app first:
 
 ```
@@ -107,3 +113,5 @@ source venv/bin/activate
 pip install -r requirements.txt
 FLASK_APP=application.py flask run
 ```
+This should run the application and host it on `http://localhost:5000`
+
