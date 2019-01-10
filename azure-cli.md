@@ -54,3 +54,6 @@ To use type:
 az interactive
 ```
 
+## Creating a storage account
+Every storage account must belong to an Azure `resource group`. A `resource group` is a logical container for grouping your Azure services. When you create a storage account, you have the option to either create a `new resource group`, or `use an existing resource group`.
+
