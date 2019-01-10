@@ -12,3 +12,7 @@
 * Cognitive Services
 * [Azure Services](concepts/azure-services.md)
 
+## Deployment
+
+* [Python Web App Deploy](deployment/python-web-app-deploy.md)
+
