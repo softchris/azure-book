@@ -79,3 +79,10 @@ az storage account create \
 ```
 Storage account names needs to be lowercase
 Also this one will answer with a long JSON response. Ensure the `provisioningState` says `Succeeded`
+
+Let's have a look at our resource group in our Azure portal
+
+Now that we are done we can either choose to let everything remain as it is or we can clean up our used resource. If we opt for the latter we should type the following:
+```
+az group delete --name resourceForStorageAccount
+```
