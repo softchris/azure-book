@@ -44,3 +44,10 @@ Let's get the sample app
 git clone https://github.com/Azure-Samples/meanjs.git
 ```
 
+Thereafter
+
+```
+cd meanjs
+npm install && npm start
+```
+
