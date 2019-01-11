@@ -44,7 +44,7 @@ Let's get the sample app
 git clone https://github.com/Azure-Samples/meanjs.git
 ```
 
-Thereafter
+Thereafter type the following:
 
 ```
 cd meanjs
