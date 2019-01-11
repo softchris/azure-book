@@ -51,3 +51,6 @@ cd meanjs
 npm install && npm start
 ```
 
+Now you should get the following if you navigate to `http://localhost:3000`
+![](/assets/Screen Shot 2019-01-11 at 00.53.10.png)
+
