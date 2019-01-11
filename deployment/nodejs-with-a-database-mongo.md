@@ -75,14 +75,14 @@ Now you should get the following if you navigate to `http://localhost:3000`
 we can either use an existing resource group or create a new one. We create a new one by typing:
 
 ```
-az group create --name myResourceGroup --location "West Europe"
+az group create --name cosmosgroup --location "West Europe"
 ```
 
 ## create a cosmos db account
 to create our cosmos db account we need to type the following:
 
 ```
-az cosmosdb create --name <cosmosdb_name> --resource-group myResourceGroup --kind MongoDB
+az cosmosdb create --name cosmosdbchris --resource-group cosmosgroup --kind MongoDB
 ```
 as you can see we need to specify `--resource-group` and `--kind`. CosmosDB is more like a service that allows us to choose from several types of databases.
 
