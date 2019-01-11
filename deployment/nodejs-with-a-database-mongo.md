@@ -71,3 +71,20 @@ npm install && npm start
 Now you should get the following if you navigate to `http://localhost:3000`
 ![](/assets/Screen Shot 2019-01-11 at 00.53.10.png)
 
+## create a resource group
+we can either use an existing resource group or create a new one. We create a new one by typing:
+
+```
+az group create --name myResourceGroup --location "West Europe"
+```
+
+## create a cosmos db account
+to create our cosmos db account we need to type the following:
+
+```
+az cosmosdb create --name <cosmosdb_name> --resource-group myResourceGroup --kind MongoDB
+```
+as you can see we need to specify `--resource-group` and `--kind`. CosmosDB is more like a service that allows us to choose from several types of databases.
+
+
+
