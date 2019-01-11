@@ -4,17 +4,31 @@
 
 ## Concepts
 
-* [Resource Group](resource-group.md)
 * [Microsoft Azure Portal](concepts/microsoft-azure-portal.md)
+* [Resource Group](resource-group.md)
+* Price plan
+* Deployment user
 * [Azure CLI](azure-cli.md)
+* Azure Keyvault
+* Azure Pipelines
 * [App Service](app-service.md)
-* [Cognitive Services](cognitive-services.md)
 * [Azure Services](concepts/azure-services.md)
 
-## Deployment
+## Deployment recipes
 
 * [Node.js web app deploy](deployment/nodejs-web-app-deploy.md)
 * [Python Web App Deploy](deployment/python-web-app-deploy.md)
 * [Node.js with a database \( Mongo \)](deployment/nodejs-with-a-database-mongo.md)
 * [Node.js + Express with Mongo DB](deployment/nodejs-+-express-with-mongo-db.md)
+* Node.js app in a container
+
+## Debugging
+
+* [App logs](debugging/app-logs.md)
+
+## Serverless
+
+## Cognitive services
+
+* [Cognitive Services](cognitive-services.md)
 
