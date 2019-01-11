@@ -141,6 +141,12 @@ If we have a local install we type:
 node ./node_modules/gulp/bin/gulp.js
 ```
 
+Now let's run the app with the following command:
+
+```
+NODE_ENV=production node server.js
+```
+
 
 
 
