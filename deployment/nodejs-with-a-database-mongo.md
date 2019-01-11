@@ -86,5 +86,10 @@ az cosmosdb create --name cosmosdbchris --resource-group cosmosgroup --kind Mong
 ```
 as you can see we need to specify `--resource-group` and `--kind`. CosmosDB is more like a service that allows us to choose from several types of databases.
 
+This will take a while so go have a warm beverage :)
+
+Once it's done it should look something like this:
+
+
 
 
