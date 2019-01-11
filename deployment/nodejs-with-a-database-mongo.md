@@ -209,6 +209,47 @@ Ok let's actually push our code to azure with the following command:
 git push azure master
 ```
 
+go visit your site on the URL indicated by the key `hostNames` from when you generated the web site. ( this might take a little while the first time, it needs to download all npm libraries etc. )
+
+## manage changes and redeploy
+
+This is quite simple. Do the changes you need to in the code and then run:
+
+```
+gulp prod
+NODE_ENV=production node server.js
+```
+
+Thereafter commit your changes:
+
+```
+git commit -am "added article comment"
+git push azure master
+```
+
+After that your app should be updated
+
+## Summary
+We learned not only to create a web app but also to create a database and how to set the connection string. 
+
+We've learned we could use the following `az cosmosdb create` to create a CosmosDB database and also to type `az cosmosdb list-keys` to get the keys we would need to construct our connection string.
+
+Furthermore we learned how we could update the web apps app settings with the following command:
+
+```
+az webapp config appsettings set --name <app_name> --resource-group myResourceGroup --settings MONGODB_URI="mongodb://<cosmosdb_name>:<primary_master_key>@<cosmosdb_name>.documents.azure.com:10250/mean?ssl=true"
+```
+The above is definitely possible to do through the portal UI as well but if we want to be terminal hackers, this looks cooler ;)
+
+We've also learned that we can access app settings keys in our node.js web app by typing the following:
+
+```
+process.env.<appkey>
+```
+
+We've thereby learned the basic of what you would expect of any app. Of course you would need to learn about logging to track and trace errors and security to feel really comfortable as a developer in the cloud.  
+
+
 
 
 
