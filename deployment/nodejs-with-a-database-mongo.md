@@ -89,6 +89,61 @@ as you can see we need to specify `--resource-group` and `--kind`. CosmosDB is m
 This will take a while so go have a warm beverage :)
 
 Once it's done it should look something like this:
+```
+ "writeLocations": [
+    {
+      "documentEndpoint": "https://<name>-westeurope.documents.azure.com:443/",
+      "failoverPriority": 0,
+      "id": "cosmosdbchris-westeurope",
+      "locationName": "West Europe",
+      "provisioningState": "Succeeded"
+    }
+```
+
+## set up the apps connection string with the CosmosDB one
+Now it's time to go into our app and set the connection string to our MongoDB database in the cloud and try to see if our app is able to run locally but connect to our cloud database. We need to do the following to make that happen:
+
+- retrieve the key
+- use the key and set the connection string in our app
+- test the app locally
+
+### retrieve key
+We do that by using the `list-keys` command
+
+```
+az cosmosdb list-keys --name cosmosdbchris --resource-group cosmosgroup
+```
+This will give us a JSON response back. We want the value for the key `primaryMasterKey` so copy that one
+
+
+### use the key and set the connection string in our app
+Inside of the apps `config/env` directory there is a file called `local-production.js`. This is currently specified in the `.gitignore` file so this is only about a local test, we will need set the connection string differently once the app is in the cloud. For now bare with me and let's try to set up the connection string for our local test:
+
+```
+module.exports = {
+  db: {
+    uri: 'mongodb://cosmosdbchris:<primary_master_key>@cosmosdbchris.documents.azure.com:10250/mean?ssl=true&sslverifycertificate=false'
+  }
+};
+```
+
+### test the app locally
+
+
+At this point we need to create a production build of the app. If we have a global install of gulp we can just type:
+
+```
+gulp prod
+```
+If we have a local install we type:
+
+```
+node ./node_modules/gulp/bin/gulp.js
+```
+
+
+
+
 
 
 
