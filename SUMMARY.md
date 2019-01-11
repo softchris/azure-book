@@ -30,6 +30,8 @@
 
 ## Serverless
 
+* [serverless intro](serverless/serverless-intro.md)
+
 ## Cognitive services
 
 * [Cognitive Services](cognitive-services.md)
