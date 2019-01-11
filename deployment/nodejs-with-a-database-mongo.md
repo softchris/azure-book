@@ -147,7 +147,8 @@ Now let's run the app with the following command:
 NODE_ENV=production node server.js
 ```
 
-The app should now be found at ip `http://0.0.0.0:8443`. Yes, it's there and it's actually using our Cosmos DB instead of the local one
+The app should now be found at ip `http://0.0.0.0:8443`. Yes, it's there and it's actually using our Cosmos DB instead of the local one. We can see that if we go to Azure portal, find our resource group `cosmosgroup`, then click on our cosmosdb instance and click `Data Explorer` we will see this:
+![](/assets/Screen Shot 2019-01-11 at 22.12.19.png) 
 
 
 
