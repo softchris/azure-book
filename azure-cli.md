@@ -89,3 +89,7 @@ Now that we are done we can either choose to let everything remain as it is or w
 az group delete --name resourceForStorageAccount
 ```
 
+## Tutorials
+
+[Azure CLI Tutorial](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)
+
