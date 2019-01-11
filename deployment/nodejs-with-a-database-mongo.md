@@ -193,6 +193,22 @@ db: {
 ```
 The above means we are already set up and ready to connect to MongoDB. We don't actually need to change anything.
 
+## push the app to azure
+Next step is to push the app to azure. We do that with the following command:
+
+```
+git remote add azure <deploymentLocalGitUrl-from-create-step>
+```
+The above means that we need to find the value of key `deploymentLocalGitUrl` that we got from creating our web site. Let' run the command to have the remote branch point correctly.
+
+All done? Good!
+
+Ok let's actually push our code to azure with the following command:
+
+```
+git push azure master
+```
+
 
 
 
