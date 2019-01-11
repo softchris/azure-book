@@ -36,3 +36,11 @@ sudo chmod -R go+w /data/db
 
 Thereafter start `mongod`, this will start the background process
 
+## Get the sample app
+
+Let's get the sample app
+
+```
+git clone https://github.com/Azure-Samples/meanjs.git
+```
+
