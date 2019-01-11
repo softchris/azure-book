@@ -211,6 +211,9 @@ git push azure master
 
 go visit your site on the URL indicated by the key `hostNames` from when you generated the web site. ( this might take a little while the first time, it needs to download all npm libraries etc. )
 
+After all that wait, it should look like this:
+![](/assets/Screen Shot 2019-01-11 at 22.58.04.png)
+
 ## manage changes and redeploy
 
 This is quite simple. Do the changes you need to in the code and then run:
