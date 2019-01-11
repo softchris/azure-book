@@ -64,7 +64,7 @@ Boom, there it is. Our site is updated. Almost too easy :)
 
 we have managed to create a Node.js app from a sample repository and we have also deployed said app to azure. We have used a short cut for deploying namely the command `az webapp up`. That command has set some defaults for us on resource group as well as pricing plan and also set our deployment type to `zip deploy`, which essentially zips up our files and send them to the deployment server. 
 
-In a real scenario we would need to use a little bit different approach as described in this article [](/deployment/python-web-app-deploy.md), where we create our own deployment user, resource group, price plan etc. This is definitely a good approach if you want to code up something quick and dirty and deploy it and show people.
+In a real scenario we would need to use a little bit different approach as described in this article [Python Web App deploy](/deployment/python-web-app-deploy.md), where we create our own deployment user, resource group, price plan etc. This is definitely a good approach if you want to code up something quick and dirty and deploy it and show people.
 
 
 
