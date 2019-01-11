@@ -151,6 +151,47 @@ The app should now be found at ip `http://0.0.0.0:8443`. Yes, it's there and it'
 ![](/assets/Screen Shot 2019-01-11 at 22.12.19.png) 
 
 
+## create a deployment user
+Let's start focusing on getting the app to the cloud instead of running it locally. First thing we need to do is to get a deployment user. If you have created on before you might use that again, otherwise we need to type the following:
+
+```
+az webapp deployment user set --user-name <username> --password <password>
+```
+The user name needs to be globally unique. 
+
+## create a service plan
+this is so we know how we will be billed for the resources under this resource group. Let's create a service plan with the following command:
+```
+az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux
+```
+
+## create a web app
+Now it's time to create the web app, where our app will finally live. Let's create it with the following command:
+
+```
+az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
+```
+
+Now we have created our web app and by us specifying `--deployment-local-git` means we can use git to push the app
+
+## set db app settings
+Remember how we had set the connection string before? Well we had done so in a file that we didn't aim to check in. What we can do instead is to set the connection string with an azure cli command instead:
+
+Let's use the following command:
+
+```
+az webapp config appsettings set --name <app_name> --resource-group myResourceGroup --settings MONGODB_URI="mongodb://<cosmosdb_name>:<primary_master_key>@<cosmosdb_name>.documents.azure.com:10250/mean?ssl=true"
+```
+
+Now to access this app setting key in Node.js. We just need to refer to `process.env.MONGODB_URI`. Therefore let's go into `config/env/production.js`, note a code piece that looks like this:
+
+```
+db: {
+  uri: ... || process.env.MONGODB_URI || ...,
+  ...
+},
+```
+The above means we are already set up and ready to connect to MongoDB. We don't actually need to change anything.
 
 
 
