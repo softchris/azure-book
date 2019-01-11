@@ -6,11 +6,11 @@
 
 * [Microsoft Azure Portal](concepts/microsoft-azure-portal.md)
 * [Resource Group](resource-group.md)
-* Price plan
-* Deployment user
+* [Price plan](concepts/price-plan.md)
+* [Deployment user](concepts/deployment-user.md)
 * [Azure CLI](azure-cli.md)
-* Azure Keyvault
-* Azure Pipelines
+* [Azure Keyvault](concepts/azure-keyvault.md)
+* [Azure Pipelines](concepts/azure-pipelines.md)
 * [App Service](app-service.md)
 * [Azure Services](concepts/azure-services.md)
 * [ARM, Azure resource manager - templates](concepts/arm-azure-resource-manager-templates.md)
