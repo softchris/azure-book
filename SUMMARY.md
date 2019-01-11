@@ -13,6 +13,7 @@
 * Azure Pipelines
 * [App Service](app-service.md)
 * [Azure Services](concepts/azure-services.md)
+* [ARM, Azure resource manager - templates](concepts/arm-azure-resource-manager-templates.md)
 
 ## Deployment recipes
 
