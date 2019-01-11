@@ -1,0 +1,1 @@
+[Deploy a dockerized app](https://blog.akquinet.de/2018/06/13/how-to-deploy-a-dockerized-app-to-microsoft-azure-web-app-for-containers/)

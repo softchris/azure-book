@@ -20,7 +20,7 @@
 * [Python Web App Deploy](deployment/python-web-app-deploy.md)
 * [Node.js with a database \( Mongo \)](deployment/nodejs-with-a-database-mongo.md)
 * [Node.js + Express with Mongo DB](deployment/nodejs-+-express-with-mongo-db.md)
-* Node.js app in a container
+* [Node.js app in a container](deployment/nodejs-app-in-a-container.md)
 
 ## Debugging
 
