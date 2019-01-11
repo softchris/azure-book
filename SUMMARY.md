@@ -15,4 +15,5 @@
 
 * [Node.js web app deploy](deployment/nodejs-web-app-deploy.md)
 * [Python Web App Deploy](deployment/python-web-app-deploy.md)
+* [Node.js with a database \( Mongo \)](deployment/nodejs-with-a-database-mongo.md)
 
