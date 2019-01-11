@@ -1,7 +1,14 @@
 # Deploy a Node.js + Mongo DB database
-This assumes you have a MongoDB server running locally. If you don't head to the download page [Download page](https://www.mongodb.com/download-center/community?jmp=docs) and click `Download`
+This assumes you have a MongoDB server running locally. 
+
+## Installing MongoDB
+If you already have MongoDB installed and working, skip this step otherwise keep reading.
+
+Go to the download page [Download page](https://www.mongodb.com/download-center/community?jmp=docs) and click `Download`
 
 Thereafter double click the installation file and find the resulting unpacked directory. 
+
+### Set the path
 
 Navigate to the directory and run `pwd`. Thereafter set it up in the PATH variable, like so:
 
@@ -11,12 +18,21 @@ Navigate to the directory and run `pwd`. Thereafter set it up in the PATH variab
 export PATH=<mongodb-install-directory>/bin:$PATH
 ```
 
+### Create data directory and set access rights
+
 Thereafter we need to set up the data directory where MongoDB will read and write from. We do that with:
 
 ```
 mkdir -p /data/db
 ```
 
+Then you need to ensure your data directory has the correct read/write access. Type the following:
+
+```
+sudo chmod -R go+w /data/db
+```
+
+### Start the engine
+
 Thereafter start `mongod`, this will start the background process
 
-Navigate t
