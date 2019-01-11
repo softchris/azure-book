@@ -252,6 +252,9 @@ process.env.<appkey>
 
 We've thereby learned the basic of what you would expect of any app. Of course you would need to learn about logging to track and trace errors and security to feel really comfortable as a developer in the cloud.  
 
+### Further reading
+
+This is the tutorial I was following from Microsoft Docs [Node.js + MongoDB tutorial](https://docs.microsoft.com/en-gb/azure/app-service/containers/tutorial-nodejs-mongodb-app)
 
 
 
