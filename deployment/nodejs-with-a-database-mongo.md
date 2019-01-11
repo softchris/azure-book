@@ -4,7 +4,7 @@ This assumes you have a MongoDB server running locally.
 We will take do the following that will result in our app being deployed, database and all:
 
 - **set up and install MongoDB**, so we can test our app locally, no need if we already have MongoDB installed
-- **clone** a sample app from github
+- **clone a sample app** from github
 - **create a resource group**, we will need this logic group for our web app and database account
 - **create a CosmosDB account**, so we have a database to connect to
 - **set up the apps connection string with the CosmosDB one**, so we can test that when we run the app locally that it is able to connect to our CosmosDB instance on Azure
@@ -18,7 +18,7 @@ We will take do the following that will result in our app being deployed, databa
 
 
 
-## Installing MongoDB
+## Set up and install MongoDB
 If you already have MongoDB installed and working, skip this step otherwise keep reading.
 
 Go to the download page [Download page](https://www.mongodb.com/download-center/community?jmp=docs) and click `Download`
