@@ -73,5 +73,26 @@ az cognitiveservices account create \
 --location westeurope
 
 ```
+That should have create the `cog services account`.
 
+## Verify account
+We can easily verify that the account was created by typing:
+
+```
+az cognitiveservices account list \
+--resource-group resourceforcogservices // returns array []
+// OR
+az cognitiveservices account show \
+--name ComputerVisionService \
+--resource-group resourceforcogservices // returns a specific account by name
+
+```
+
+### Get the keys
+
+```
+az cognitiveservices account keys list \
+--name ComputerVisionService \
+--resource-group resourceforcogservices
+```
 
