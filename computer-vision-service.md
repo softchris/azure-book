@@ -39,7 +39,7 @@ Commands:
 - **account delete**, Delete an Azure Cognitive Services account.
 - **keys list**, List the keys of an Azure Cognitive Services account.
 
-## Create a Coginitive Service account
+## Create a Cognitive Service account
 we need a Cognitive Services account for the Computer Vision API
 The command for creating the account is as follows:
 
@@ -48,7 +48,10 @@ az cognitiveservices account create \
 --kind ComputerVision \
 --name ComputerVisionService \
 --sku S1 \
---resource-group [sandbox resource group name] \
+--resource-group [resourceGroup] \
 --location [location]
 ```
+Ok so we need to create a `resource group` and decide on a `location`.
+
+### Create a resource group
 
