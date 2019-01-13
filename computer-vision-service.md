@@ -141,6 +141,15 @@ curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/analyze?visualF
 | jq '.'
 ```
 
+curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=Categories,Description&details=Landmarks" \
+-H "Ocp-Apim-Subscription-Key: $key" \
+-H "Content-Type: application/json" \
+-d "{'url' : 'https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/5a3d8165e2c4836cd19a9f7b/1513980264718/?format=2500w'}" \
+| jq '.'
+
+
+
+
 You should get back an answer looking like this:
 
 ```
@@ -198,4 +207,73 @@ You should get back an answer looking like this:
 ```
 
 ## Checking for inappropriate content
-TODO
+We can also call the APIO to determine wether our image contains adult/ inappropriate content. To accomplish that we only need to change the parameters.
+
+Let's change `visualFeatures` to instead say `Adult,Description`. Our call will now look like this:
+
+```
+curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=Adult,Description" \
+-H "Ocp-Apim-Subscription-Key: $key" \
+-H "Content-Type: application/json" \
+-d "{'url' : 'https://raw.githubusercontent.com/MicrosoftDocs/mslearn-process-images-with-the-computer-vision-service/master/images/people.png'}" \
+| jq '.'
+```
+The response coming back looks like this:
+
+```
+{
+  "adult": {
+    "isAdultContent": false,
+    "isRacyContent": false,
+    "adultScore": 0.0013711383799090981,
+    "racyScore": 0.0046537225134670734
+  },
+  "description": {
+    "tags": [
+      "outdoor",
+      "person",
+      "posing",
+      "photo",
+      "grass",
+      "group",
+      "standing",
+      "man",
+      "people",
+      "woman",
+      "young",
+      "holding",
+      "dress",
+      "white"
+    ],
+    "captions": [
+      {
+        "text": "a group of people posing for a photo",
+        "confidence": 0.9906094762899921
+      }
+    ]
+  },
+  "requestId": "",
+  "metadata": {
+    "width": 600,
+    "height": 462,
+    "format": "Png"
+  }
+}
+```
+
+Let's highlight specifically on the `adult` property section:
+
+```
+"adult": {
+  "isAdultContent": false,
+  "isRacyContent": false,
+  "adultScore": 0.0013711383799090981,
+  "racyScore": 0.0046537225134670734
+  }
+```
+We see the following parameters of interest:
+- `isAdultContent` has the value `false. 
+- `isRacyContent` is also `false`
+- `adultScore` is very low value close to 0. It would need to be closer to `1.0` to imply it's _adult content_. 
+- `racyScore`, same thing here, a value close to `0`
+
