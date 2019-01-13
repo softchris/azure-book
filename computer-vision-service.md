@@ -14,5 +14,15 @@ We will do the following
 - get an API key
 - make a POST call to the API
 
+Format of the URL
+
+```
+region.api.cognitive.microsoft.com/vision/v2.0/resource/[parameters]
+```
+
+- **region** - the region where you created the account, for example, westus.
+- **resource** - the Computer Vision resource you are calling such as 
+- **analyze**, describe, generateThumbnail, ocr, models, recognizeText, tag.
+
 ## Create a Coginitive Service account
 
