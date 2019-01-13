@@ -314,7 +314,12 @@ curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/generateThumbna
 This will create an image with the dimensions 100x100 and with the name `thumbnail.jpg`.
 
 ## Extract printed text from an image
+The Computer Vision API contains some neat OCR algorithms that will be able to recognize text in our images.
 
+The URL for calling this API looks like this:
+```
+https://<region>.api.cognitive.microsoft.com/vision/v2.0/ocr?language=<...>&detectOrientation=<...>
+```
 
 ## Summary
 
