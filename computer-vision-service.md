@@ -196,3 +196,6 @@ You should get back an answer looking like this:
   }
 }
 ```
+
+## Checking for inappropriate content
+TODO
