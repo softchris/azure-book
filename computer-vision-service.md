@@ -287,6 +287,19 @@ Ok, so there is a thumbnail generating service. Why do we want that? Well let's 
 
 Ok, so it seems to do a better job than a human finding the interesting part of an image, neat. Let's try it out.
 
+Ok, let's have a look at what the URL looks like that we need to call to create the thumbnails we need:
+
+```
+https://<region>.api.cognitive.microsoft.com/vision/v2.0/generateThumbnail?width=<...>&height=<...>&smartCropping=<...>
+```
+Ok first thing we see here is that we changed the name of the service we are going to use to `generateThumbnail`. Of course that means the parameters will change to. Here is an example to why I would want this enabled - _with smart cropping enabled, a cropped profile picture would keep someone's face within the picture frame even when the picture has a different aspect ratio_
+
+Parameters:
+
+- width, required
+- height, required
+- smartCropping, boolean that 
+
 
 ## Summary
 
