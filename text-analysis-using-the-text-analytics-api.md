@@ -2,7 +2,7 @@
 
 The API covers the following:
 
-- **sentiment analysis**, is something good or bad?
+- **sentiment analysis**, What do our customers really want?
 - **key phrase extraction**, find the important phrase that carries meaning
 - **language detection**, discover what language something was written in
 
