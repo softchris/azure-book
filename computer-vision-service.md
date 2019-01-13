@@ -97,3 +97,13 @@ az cognitiveservices account keys list \
 ```
 
 This retuns a list of keys that we can use to do our REST API call.
+
+We can save down the first `key` in our response to a variable that we can refer to later, like so:
+
+```
+key=$(az cognitiveservices account keys list \
+--name ComputerVisionService \
+--resource-group resourceforcogservices \
+--query key1 -o tsv)
+```
+As you can see above we pose a query and ask specifically for `key1`
