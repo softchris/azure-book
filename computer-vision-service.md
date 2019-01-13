@@ -275,9 +275,12 @@ Let's highlight specifically on the `adult` property section:
   }
 ```
 We see the following parameters of interest:
-- `isAdultContent` has the value `false. 
+- `isAdultContent` has the value `false`. 
 - `isRacyContent` is also `false`
 - `adultScore` is very low value close to 0. It would need to be closer to `1.0` to imply it's _adult content_. 
 - `racyScore`, same thing here, a value close to `0`
+
+
+## Summary
 
 
