@@ -9,5 +9,10 @@ We will do the following
 - **Detect** and extract printed text from an image.
 - **Detect** and extract handwritten text from an image.
 
+## Calling the API
+
+- get an API key
+- make a POST call to the API
+
 ## Create a Coginitive Service account
 
