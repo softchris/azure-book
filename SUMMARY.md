@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Computer Vision](computer-vision.md)
 
 ## Concepts
 
@@ -36,5 +35,6 @@
 ## Cognitive services
 
 * [Cognitive Services](cognitive-services.md)
+* [Computer Vision](computer-vision.md)
 * [Computer Vision service tutorial](computer-vision-service.md)
 
