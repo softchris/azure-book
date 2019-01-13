@@ -54,4 +54,12 @@ az cognitiveservices account create \
 Ok so we need to create a `resource group` and decide on a `location`.
 
 ### Create a resource group
+We can simply do that by typing
+```
+az group create \
+    --name resourceforcogservices \
+    --location westeurope
+
+```
+
 
