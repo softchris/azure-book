@@ -326,6 +326,16 @@ Parameters:
 - **language**: The language code of the text to be detected in the image. The default value is unk,or unknown. This let's the service auto detect the language of the text in the image.
 - **detectOrientation**: When true, the service tries to detect the image orientation and correct it before further processing, for example, whether the image is upside-down.
 
+To perform the actual call we need to perform the following POST request:
+
+```
+curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/ocr" \
+-H "Ocp-Apim-Subscription-Key: $key" \
+-H "Content-Type: application/json"  \
+-d "{'url' : 'https://raw.githubusercontent.com/MicrosoftDocs/mslearn-process-images-with-the-computer-vision-service/master/images/ebook.png'}" \
+ | jq '.'
+```
+
 ## Summary
 
 
