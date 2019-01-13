@@ -313,6 +313,8 @@ curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/generateThumbna
 ```
 This will create an image with the dimensions 100x100 and with the name `thumbnail.jpg`.
 
+## Extract printed text from an image
+
 
 ## Summary
 
