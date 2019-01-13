@@ -140,3 +140,59 @@ curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/analyze?visualF
 -d "{'url' : 'https://raw.githubusercontent.com/MicrosoftDocs/mslearn-process-images-with-the-computer-vision-service/master/images/mountains.jpg'}" \
 | jq '.'
 ```
+
+You should get back an answer looking like this:
+
+```
+{
+  "categories": [
+    {
+      "name": "outdoor_mountain",
+      "score": 0.99609375,
+      "detail": {
+        "landmarks": []
+      }
+    }
+  ],
+  "description": {
+    "tags": [
+      "snow",
+      "outdoor",
+      "mountain",
+      "nature",
+      "covered",
+      "skiing",
+      "man",
+      "flying",
+      "standing",
+      "wearing",
+      "side",
+      "air",
+      "slope",
+      "jumping",
+      "plane",
+      "red",
+      "hill",
+      "riding",
+      "people",
+      "group",
+      "yellow",
+      "board",
+      "doing",
+      "airplane"
+    ],
+    "captions": [
+      {
+        "text": "a snow covered mountain",
+        "confidence": 0.956279380622841
+      }
+    ]
+  },
+  "requestId": "3c99e0c5-0ab9-4baf-9b7d-b804a4e377f9",
+  "metadata": {
+    "width": 600,
+    "height": 462,
+    "format": "Jpeg"
+  }
+}
+```
