@@ -25,5 +25,19 @@ region.api.cognitive.microsoft.com/vision/v2.0/resource/[parameters]
 - **resource** - the Computer Vision resource you are calling such as 
 - **analyze**, describe, generateThumbnail, ocr, models, recognizeText, tag.
 
+## Azure CLI
+You can manage cognitive services through either UI or the Azure CLI
+
+```
+az cognitiveservices <command> // e.g `list`
+```
+Commands:
+
+- **list**, List available Azure Cognitive Services accounts.
+- **account show**, Get the details of an Azure Cognitive Services account.
+- **account create**, Create an Azure Cognitive Services account.
+- **account delete**, Delete an Azure Cognitive Services account.
+- **keys list**, List the keys of an Azure Cognitive Services account.
+
 ## Create a Coginitive Service account
 
