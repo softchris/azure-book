@@ -511,6 +511,27 @@ We see above from our response we are given the `orientation` for the picture an
 ```
 Above we see that `words` that contains one instance per found word at a specific place.  
 
+## Extract handwritten text
+This is great to use when you have a lot of handwritten notes and want to know what they say. It's really good at recognizing hand written text.
+
+Let's have a look at what the URL looks like to call this service:
+```
+https://<region>.api.cognitive.microsoft.com/vision/v2.0/recognizeText?mode=<...>
+```
+Above we are using the method `recognizeText` and we use the following parameters with it:
+
+- `mode`, this has to have the value `HandWritten` or `Printed`
+
+Calling this service therefore looks like this:
+
+```
+curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/recognizeText?mode=Handwritten" \
+-H "Ocp-Apim-Subscription-Key: $key" \
+-H "Content-Type: application/json" \
+-d "{'url' : 'https://raw.githubusercontent.com/MicrosoftDocs/mslearn-process-images-with-the-computer-vision-service/master/images/handwriting.jpg'}" \
+-D - 
+```
+
 ## Summary
 
 
