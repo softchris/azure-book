@@ -10,3 +10,4 @@ We will do the following
 - **Detect** and extract handwritten text from an image.
 
 ## Create a Coginitive Service account
+
