@@ -1,6 +1,9 @@
 # Computer vision service
 
+
 > WHY Cog Services: You need to decide whether to build or buy a solution. Building a sophisticated image processing and analysis engine is costly. One alternative is to use the Computer Vision API from Microsoft. 
+![](/assets/blue-close-up-eye-685526.jpg)
+
 We will do the following
 
 - **Create** a Cognitive Services account.
@@ -276,4 +279,5 @@ We see the following parameters of interest:
 - `isRacyContent` is also `false`
 - `adultScore` is very low value close to 0. It would need to be closer to `1.0` to imply it's _adult content_. 
 - `racyScore`, same thing here, a value close to `0`
+
 
