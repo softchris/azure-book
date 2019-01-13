@@ -106,4 +106,9 @@ key=$(az cognitiveservices account keys list \
 --resource-group resourceforcogservices \
 --query key1 -o tsv)
 ```
-As you can see above we pose a query and ask specifically for `key1`
+As you can see above we pose a query and ask specifically for `key1`.
+We can see our command worked by typing:
+
+```
+echo $key // should print `key1` value
+```
