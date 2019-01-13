@@ -336,6 +336,181 @@ curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/ocr" \
  | jq '.'
 ```
 
+The answer back looks like this:
+
+```
+{
+  "language": "en",
+  "textAngle": 0,
+  "orientation": "Up",
+  "regions": [
+    {
+      "boundingBox": "57,18,348,509",
+      "lines": [
+        {
+          "boundingBox": "335,18,70,14",
+          "words": [
+            {
+              "boundingBox": "335,18,70,14",
+              "text": "Microsoft"
+            }
+          ]
+        },
+        {
+          "boundingBox": "67,102,286,27",
+          "words": [
+            {
+              "boundingBox": "67,102,60,27",
+              "text": "NET"
+            },
+            {
+              "boundingBox": "140,102,213,27",
+              "text": "Microservices:"
+            }
+          ]
+        },
+        {
+          "boundingBox": "57,139,239,29",
+          "words": [
+            {
+              "boundingBox": "57,139,185,29",
+              "text": "Architecture"
+            },
+            {
+              "boundingBox": "253,139,43,29",
+              "text": "for"
+            }
+          ]
+        },
+        {
+          "boundingBox": "58,178,291,28",
+          "words": [
+            {
+              "boundingBox": "58,178,209,28",
+              "text": "Containerized"
+            },
+            {
+              "boundingBox": "280,179,69,27",
+              "text": ".NET"
+            }
+          ]
+        },
+        {
+          "boundingBox": "57,216,188,37",
+          "words": [
+            {
+              "boundingBox": "57,216,188,37",
+              "text": "Applications"
+            }
+          ]
+        },
+        {
+          "boundingBox": "277,465,93,10",
+          "words": [
+            {
+              "boundingBox": "277,466,30,9",
+              "text": "Cesar"
+            },
+            {
+              "boundingBox": "310,466,14,9",
+              "text": "de"
+            },
+            {
+              "boundingBox": "328,465,9,10",
+              "text": "la"
+            },
+            {
+              "boundingBox": "341,466,29,9",
+              "text": "Torre"
+            }
+          ]
+        },
+        {
+          "boundingBox": "277,480,65,13",
+          "words": [
+            {
+              "boundingBox": "277,480,17,10",
+              "text": "Bill"
+            },
+            {
+              "boundingBox": "298,480,44,13",
+              "text": "Wagner"
+            }
+          ]
+        },
+        {
+          "boundingBox": "277,495,71,9",
+          "words": [
+            {
+              "boundingBox": "277,495,10,9",
+              "text": "M"
+            },
+            {
+              "boundingBox": "289,495,16,9",
+              "text": "ike"
+            },
+            {
+              "boundingBox": "308,495,40,9",
+              "text": "Rousos"
+            }
+          ]
+        },
+        {
+          "boundingBox": "277,515,110,12",
+          "words": [
+            {
+              "boundingBox": "277,515,46,10",
+              "text": "Microsoft"
+            },
+            {
+              "boundingBox": "327,515,60,12",
+              "text": "Corporation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+The interesting part is in the `regions` key which is an array of found text occurrences. Let's have a look at one such item:
+
+```
+{
+  "language": "en",
+  "textAngle": 0,
+  "orientation": "Up",
+  "regions": [
+    {
+      "boundingBox": "57,18,348,509",
+      "lines": [
+        {
+          "boundingBox": "335,18,70,14",
+          "words": [
+            {
+              "boundingBox": "335,18,70,14",
+              "text": "Microsoft"
+            }
+          ]
+        }
+        ]
+    }
+```
+We see above from our response we are given the `orientation` for the picture and also `regions` which are all the different sections in the image. Looking deeper in the response we have `lines` which is an array that points to x number of instance where each instance looks like this:
+
+```
+{
+  "boundingBox": "335,18,70,14",
+  "words": [
+    {
+      "boundingBox": "335,18,70,14",
+      "text": "Microsoft"
+    }
+  ]
+}
+```
+Above we see that `words` that contains one instance per found word at a specific place.  
+
 ## Summary
 
 
