@@ -129,9 +129,12 @@ There are some requirements on the images that you mean to process, namely:
 - **Image file size** must be less than 4 MB.
 - **Image dimensions** must be at least 50 x 50.
 
+### Identifying landmarks
+We need to set `visualFeatures=Categories,Description` and `details=Landmarks`. Then we need to set our key as the value of the header param `Ocp-Apim-Subscription-Key` ans 
 
+> On some system the lib `jq` is not installed. We need it before we run our curl command below, `brew install jq`
 ```
-curl "https://<region>.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=Categories,Description&details=Landmarks" \
+curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=Categories,Description&details=Landmarks" \
 -H "Ocp-Apim-Subscription-Key: $key" \
 -H "Content-Type: application/json" \
 -d "{'url' : 'https://raw.githubusercontent.com/MicrosoftDocs/mslearn-process-images-with-the-computer-vision-service/master/images/mountains.jpg'}" \
