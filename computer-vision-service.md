@@ -311,6 +311,7 @@ curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/generateThumbna
 -d "{'url' : 'https://raw.githubusercontent.com/MicrosoftDocs/mslearn-process-images-with-the-computer-vision-service/master/images/dog.png'}" \
 -o  thumbnail.jpg
 ```
+This will create an image with the dimensions 100x100 and with the name `thumbnail.jpg`.
 
 
 ## Summary
