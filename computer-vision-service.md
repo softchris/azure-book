@@ -96,3 +96,4 @@ az cognitiveservices account keys list \
 --resource-group resourceforcogservices
 ```
 
+This retuns a list of keys that we can use to do our REST API call.
