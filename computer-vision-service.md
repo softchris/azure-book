@@ -13,6 +13,7 @@ We will do the following
 
 - get an API key
 - make a POST call to the API
+- parse the JSON response
 
 Format of the URL
 
