@@ -1,5 +1,7 @@
 # Cognitive services
 
+
+
 [Service overview of all the Cognitive services categories](https://azure.microsoft.com/en-gb/services/cognitive-services/)
 
 [API Listing all cognitive services](https://docs.microsoft.com/en-gb/javascript/api/overview/azure/cognitive-services?view=azure-node-latest)

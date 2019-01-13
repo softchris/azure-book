@@ -35,4 +35,5 @@
 ## Cognitive services
 
 * [Cognitive Services](cognitive-services.md)
+* [Computer Vision service](computer-vision-service.md)
 
