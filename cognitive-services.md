@@ -13,3 +13,5 @@
 [LEARN Module for Custom Vision](https://docs.microsoft.com/en-us/learn/modules/classify-images-with-custom-vision-service/)
 
 [LEARN Module for Computer Vision](https://docs.microsoft.com/en-gb/learn/modules/create-computer-vision-service-to-classify-images/)
+
+[Analyzing text with Text Analytics](https://docs.microsoft.com/en-gb/learn/modules/classify-user-feedback-with-the-text-analytics-api/)
