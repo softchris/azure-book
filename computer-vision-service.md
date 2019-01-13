@@ -532,6 +532,16 @@ curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/recognizeText?m
 -D - 
 ```
 
+This gives us a response back that does not contain the actual answer but rather tells us where to go once it managed to finish the operation. The URL to go can be found in the `Operation-Location` parameter. In this specific case I got an URL back with the value:
+
+```
+https://westeurope.api.cognitive.microsoft.com/vision/v2.0/textOperations/1769e0e4-a93b-4b78-93f1-00b3bb27e1b4
+```
+To get the result we will need to perform the following call:
+```
+curl -H "Ocp-Apim-Subscription-Key: $key" "<Operation-Location>" | jq '.'
+```
+
 ## Summary
 
 
