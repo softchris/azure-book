@@ -280,6 +280,13 @@ We see the following parameters of interest:
 - `adultScore` is very low value close to 0. It would need to be closer to `1.0` to imply it's _adult content_. 
 - `racyScore`, same thing here, a value close to `0`
 
+## Generate thumbnail
+Ok, so there is a thumbnail generating service. Why do we want that? Well let's look at the sales pitch for this service:
+
+> Computer Vision first generates a high-quality thumbnail and then analyzes the objects within the image to determine the region of interest (ROI). Computer Vision then crops the image to fit the requirements of the region of interest. The generated thumbnail can be presented using an aspect ratio that is different from the aspect ratio of the original image, depending on your needs
+
+Ok, so it seems to do a better job than a human finding the interesting part of an image, neat. Let's try it out.
+
 
 ## Summary
 
