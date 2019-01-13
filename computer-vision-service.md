@@ -112,3 +112,28 @@ We can see our command worked by typing:
 ```
 echo $key // should print `key1` value
 ```
+
+## Talking to the API
+Time has come to talk to the API. We will attempt to analyze an image. Let's have a look at what an API URL might look like :
+
+```
+https://<region>.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=<...>&details=<...>&language=<...>
+```
+Above we are using the `analyze` method. There are also some parameters in there that we need to set such as `visualFeatures`, `details` and `language`
+- **details**, this can have value `Landmarks` or `Celebrities`
+- **visualFeatures**, this is about what kind of information you want back, The `Categories` option will categorize the content of the images like trees, buildings, and more. `Faces` will identify people's faces and give you their gender and age
+
+There are some requirements on the images that you mean to process, namely:
+
+- **Supported image formats**: JPEG, PNG, GIF, BMP.
+- **Image file size** must be less than 4 MB.
+- **Image dimensions** must be at least 50 x 50.
+
+
+```
+curl "https://<region>.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=Categories,Description&details=Landmarks" \
+-H "Ocp-Apim-Subscription-Key: $key" \
+-H "Content-Type: application/json" \
+-d "{'url' : 'https://raw.githubusercontent.com/MicrosoftDocs/mslearn-process-images-with-the-computer-vision-service/master/images/mountains.jpg'}" \
+| jq '.'
+```
