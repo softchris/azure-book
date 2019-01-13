@@ -320,6 +320,11 @@ The URL for calling this API looks like this:
 ```
 https://<region>.api.cognitive.microsoft.com/vision/v2.0/ocr?language=<...>&detectOrientation=<...>
 ```
+The service used is called `ocr`.
+
+Parameters:
+- **language**: The language code of the text to be detected in the image. The default value is unk,or unknown. This let's the service auto detect the language of the text in the image.
+- **detectOrientation**: When true, the service tries to detect the image orientation and correct it before further processing, for example, whether the image is upside-down.
 
 ## Summary
 
