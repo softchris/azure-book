@@ -62,4 +62,16 @@ az group create \
 
 ```
 
+### Create the cog services account
+
+```
+az cognitiveservices account create \
+--kind ComputerVision \
+--name ComputerVisionService \
+--sku S1 \
+--resource-group resourceforcogservices \
+--location westeurope
+
+```
+
 
