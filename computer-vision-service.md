@@ -539,9 +539,315 @@ https://westeurope.api.cognitive.microsoft.com/vision/v2.0/textOperations/1769e0
 ```
 To get the result we will need to perform the following call:
 ```
-curl -H "Ocp-Apim-Subscription-Key: $key" "<Operation-Location>" | jq '.'
+curl -H "Ocp-Apim-Subscription-Key: $key" "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/textOperations/1769e0e4-a93b-4b78-93f1-00b3bb27e1b4" | jq '.'
 ```
+The response will now look like this:
 
+```
+{
+  "status": "Succeeded",
+  "recognitionResult": {
+    "lines": [
+      {
+        "boundingBox": [
+          126,
+          127,
+          388,
+          133,
+          387,
+          168,
+          125,
+          162
+        ],
+        "text": "It does not matte",
+        "words": [
+          {
+            "boundingBox": [
+              110,
+              128,
+              163,
+              128,
+              164,
+              164,
+              110,
+              164
+            ],
+            "text": "It"
+          },
+          {
+            "boundingBox": [
+              167,
+              128,
+              239,
+              128,
+              240,
+              164,
+              167,
+              164
+            ],
+            "text": "does"
+          },
+          {
+            "boundingBox": [
+              228,
+              128,
+              300,
+              127,
+              300,
+              163,
+              228,
+              164
+            ],
+            "text": "not"
+          },
+          {
+            "boundingBox": [
+              296,
+              127,
+              395,
+              127,
+              395,
+              163,
+              297,
+              163
+            ],
+            "text": "matte"
+          }
+        ]
+      },
+      {
+        "boundingBox": [
+          153,
+          180,
+          434,
+          194,
+          433,
+          230,
+          151,
+          216
+        ],
+        "text": "how slowly you go",
+        "words": [
+          {
+            "boundingBox": [
+              141,
+              183,
+              200,
+              184,
+              195,
+              223,
+              136,
+              222
+            ],
+            "text": "how"
+          },
+          {
+            "boundingBox": [
+              222,
+              185,
+              314,
+              187,
+              309,
+              226,
+              217,
+              224
+            ],
+            "text": "slowly"
+          },
+          {
+            "boundingBox": [
+              326,
+              187,
+              382,
+              189,
+              376,
+              228,
+              321,
+              226
+            ],
+            "text": "you"
+          },
+          {
+            "boundingBox": [
+              398,
+              189,
+              440,
+              190,
+              435,
+              229,
+              393,
+              228
+            ],
+            "text": "go"
+          }
+        ]
+      },
+      {
+        "boundingBox": [
+          126,
+          237,
+          313,
+          243,
+          312,
+          280,
+          125,
+          274
+        ],
+        "text": "so as long as",
+        "words": [
+          {
+            "boundingBox": [
+              114,
+              238,
+              162,
+              239,
+              160,
+              277,
+              112,
+              276
+            ],
+            "text": "so"
+          },
+          {
+            "boundingBox": [
+              162,
+              239,
+              210,
+              239,
+              208,
+              277,
+              160,
+              277
+            ],
+            "text": "as"
+          },
+          {
+            "boundingBox": [
+              210,
+              239,
+              276,
+              240,
+              274,
+              278,
+              208,
+              277
+            ],
+            "text": "long"
+          },
+          {
+            "boundingBox": [
+              276,
+              240,
+              321,
+              241,
+              319,
+              279,
+              274,
+              278
+            ],
+            "text": "as"
+          }
+        ]
+      },
+      {
+        "boundingBox": [
+          192,
+          281,
+          431,
+          293,
+          429,
+          337,
+          190,
+          325
+        ],
+        "text": "you do not stop",
+        "words": [
+          {
+            "boundingBox": [
+              194,
+              279,
+              258,
+              283,
+              246,
+              325,
+              182,
+              321
+            ],
+            "text": "you"
+          },
+          {
+            "boundingBox": [
+              271,
+              284,
+              315,
+              287,
+              303,
+              329,
+              259,
+              326
+            ],
+            "text": "do"
+          },
+          {
+            "boundingBox": [
+              315,
+              287,
+              370,
+              290,
+              358,
+              333,
+              303,
+              329
+            ],
+            "text": "not"
+          },
+          {
+            "boundingBox": [
+              366,
+              290,
+              440,
+              295,
+              428,
+              337,
+              354,
+              332
+            ],
+            "text": "stop"
+          }
+        ]
+      },
+      {
+        "boundingBox": [
+          156,
+          367,
+          318,
+          346,
+          325,
+          399,
+          163,
+          419
+        ],
+        "text": "fighting",
+        "words": [
+          {
+            "boundingBox": [
+              168,
+              366,
+              323,
+              339,
+              328,
+              396,
+              174,
+              423
+            ],
+            "text": "fighting"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
 ## Summary
 
 
