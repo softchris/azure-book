@@ -292,13 +292,25 @@ Ok, let's have a look at what the URL looks like that we need to call to create 
 ```
 https://<region>.api.cognitive.microsoft.com/vision/v2.0/generateThumbnail?width=<...>&height=<...>&smartCropping=<...>
 ```
-Ok first thing we see here is that we changed the name of the service we are going to use to `generateThumbnail`. Of course that means the parameters will change to. Here is an example to why I would want this enabled - _with smart cropping enabled, a cropped profile picture would keep someone's face within the picture frame even when the picture has a different aspect ratio_
+Ok first thing we see here is that we changed the name of the service we are going to use to `generateThumbnail`. Of course that means the parameters will change to. 
 
 Parameters:
 
-- width, required
-- height, required
-- smartCropping, boolean that 
+- **width**, required
+- **height**, required
+- **smartCropping**, Here is an example to why I would want this enabled - _with smart cropping enabled, a cropped profile picture would keep someone's face within the picture frame even when the picture has a different aspect ratio_
+
+
+
+So an actual call to this service looks like this:
+
+```
+curl "https://westeurope.api.cognitive.microsoft.com/vision/v2.0/generateThumbnail?width=100&height=100&smartCropping=true" \
+-H "Ocp-Apim-Subscription-Key: $key" \
+-H "Content-Type: application/json" \
+-d "{'url' : 'https://raw.githubusercontent.com/MicrosoftDocs/mslearn-process-images-with-the-computer-vision-service/master/images/dog.png'}" \
+-o  thumbnail.jpg
+```
 
 
 ## Summary
