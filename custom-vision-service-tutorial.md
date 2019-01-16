@@ -83,4 +83,7 @@ The results should look something like this:
 ![](/assets/Screen Shot 2019-01-16 at 20.46.51.png)
 Let's try to tag the image correctly by giving it the tags `Picasso`. To do that click the button `Predictions`. So close the dialog, click `Predictions` and select the image you just tested and add the tag.
 
+To ensure our model seem properly trained select the file `FlowersTest.jpg` and ensure it gets a low score for being any of the famous painters. It should look something like so:
+![](/assets/Screen Shot 2019-01-16 at 20.54.09.png)
+
 
