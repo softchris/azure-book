@@ -97,3 +97,7 @@ Ok we will take the following steps:
 
 As you can see there are two ways to talk the API, we can either give it an image URL, if it's an external image URL or if we select an image locally from our computer we should go with the option below. Also important is to set the `Prediction-Key`.
 
+- **Prediction-Key**: This key has to be set as a header in all requests. That's what gives us access to the endpoint.
+- **Request URL**: The dialog shows two different URLs. If we're posting an image URL, then use the first URL, which ends in `/url`. If we want to post a raw image in the body of our request, we use the second URL, which ends in `/image`.
+- **Content-Type**: If we're posting a raw image, we set the body of the request to the binary representation of the image and the content type to `application/octet-stream`. If we're posting an image URL, we put that as JSON in the body and set the content type to `application/json`.
+
