@@ -143,3 +143,6 @@ Ok, let's see what result we get:
 }
 ```
 We can see from the JSON payload we got that the probability is high that it's a painting but it doesn't seem to be either a `Picasso`, `Pollock` and definitely not a `Rembrandt`.
+
+Looking at the picture though we can see it's a famous painting by `Van Gogh`, so maybe there is hope yet for our AI to work as an art expert?
+![](/assets/Screen Shot 2019-01-16 at 21.43.51.png)
