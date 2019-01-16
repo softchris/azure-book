@@ -86,4 +86,6 @@ Let's try to tag the image correctly by giving it the tags `Picasso`. To do that
 To ensure our model seem properly trained select the file `FlowersTest.jpg` and ensure it gets a low score for being any of the famous painters. It should look something like so:
 ![](/assets/Screen Shot 2019-01-16 at 20.54.09.png)
 
+## Call the model's prediction endpoint over HTTP
+Ok so we trained our model, now it's time to reap the fruits of our labour. We will hit the our CustomVisionService API. The API will use our newly trained model as a reference when trying to find out what a sample image is.
 
