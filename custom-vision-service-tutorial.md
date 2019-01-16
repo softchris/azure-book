@@ -40,6 +40,8 @@ Once you've downloaded the zip file look for the directory
 > Artists\Picasso
 Click `Add images` and add all the images from that folder.
 
+Select the tag `painting` and `Picasso` and complete the dialog:
+![](/assets/Screen Shot 2019-01-16 at 20.26.24.png)
 
 
 
