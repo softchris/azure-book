@@ -95,5 +95,5 @@ Ok we will take the following steps:
 - retrieve the URL we need to hit, to use our model, click `Prediction Url`, this should produce a modal looking like this:
 ![](/assets/Screen Shot 2019-01-16 at 21.11.35.png)
 
-As you can see there are two ways to talk the API, we can either give it an image URL, if it's an external image URL or if we select an image locally from our computer we should go with the option below
+As you can see there are two ways to talk the API, we can either give it an image URL, if it's an external image URL or if we select an image locally from our computer we should go with the option below. Also important is to set the `Prediction-Key`.
 
