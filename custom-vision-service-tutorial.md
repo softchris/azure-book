@@ -142,12 +142,48 @@ Ok, let's see what result we get:
   ]
 }
 ```
+
+
 We can see from the JSON payload we got that the probability is high that it's a painting but it doesn't seem to be either a `Picasso`, `Pollock` and definitely not a `Rembrandt`.
 
 Looking at the picture though we can see it's a famous painting by `Van Gogh`, so maybe there is hope yet for our AI to work as an art expert?
 ![](/assets/Screen Shot 2019-01-16 at 21.43.51.png)
 
 Let's try something that it should recognzie though. So let's switch the url to this Picasso:
-```
+
 https://raw.githubusercontent.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/master/test-images/PicassoTest_02.jpg
 ```
+
+And the result iiiis:
+
+```
+{
+  "id": "",
+  "project": "",
+  "iteration": "",
+  "created": "2019-01-16T21:48:54.9299533Z",
+  "predictions": [
+    {
+      "probability": 0.6845262,
+      "tagId": "0e7beff2-08ac-4279-ad2e-36ca63e7bc3e",
+      "tagName": "Picasso"
+    },
+    {
+      "probability": 0.3154695,
+      "tagId": "c7aa6eb6-03a5-493e-b857-7eeef850807f",
+      "tagName": "painting"
+    },
+    {
+      "probability": 4.20960669e-06,
+      "tagId": "7ba0f66f-8351-4139-b0df-f12b289072a9",
+      "tagName": "Rembrandt"
+    },
+    {
+      "probability": 3.73590119e-08,
+      "tagId": "c57476dc-6ac7-4d6f-8692-bb4ce38b00e2",
+      "tagName": "Pollock"
+    }
+  ]
+}
+```
+Ok so `"probability": 0.6845262` for a `Picasso` and very low number for the other painters. It seems to working :) although I'm not sure I would invest in a painting with that likelihood ;)
