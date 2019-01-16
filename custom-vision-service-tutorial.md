@@ -10,3 +10,5 @@ We will take the following steps:
 - **Test** a Custom Vision Service model
 - **Call** your custom model's prediction endpoint over HTTP
 
+
+
