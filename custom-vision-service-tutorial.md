@@ -3,3 +3,10 @@ The idea with using Custom Service is that you have a pre trained model already.
 
 Let's have a look at the below tutorial in which we learn to identify paintings from famous artists.
 
+We will take the following steps:
+
+- **Create** a Custom Vision Service project
+- **Train** a Custom Vision Service model with tagged images
+- **Test** a Custom Vision Service model
+- **Call** your custom model's prediction endpoint over HTTP
+
