@@ -36,4 +36,10 @@ So we now have this:
 Go to the following link to download the images of paintings:
 > https://github.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/raw/master/cvs-resources.zip
 
+Once you've downloaded the zip file look for the directory 
+> Artists\Picasso
+Click `Add images` and add all the images from that folder.
+
+
+
 
