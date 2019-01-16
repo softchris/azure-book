@@ -30,4 +30,7 @@ Enter the title `painting`, like so:
 
 Repeat the steps to add `Picasso`, `Pollock`, and `Rembrandt`
 
+So we now have this:
+![](/assets/Screen Shot 2019-01-16 at 16.53.13.png)
+
 
