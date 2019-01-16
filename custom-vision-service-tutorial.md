@@ -28,3 +28,6 @@ Click the `+` to the right of `Tags`:
 Enter the title `painting`, like so:
 ![](/assets/Screen Shot 2019-01-16 at 16.51.30.png)
 
+Repeat the steps to add `Picasso`, `Pollock`, and `Rembrandt`
+
+
