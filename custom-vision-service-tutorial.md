@@ -89,3 +89,8 @@ To ensure our model seem properly trained select the file `FlowersTest.jpg` and 
 ## Call the model's prediction endpoint over HTTP
 Ok so we trained our model, now it's time to reap the fruits of our labour. We will hit the our CustomVisionService API. The API will use our newly trained model as a reference when trying to find out what a sample image is.
 
+Ok we will take the following steps:
+
+- make the latest iteration default, so it knows what state of the model it should compare from, click `Performance` and then click `Make Default`
+- retrieve the URL we need to hit, to use our model, click `Prediction Url`
+
