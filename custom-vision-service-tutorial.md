@@ -62,7 +62,7 @@ When it's finished it will have produced an `iteration` that you can click into 
 
 As you can see above two measures are being presented `Precision` and `Recall`.
 
-Suppose the model was presented with three Picasso images and three from Van Gogh. Let's say it correctly identified two of the Picasso samples as "Picasso" images, but incorrectly identified two of the Van Gogh samples as Picasso. In this case, the `Precision` would be 50%, since it identified two out of four images correctly. The `Recall` score would be 67% since it correctly identified two of the three Picasso images correctly.
+Suppose the model was presented with three Picasso images and three from Van Gogh. Let's say it correctly identified two of the Picasso samples as "Picasso" images, but incorrectly identified two of the Van Gogh samples as Picasso. In this case, the `Precision` would be **50%**, since it identified two out of four images correctly. The `Recall` score would be **67%** since it correctly identified two of the three Picasso images correctly.
 
 
 
