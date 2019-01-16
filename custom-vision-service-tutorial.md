@@ -43,5 +43,12 @@ Click `Add images` and add all the images from that folder.
 Select the tag `painting` and `Picasso` and complete the dialog:
 ![](/assets/Screen Shot 2019-01-16 at 20.26.24.png)
 
+With seven Picasso images, the Custom Vision Service can do a decent job of identifying paintings by Picasso. But if you trained the model right now, it would only understand what a Picasso looks like, and it wouldn't be able to identify paintings by other artists. 
+
+> The next step is to upload some paintings by another artist.
+
+
+
+
 
 
