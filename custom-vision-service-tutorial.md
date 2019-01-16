@@ -18,3 +18,7 @@ Sign in and click `New Project`
 You will be presented with the following modal:
 ![](/assets/Screen Shot 2019-01-16 at 16.47.25.png)
 
+name the project `Artworks`, and make sure that `General` is selected in the `Domains` list. You can keep the `default settings` for `Project Types` and `Classification Types`. 
+
+Select `Create project` to create our project.
+
