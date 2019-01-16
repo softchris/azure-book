@@ -81,6 +81,6 @@ We will do the following:
 
 The results should look something like this:
 ![](/assets/Screen Shot 2019-01-16 at 20.46.51.png)
-Let's try to tag the image correctly by giving it the tags `Picasso` and `Painting`. To do that click the button `Predictions`. So close the dialog, click `Predictions` and select the image you just tested and add the tags.
+Let's try to tag the image correctly by giving it the tags `Picasso`. To do that click the button `Predictions`. So close the dialog, click `Predictions` and select the image you just tested and add the tag.
 
 
