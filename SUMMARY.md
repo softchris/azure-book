@@ -37,5 +37,6 @@
 * [Cognitive Services](cognitive-services.md)
 * [Computer Vision](computer-vision.md)
 * [Computer Vision service tutorial](computer-vision-service.md)
+* [Custom Vision service tutorial](custom-vision-service-tutorial.md)
 * [Text Analysis using the Text Analytics API](text-analysis-using-the-text-analytics-api.md)
 
