@@ -22,3 +22,9 @@ name the project `Artworks`, and make sure that `General` is selected in the `Do
 
 Select `Create project` to create our project.
 
+## Upload tagged images
+Click the `+` to the right of `Tags`:
+![](/assets/Screen Shot 2019-01-16 at 16.50.40.png) 
+Enter the title `painting`, like so:
+![](/assets/Screen Shot 2019-01-16 at 16.51.30.png)
+
