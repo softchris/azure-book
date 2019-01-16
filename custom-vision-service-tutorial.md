@@ -49,6 +49,9 @@ With seven Picasso images, the Custom Vision Service can do a decent job of iden
 
 Let's do just that by selecting the directory `Artists\Rembrandt` and tag all images with `painting` and `Rembrandt`
 
+Lastly let's get those Pollock paintings in there by selecting `Artists\Pollock` directory and give them the tag `painting` and `Pollock`
+
+## Train the model
 
 
 
