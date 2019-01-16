@@ -52,6 +52,13 @@ Let's do just that by selecting the directory `Artists\Rembrandt` and tag all im
 Lastly let's get those Pollock paintings in there by selecting `Artists\Pollock` directory and give them the tag `painting` and `Pollock`
 
 ## Train the model
+To train the mode it's just a few simple steps:
+- hit `Train` button
+- look at the stats from the training session
+- add additional images, after the training has finished if you wish for it to be more exact
+
+When it's finished it will have produced an `iteration` that you can click into and it should look like this:
+![](/assets/Screen Shot 2019-01-16 at 20.38.46.png)
 
 
 
