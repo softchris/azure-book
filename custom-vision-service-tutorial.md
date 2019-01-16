@@ -15,3 +15,6 @@ We will take the following steps:
 We need to go to the following URL https://www.customvision.ai/
 Sign in and click `New Project`
 
+You will be presented with the following modal:
+![](/assets/Screen Shot 2019-01-16 at 16.47.25.png)
+
