@@ -60,6 +60,7 @@ To train the mode it's just a few simple steps:
 When it's finished it will have produced an `iteration` that you can click into and it should look like this:
 ![](/assets/Screen Shot 2019-01-16 at 20.38.46.png)
 
+As you can see above two measures are being presented `Precision` and `Recall`.
 
 
 
