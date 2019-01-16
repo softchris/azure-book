@@ -73,4 +73,14 @@ The `Recall` score would be **67%** since it correctly identified two of the thr
 ## Test the model
 Now that we've trained our model, it's time to test it. We'll give the model new images and see how well it classifies it.
 
+We will do the following:
+- hit the button `Quick test`
+- select an image to test
+- examine the results
+- tag the image with the correct tag, to tell the model what it was
+
+The results should look something like this:
+![](/assets/Screen Shot 2019-01-16 at 20.46.51.png)
+Let's try to tag the image correctly by giving it the tags `Picasso` and `Painting`. To do that click the button `Prediction`
+
 
