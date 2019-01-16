@@ -101,3 +101,12 @@ As you can see there are two ways to talk the API, we can either give it an imag
 - **Request URL**: The dialog shows two different URLs. If we're posting an image URL, then use the first URL, which ends in `/url`. If we want to post a raw image in the body of our request, we use the second URL, which ends in `/image`.
 - **Content-Type**: If we're posting a raw image, we set the body of the request to the binary representation of the image and the content type to `application/octet-stream`. If we're posting an image URL, we put that as JSON in the body and set the content type to `application/json`.
 
+Let's now call the API, with cURL, using the following command:
+
+```
+curl [endpoint-URL] \
+-H "Prediction-Key: [Prediction-Key]" \
+-H "Content-Type: application/json" \
+-d "{'url' : 'https://raw.githubusercontent.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/master/test-images/VanGoghTest_02.jpg'}" \
+| jq '.'
+```
