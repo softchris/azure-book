@@ -110,3 +110,36 @@ curl [endpoint-URL] \
 -d "{'url' : 'https://raw.githubusercontent.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/master/test-images/VanGoghTest_02.jpg'}" \
 | jq '.'
 ```
+Ok, let's see what result we get:
+
+```
+{
+  "id": "",
+  "project": "",
+  "iteration": "",
+  "created": "2019-01-16T21:31:21.3107487Z",
+  "predictions": [
+    {
+      "probability": 0.985745668,
+      "tagId": "c7aa6eb6-03a5-493e-b857-7eeef850807f",
+      "tagName": "painting"
+    },
+    {
+      "probability": 0.0141444681,
+      "tagId": "0e7beff2-08ac-4279-ad2e-36ca63e7bc3e",
+      "tagName": "Picasso"
+    },
+    {
+      "probability": 0.000108960478,
+      "tagId": "c57476dc-6ac7-4d6f-8692-bb4ce38b00e2",
+      "tagName": "Pollock"
+    },
+    {
+      "probability": 8.905273e-07,
+      "tagId": "7ba0f66f-8351-4139-b0df-f12b289072a9",
+      "tagName": "Rembrandt"
+    }
+  ]
+}
+```
+We can see from the JSON payload we got that the probability is high that it's a painting but it doesn't seem to be either a `Picasso`, `Pollock` and definitely not a `Rembrandt`.
