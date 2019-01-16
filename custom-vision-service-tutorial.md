@@ -33,4 +33,7 @@ Repeat the steps to add `Picasso`, `Pollock`, and `Rembrandt`
 So we now have this:
 ![](/assets/Screen Shot 2019-01-16 at 16.53.13.png)
 
+Go to the following link to download the images of paintings:
+> https://github.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/raw/master/cvs-resources.zip
+
 
