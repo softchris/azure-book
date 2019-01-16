@@ -146,3 +146,8 @@ We can see from the JSON payload we got that the probability is high that it's a
 
 Looking at the picture though we can see it's a famous painting by `Van Gogh`, so maybe there is hope yet for our AI to work as an art expert?
 ![](/assets/Screen Shot 2019-01-16 at 21.43.51.png)
+
+Let's try something that it should recognzie though. So let's switch the url to this Picasso:
+```
+https://raw.githubusercontent.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/master/test-images/PicassoTest_02.jpg
+```
