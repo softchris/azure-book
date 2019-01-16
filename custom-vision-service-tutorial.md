@@ -47,6 +47,7 @@ With seven Picasso images, the Custom Vision Service can do a decent job of iden
 
 > The next step is to upload some paintings by another artist.
 
+Let's do just that by selecting the directory `Artists\Rembrandt` and tag all images with `painting` and `Rembrandt`
 
 
 
