@@ -10,5 +10,8 @@ We will take the following steps:
 - **Test** a Custom Vision Service model
 - **Call** your custom model's prediction endpoint over HTTP
 
+## Create a Custom Vision Project
 
+We need to go to the following URL https://www.customvision.ai/
+Sign in and click `New Project`
 
