@@ -186,4 +186,4 @@ And the result iiiis:
   ]
 }
 ```
-Ok so `"probability": 0.6845262` for a `Picasso` and very low number for the other painters. It seems to working :) although I'm not sure I would invest in a painting with that likelihood ;)
+Ok so `"probability": 0.6845262` for a `Picasso` and very low number for the other painters. It seems to be working :) although I'm not sure I would invest in a painting with that likelihood ;)
