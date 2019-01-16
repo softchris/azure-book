@@ -92,5 +92,8 @@ Ok so we trained our model, now it's time to reap the fruits of our labour. We w
 Ok we will take the following steps:
 
 - make the latest iteration default, so it knows what state of the model it should compare from, click `Performance` and then click `Make Default`
-- retrieve the URL we need to hit, to use our model, click `Prediction Url`
+- retrieve the URL we need to hit, to use our model, click `Prediction Url`, this should produce a modal looking like this:
+![](/assets/Screen Shot 2019-01-16 at 21.11.35.png)
+
+As you can see there are two ways to talk the API, we can either give it an image URL, if it's an external image URL or if we select an image locally from our computer we should go with the option below
 
