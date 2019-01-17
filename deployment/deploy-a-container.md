@@ -5,6 +5,8 @@
 - **Clone** application source code from GitHub
 - **Create** a container image from application source
 - **Test** the image in a local Docker environment
+- Create a container registry
+- Deploy application
 
 You will ned the following installed
 - Docker 
