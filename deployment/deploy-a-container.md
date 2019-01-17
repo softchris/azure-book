@@ -86,12 +86,12 @@ That's it. Here is a screen dump of the commands we just ran:
 
 We need Docker, Docker Engine and Azure CLI for this to work.
 Before we can create said registry we will need a `Resource Group`, so let's create that first:
-> az group create --name myResourceGroup --location westeurope
+> az group create --name chrisresourceGroup --location westeurope
 
 Once this `Resource Group` is created we can go back to creating our `Container Registry`.
 
 The command looks like the following:
-> az acr create --resource-group myResourceGroup --name <acrName> --sku Basic --admin-enabled true
+> az acr create --resource-group chrisresourceGroup --name chriscontainerregistry --sku Basic --admin-enabled true
 
 Let's break it down a bit. 
 > az acr create
@@ -130,6 +130,31 @@ We need to log in to our registry before we can push docker images to it. So let
 > az acr login --name <acrName>
 
 That should tell you `Login Succeeded` if all is well
+
+## Tag container image
+To push a container image to a private registry like Azure Container Registry, you must first tag the image with the full name of the `registry's login server`.
+
+Ok, so we need to use this name `"loginServer": "chriscontainerregistry.azurecr.io"`
+So either you remember the name of `loginServer`, from when we created our container registry or you can always retrieve the `loginServer` later by calling this command:
+
+> az acr show --name <acrName> --query loginServer --output table
+This will give use the `loginServer` name printed in our terminal. Of course `acrName` has in our case the value `chriscontainerregistry`
+
+Let's now head back to Docker. We need to Tag the `aci-tutorial-app` image with the `loginServer` of your container registry.
+
+We tag it with the following command:
+> docker tag aci-tutorial-app <acrLoginServer>/aci-tutorial-app:v1
+
+Let's break it down. 
+- **aci-tutorial-app**, this is the name of our image, run `docker image` if you want to verify that
+- **<acrLoginServer>/aci-tutorial-app:v1**, this will tag the image in way so it's possible to push to our container registry. One note though, `:v1` this is a version number but we can easily call this `LATEST` or todays date, the point is to have a system so you know if you want to use a specific image
+
+So the correct command in our case, using the correct values would be:
+
+> docker tag aci-tutorial-app chriscontainerregistry.azurecr.io/aci-tutorial-app:v1
+
+Run `docker images` command at this point to verify it was correctly created, it should look something like this:
+
 
 
 
