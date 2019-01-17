@@ -41,6 +41,7 @@ It does the following:
 
 We can use the `docker build` command to build an image. The exact command we will need to use is:
 > docker build ./aci-helloworld -t aci-tutorial-app
+
 The above command looks for the Dockerfile in the directory `/aci-helloworld` and creates an image called `aci-tutorial-app`
 
 We can see our created image if we run the following command:
@@ -60,5 +61,8 @@ Let's look at the arguments:
 We can see that the external port is 8080, which means we can navigate to 
 > http://localhost:8080
 to ensure our application works.
-  
+
+This is the image we get, so I would say our container is working:
+
+![](/assets/Screen Shot 2019-01-17 at 01.39.42.png)  
 
