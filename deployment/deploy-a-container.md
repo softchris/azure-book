@@ -125,6 +125,10 @@ You should get an output looking like the following:
 ```
 The important part is getting a `provisionState` back with value `Succeeded`.
 
+### Log in to our registry
+We need to log in to our registry before we can push docker images to it. So let's log in:
+> az acr login --name <acrName>
+
 
 
 
