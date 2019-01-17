@@ -90,4 +90,17 @@ Before we can create said registry we will need a `Resource Group`, so let's cre
 
 Once this `Resource Group` is created we can go back to creating our `Container Registry`.
 
+The command looks like the following:
+> az acr create --resource-group myResourceGroup --name <acrName> --sku Basic --admin-enabled true
+
+Let's break it down a bit. 
+> az acr create
+
+Is the actual command for create our `Container Registry`. Then we need some arguments:
+- **--resource-group**, this should be our newly create `Resource Group` called `myResourceGroup`
+- **--name**, this is the name we give our registry, e.g `containerregistry` for example
+- **--sku**, this is the price plan, we opt for the cheapest one called `Basic` 
+
+
+
 
