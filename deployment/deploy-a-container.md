@@ -166,4 +166,11 @@ and with all the correct values in place, it would be:
 
 > docker push chriscontainerregistry.azurecr.io/aci-tutorial-app:v1
 
+You may need to log in first, in which case you run the following command:
+
+> az acr login --name chriscontainerregistry
+
+Carrying out the `docker push` should render the following result:
+
+![](/assets/Screen Shot 2019-01-17 at 23.49.24.png)
 
