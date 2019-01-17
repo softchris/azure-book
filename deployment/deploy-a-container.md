@@ -123,7 +123,7 @@ You should get an output looking like the following:
   "type": "Microsoft.ContainerRegistry/registries"
 }
 ```
-The important part is getting a `provisionState` back with value `Succeeded`
+The important part is getting a `provisionState` back with value `Succeeded`.
 
 
 
