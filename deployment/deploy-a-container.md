@@ -27,4 +27,17 @@ WORKDIR /usr/src/app
 RUN npm install
 CMD node /usr/src/app/index.js
 ```
+It does the following:
+
+- **Selects an OS image**,   In short we base the OS on Ubuntu and a release called alpine, that has Node.js pre installed. 
+- **Creates a directory**, with the following command `mkdir -p /usr/src/app
+`
+- **Copies all the files**, from `./app/` to `/usr/src/app/`
+- **Sets working directory**, to `/usr/src/app`
+- **Installs our node dependencies**, using `npm install`
+- **Starts our app**, using `node /usr/src/app/index.js
+`
+
+
+  
 
