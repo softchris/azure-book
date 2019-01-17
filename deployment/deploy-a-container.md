@@ -101,6 +101,30 @@ Is the actual command for create our `Container Registry`. Then we need some arg
 - **--name**, this is the name we give our registry, e.g `containerregistry` for example
 - **--sku**, this is the price plan, we opt for the cheapest one called `Basic` 
 
+You should get an output looking like the following:
+
+```
+{
+  "adminUserEnabled": true,
+  "creationDate": "2018-03-16T21:54:47.297875+00:00",
+  "id": "/subscriptions/<Subscription ID>/resourceGroups/myResourceGroup/providers/Microsoft.ContainerRegistry/registries/mycontainerregistry082",
+  "location": "eastus",
+  "loginServer": "containerregistry.azurecr.io",
+  "name": "containerregistry",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "myResourceGroup",
+  "sku": {
+    "name": "Basic",
+    "tier": "Basic"
+  },
+  "status": null,
+  "storageAccount": null,
+  "tags": {},
+  "type": "Microsoft.ContainerRegistry/registries"
+}
+```
+The important part is getting a `provisionState` back with value `Succeeded`
+
 
 
 
