@@ -174,3 +174,13 @@ Carrying out the `docker push` should render the following result:
 
 ![](/assets/Screen Shot 2019-01-17 at 23.49.24.png)
 
+## List images in the repository
+Ok, so now we actually want to see what images we have in there, spoiler there should be the one we just uploaded ;)
+
+We can run the following command:
+
+> az acr repository list --name <acrName> --output table
+
+Using the correct value for `acrName` it would look like this:
+
+> az acr repository list --name chriscontainerregistry --output table
