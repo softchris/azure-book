@@ -6,3 +6,9 @@
 - **Create** a container image from application source
 - **Test** the image in a local Docker environment
 
+You will ned the following installed
+- Docker 
+- Azure CLI [install](https://docs.microsoft.com/cli/azure/install-azure-cli)
+
+- Docker Engine
+
