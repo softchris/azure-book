@@ -66,3 +66,9 @@ This is the image we get, so I would say our container is working:
 
 ![](/assets/Screen Shot 2019-01-17 at 01.39.42.png)  
 
+With the following command we can list all the running containers:
+
+> docker ps
+It should present the following result:
+![](/assets/Screen Shot 2019-01-17 at 01.42.32.png)
+
