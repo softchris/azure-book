@@ -82,4 +82,8 @@ That's it. Here is a screen dump of the commands we just ran:
 ![](/assets/Screen Shot 2019-01-17 at 01.44.13.png)
 
 ## Create a container registry
+> Azure Container Registry is your private Docker registry in Azure.
+
+We need Docker, Docker Engine and Azure CLI for this to work.
+
 
