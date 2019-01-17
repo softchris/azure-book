@@ -41,7 +41,11 @@ It does the following:
 
 We can use the `docker build` command to build an image. The exact command we will need to use is:
 > docker build ./aci-helloworld -t aci-tutorial-app
+The above command looks for the Dockerfile in the directory `/aci-helloworld` and creates an image called `aci-tutorial-app`
 
+We can see our created image if we run the following command:
+
+> docker images
 
   
 
