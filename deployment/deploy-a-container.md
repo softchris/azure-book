@@ -80,3 +80,6 @@ We don't want a container running and using up resources so let's shut it down. 
 > docker ps // it should be an empty list
 That's it. Here is a screen dump of the commands we just ran:
 ![](/assets/Screen Shot 2019-01-17 at 01.44.13.png)
+
+## Create a container registry
+
