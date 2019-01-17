@@ -72,3 +72,9 @@ With the following command we can list all the running containers:
 It should present the following result:
 ![](/assets/Screen Shot 2019-01-17 at 01.42.32.png)
 
+We don't want a container running and using up resources so let's shut it down. We want to run the command `docker kill` to shut down the container, however that command needs an argument, it needs the `container id`. Remember when we run `docker ps` ? The first column was our `container id`. We don't need the full id though, it suffices with the 4 first characters. So let's kick off our command
+
+> docker kill [container id, 4 first characters]
+> docker ps // it should be an empty list
+That's it. Here is a screen dump of the commands we just ran:
+![](/assets/Screen Shot 2019-01-17 at 01.44.13.png)
