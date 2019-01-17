@@ -155,6 +155,6 @@ So the correct command in our case, using the correct values would be:
 
 Run `docker images` command at this point to verify it was correctly created, it should look something like this:
 
-
+![](/assets/Screen Shot 2019-01-17 at 23.36.43.png)
 
 
