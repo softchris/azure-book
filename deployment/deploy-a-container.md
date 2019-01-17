@@ -85,8 +85,9 @@ That's it. Here is a screen dump of the commands we just ran:
 > Azure Container Registry is your private Docker registry in Azure.
 
 We need Docker, Docker Engine and Azure CLI for this to work.
-Before we can create said registry we will need a Resource GRoup, so let's create that first:
+Before we can create said registry we will need a `Resource Group`, so let's create that first:
 > az group create --name myResourceGroup --location westeurope
 
+Once this `Resource Group` is created we can go back to creating our `Container Registry`.
 
 
