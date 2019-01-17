@@ -47,5 +47,18 @@ We can see our created image if we run the following command:
 
 > docker images
 
+## Test the image, by instantiating a container
+Now that we have an image, we can create a container from it, using `docker run`. The full command looks like the following:
+
+> docker run -d -p 8080:80 aci-tutorial-app
+
+Let's look at the arguments:
+
+- `-d`, this tells the container to run in the background
+- `-p`, this allows us to map ports, the argument value should be interpreted like this [external port]:[containers internal port]
+
+We can see that the external port is 8080, which means we can navigate to 
+> http://localhost:8080
+to ensure our application works.
   
 
