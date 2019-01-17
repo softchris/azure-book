@@ -12,3 +12,8 @@ You will ned the following installed
 
 - Docker Engine
 
+## Clone the application
+
+> git clone https://github.com/Azure-Samples/aci-helloworld.git
+
+
