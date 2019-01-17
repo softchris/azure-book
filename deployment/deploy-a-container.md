@@ -184,3 +184,11 @@ We can run the following command:
 Using the correct value for `acrName` it would look like this:
 
 > az acr repository list --name chriscontainerregistry --output table
+
+There it is, our only pushed image :) 
+
+![](/assets/Screen Shot 2019-01-17 at 23.52.10.png)
+
+## Deploy the application
+
+Now that we have our image in the repository, we can tell the repository to create a a container from our image and thereby deploy our application.
