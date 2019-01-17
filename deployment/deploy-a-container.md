@@ -37,6 +37,10 @@ It does the following:
 - **Installs our node dependencies**, using `npm install`
 - **Starts our app**, using `node /usr/src/app/index.js
 `
+## Build the image
+
+We can use the `docker build` command to build an image. The exact command we will need to use is:
+> docker build ./aci-helloworld -t aci-tutorial-app
 
 
   
