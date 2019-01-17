@@ -157,4 +157,13 @@ Run `docker images` command at this point, to verify it was correctly created. I
 
 ![](/assets/Screen Shot 2019-01-17 at 23.36.43.png)
 
+## Push the image to the repository
+Now we can actually push the image to the repository. We do so by executing the following command:
+
+> docker push <acrLoginServer>/aci-tutorial-app:v1
+
+and with all the correct values in place, it would be:
+
+> docker push chriscontainerregistry.azurecr.io/aci-tutorial-app:v1
+
 
