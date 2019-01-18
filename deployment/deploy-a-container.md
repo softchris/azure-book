@@ -237,4 +237,17 @@ Once it's deployed we can visit the app on the `--dns-name-label` value, like so
 
 ![](/assets/Screen Shot 2019-01-18 at 00.28.03.png)
 
+## Summary
+We set out to deploy an app. This time we wanted to deploy a docker container. As well know we need an docker image for that firstly. So we created one using `docker build`. 
+
+Then we realized we needed an `Container Registry`, cause it was from there we would deploy our image, i.e instantiate a docker container and deploy it.
+
+To make it end up in the `Container Registry` we first needed to tag it with the `loginServer` name, after that we pushed the tagged image.
+
+Lastly we told the `Container Registry` to create a container from our image and deploy it. Once deployment was done we could go to our browser and verify the app was there, success :))
+
+It wasn't that many steps really. I mean let's say our app consisted of 3 other services. We would only need to build an image for each, tag it, push, and create a container.
+
+### Further reading
+https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app
 
