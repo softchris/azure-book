@@ -192,3 +192,28 @@ There it is, our only pushed image :)
 ## Deploy the application
 
 Now that we have our image in the repository, we can tell the repository to create a a container from our image and thereby deploy our application.
+
+To run our deploy command we first need a little info, namely the following:
+
+- login server, we can run the following command for that one
+
+> az acr show --name <acrName> --query loginServer
+
+- username and password, for that we run this command:
+
+> az acr credential show --name <acrName> --query "passwords[0].value"
+
+This will return the password
+
+`chriscontainerregistry.azurecr.io`
+`sEbe1Ra2SQ+AumPyeKtMNFThlIE4n1R8`
+
+Ok, now we come to the deploy command, that might look a little bit intimidating:
+
+`
+az container create -g chrisresourceGroup --name chris-app --image chriscontainerregistry.azurecr.io/aci-tutorial-app:v1 --registry-username <acrName> --registry-password password
+`
+
+There are a ton of ways to create a container, if you are interested in other ways, have a look at this link [az container create](https://docs.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest#az-container-create)
+
+After a very long JSON response back, look for `provisioningState: Succeded`, if you have that you are good.
