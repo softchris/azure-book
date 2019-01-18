@@ -216,4 +216,18 @@ az container create -g chrisresourceGroup --name chris-app --image chriscontaine
 
 There are a ton of ways to create a container, if you are interested in other ways, have a look at this link [az container create](https://docs.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest#az-container-create)
 
+If it takes a while to deploy you can check status meanwhile, with this command:
+
+> az container show --resource-group chrisresourceGroup --name chris-app --query instanceView.state
+
 After a very long JSON response back, look for `provisioningState: Succeded`, if you have that you are good.
+
+Let's have a look at our container with the following command:
+
+> az container show --resource-group chrisresourceGroup --name chris-app --query ipAddress.fqdn
+
+We can see the logs from the app by running:
+
+> az container logs --resource-group chrisresourceGroup --name chris-app
+
+_This will tell us running on port 80_
