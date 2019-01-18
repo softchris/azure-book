@@ -205,29 +205,36 @@ To run our deploy command we first need a little info, namely the following:
 
 This will return the password
 
-`chriscontainerregistry.azurecr.io`
-`sEbe1Ra2SQ+AumPyeKtMNFThlIE4n1R8`
-
 Ok, now we come to the deploy command, that might look a little bit intimidating:
 
 `
-az container create -g chrisresourceGroup --name chris-app --image chriscontainerregistry.azurecr.io/aci-tutorial-app:v1 --registry-username <acrName> --registry-password password
+az container create --resource-group myResourceGroup --name aci-tutorial-app --image <acrLoginServer>/aci-tutorial-app:v1 --cpu 1 --memory 1 --registry-login-server <acrLoginServer> --registry-username <acrName> --registry-password <acrPassword> --dns-name-label <aciDnsLabel> --ports 80
 `
 
 There are a ton of ways to create a container, if you are interested in other ways, have a look at this link [az container create](https://docs.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest#az-container-create)
 
+### Check progress and logs
+
 If it takes a while to deploy you can check status meanwhile, with this command:
 
-> az container show --resource-group chrisresourceGroup --name chris-app --query instanceView.state
+> az container show --resource-group chrisresourceGroup --name aci-tutorial-app --query instanceView.state
 
 After a very long JSON response back, look for `provisioningState: Succeded`, if you have that you are good.
 
 Let's have a look at our container with the following command:
 
-> az container show --resource-group chrisresourceGroup --name chris-app --query ipAddress.fqdn
+> az container show --resource-group chrisresourceGroup --name aci-tutorial-app --query ipAddress.fqdn
 
 We can see the logs from the app by running:
 
-> az container logs --resource-group chrisresourceGroup --name chris-app
+> az container logs --resource-group chrisresourceGroup --name aci-tutorial-app
 
 _This will tell us running on port 80_
+
+### Visit the deployed app
+
+Once it's deployed we can visit the app on the `--dns-name-label` value, like so:
+
+![](/assets/Screen Shot 2019-01-18 at 00.28.03.png)
+
+
