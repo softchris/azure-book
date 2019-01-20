@@ -152,9 +152,9 @@ Looking at the picture though we can see it's a famous painting by `Van Gogh`, s
 Let's try something that it should recognzie though. So let's switch the url to this Picasso:
 
 https://raw.githubusercontent.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/master/test-images/PicassoTest_02.jpg
-```
 
-And the result iiiis:
+
+> And the result iiiis:
 
 ```
 {
