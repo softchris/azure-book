@@ -31,5 +31,6 @@ Concerns: `security`, `backup`, and `disaster recovery` and `manage` cloud-hoste
 - **Azure SQL Database**, the engine of Sql Server. You can use the Azure Database Migration Service to migrate your Sql Server to the cloud. It uses the Microsoft Data Migration Assistant to generate reports to provide recommendations on things you should do before migrating. Thereafter it should be as simple as changing the Connection String in your apps.
 - **Azure Cosmos DB**, globally distributed database service. Supports schema less data. Supports constantly changing data.
 - **Azure Blob Storage**, unstructured, no restrictions on what type of data it can hold wether its PDFs, videos or anything else. Highly scalable. Can handle 1000s of simultaneous uploads. Has the ability to store up to 8 TB of data for virtual machines
+- **Azure Data Lake Storage Gen2**, allows you to `perform analytics` on your data usage and `prepare reports`. Data Lake is a `large repository` that stores both `structured` and `unstructured data`. 
 
 
