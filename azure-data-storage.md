@@ -44,5 +44,7 @@ Types: from solid-state drives (SSDs) to traditional spinning hard disk drives (
   - Hot storage tier, optimized for storing data that is accessed frequently
   - Cool storage tier, optimized for data that is infrequently accessed and stored for at least 30 days
   - Archive storage tier, for data that is rarely accessed and stored for at least 180 days with flexible latency requirements
+- **Encryption and replication**, Azure provides `security` and `high availability` to your data through encryption and replication features.
+
 
 
