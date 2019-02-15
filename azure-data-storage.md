@@ -45,6 +45,8 @@ Types: from solid-state drives (SSDs) to traditional spinning hard disk drives (
   - Cool storage tier, optimized for data that is infrequently accessed and stored for at least 30 days
   - Archive storage tier, for data that is rarely accessed and stored for at least 180 days with flexible latency requirements
 - **Encryption and replication**, Azure provides `security` and `high availability` to your data through encryption and replication features.
-
+Encryption for storage services:
+  - **Azure Storage Service Encryption (SSE)** for data at rest helps you secure your data to meet the organization's security and regulatory compliance. It encrypts the data before storing it and decrypts the data before retrieving it. The encryption and decryption are transparent to the user.
+  - **Client-side encryption** is where the data is already encrypted by the client libraries. Azure stores the data in the encrypted state at rest, which is then decrypted during retrieval.
 
 
