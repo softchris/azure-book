@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Azure data storage](azure-data-storage.md)
 
 ## Concepts
 
