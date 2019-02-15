@@ -10,4 +10,4 @@ You're looking for a storage solution that is `secure`, `durable`, `scalable`, a
 
 Thinking about storing data in the cloud.
 
-Concerns: `security`, `backup`, and `disaster recovery`.
+Concerns: `security`, `backup`, and `disaster recovery` and `manage` cloud-hosted data
