@@ -39,14 +39,18 @@ Typical scenarios for using disk storage are:
   - if you want to lift and shift applications that read and write data to persistent disks
   - if you are storing data that is not required to be accessed from outside the virtual machine to which the disk is attached.
 
-Types: from solid-state drives (SSDs) to traditional spinning hard disk drives (HDDs)
+  Types: from solid-state drives (SSDs) to traditional spinning hard disk drives (HDDs)
 - **Storage Tiers**, three types:
   - Hot storage tier, optimized for storing data that is accessed frequently
   - Cool storage tier, optimized for data that is infrequently accessed and stored for at least 30 days
   - Archive storage tier, for data that is rarely accessed and stored for at least 180 days with flexible latency requirements
 - **Encryption and replication**, Azure provides `security` and `high availability` to your data through encryption and replication features.
-Encryption for storage services:
+
+  Encryption for storage services:
   - **Azure Storage Service Encryption (SSE)** for data at rest helps you secure your data to meet the organization's security and regulatory compliance. It encrypts the data before storing it and decrypts the data before retrieving it. The encryption and decryption are transparent to the user.
   - **Client-side encryption** is where the data is already encrypted by the client libraries. Azure stores the data in the encrypted state at rest, which is then decrypted during retrieval.
+  
+  Replication for storage availability
+A replication type is set up when you create a storage account. The replication feature ensures that your data is durable and always available. Azure provides regional and geographic replications to protect your data against natural disasters and other local disasters like fire or flooding.
 
 
