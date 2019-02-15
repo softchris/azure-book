@@ -27,3 +27,9 @@ Concerns: `security`, `backup`, and `disaster recovery` and `manage` cloud-hoste
 
 - **Unstructured data**. Unstructured data encompasses data that has no designated structure to it. This also means that there are `no restrictions on the kinds of data it can hold`. For example, a blob can hold a PDF document, a JPG image, a JSON file, video content, etc. As such, unstructured data is becoming more prominent as businesses try to tap into new data sources.
 
+## Different data storages
+- **Azure SQL Database**, the engine of Sql Server. You can use the Azure Database Migration Service to migrate your Sql Server to the cloud. It uses the Microsoft Data Migration Assistant to generate reports to provide recommendations on things you should do before migrating. Thereafter it should be as simple as changing the Connection String in your apps.
+- **Azure Cosmos DB**, globally distributed database service. Supports schema less data. Supports constantly changing data.
+- **Azure Blob Storage**, unstructured, no restrictions on what type of data it can hold wether its PDFs, videos or anything else. Highly scalable. Can handle 1000s of simultaneous uploads. Has the ability to store up to 8 TB of data for virtual machines
+
+
