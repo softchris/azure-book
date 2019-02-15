@@ -37,6 +37,9 @@ Concerns: `security`, `backup`, and `disaster recovery` and `manage` cloud-hoste
 - **Disk storage**, Disk storage _provides disks for virtual machines_, _applications_, and _other services_ to access and use as they need, similar to how they would in on-premises scenarios. Disk storage allows data to be persistently stored and accessed from an attached virtual hard disk. The disks can be _managed_ or _unmanaged_ by Azure, and therefore managed and _configured by the user_.
 Typical scenarios for using disk storage are: 
   - if you want to lift and shift applications that read and write data to persistent disks
-  - if you are storing data that is not required to be accessed from outside the virtual machine to which the disk is attached
+  - if you are storing data that is not required to be accessed from outside the virtual machine to which the disk is attached.
+
+Types: from solid-state drives (SSDs) to traditional spinning hard disk drives (HDDs)
+- **Storage Tiers**, 
 
 
