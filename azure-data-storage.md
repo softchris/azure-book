@@ -32,6 +32,7 @@ Concerns: `security`, `backup`, and `disaster recovery` and `manage` cloud-hoste
 - **Azure Cosmos DB**, globally distributed database service. Supports schema less data. Supports constantly changing data.
 - **Azure Blob Storage**, unstructured, no restrictions on what type of data it can hold wether its PDFs, videos or anything else. Highly scalable. Can handle 1000s of simultaneous uploads. Has the ability to store up to 8 TB of data for virtual machines
 - **Azure Data Lake Storage Gen2**, allows you to `perform analytics` on your data usage and `prepare reports`. Data Lake is a `large repository` that stores both `structured` and `unstructured data`. Combines the scalability and cost benefits of object storage with the reliability and performance of the Big Data file system capabilities
-- Azure files, fully managed file shares in the cloud that are accessible via the industry standard `Server Message Block (SMB) protocol`.
+- **Azure files**, fully managed file shares in the cloud that are accessible via the industry standard `Server Message Block (SMB) protocol`. Applications running in Azure virtual machines or cloud services can mount a file storage share to access file data, just as a desktop application would mount a typical SMB share. Typical usage scenarios would be to share files anywhere in the world, diagnostic data, or application data sharing
+- Azure queue, 
 
 
