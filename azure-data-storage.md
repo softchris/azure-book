@@ -53,4 +53,5 @@ Typical scenarios for using disk storage are:
   Replication for storage availability
 A replication type is set up when you create a storage account. The replication feature ensures that your data is durable and always available. Azure provides regional and geographic replications to protect your data against natural disasters and other local disasters like fire or flooding.
 
+## Comparison between Azure data storage and On Premise
 
