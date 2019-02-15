@@ -40,6 +40,9 @@ Typical scenarios for using disk storage are:
   - if you are storing data that is not required to be accessed from outside the virtual machine to which the disk is attached.
 
 Types: from solid-state drives (SSDs) to traditional spinning hard disk drives (HDDs)
-- **Storage Tiers**, 
+- **Storage Tiers**, three types:
+  - Hot storage tier, optimized for storing data that is accessed frequently
+  - Cool storage tier, optimized for data that is infrequently accessed and stored for at least 30 days
+  - Archive storage tier, for data that is rarely accessed and stored for at least 180 days with flexible latency requirements
 
 
