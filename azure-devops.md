@@ -51,8 +51,8 @@ Microsoft's Azure DevOps family of products is a highly scalable, reliable optio
 
 ### Products
 It's a suite of Products
-- Azure Boards, proven agile tools to `plan`, `track`, and `discuss` work across your teams
-- Azure Pipelines, allows you to `build`, `test`, and `deploy` with `CI/CD` that works with any language, platform, and cloud. Connect to GitHub or any other Git provider and deploy continuously
-- Azure Repos
-- Azure Test plans
-- Azure artificats
+- **Azure Boards**, proven agile tools to `plan`, `track`, and `discuss` work across your teams
+- **Azure Pipelines**, allows you to `build`, `test`, and `deploy` with `CI/CD` that works with any language, platform, and cloud. Connect to GitHub or any other Git provider and deploy continuously
+- **Azure Repos**, provide unlimited, cloud-hosted private and public Git repos to build better code with pull requests and advanced file management
+- **Azure Test plans**, help you ship with confidence by providing manual and exploratory testing tools
+- **Azure artificats**, give you the ability to `create`, `host`, and `share` packages with your team. You can easily add artifacts to your CI/CD pipelines with a single click
