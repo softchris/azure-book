@@ -48,3 +48,11 @@ DevOps is about people, process and products
 There are many well known and widely used tools used across the industry for helping achieve success using DevOps. Many of the popular tools are Open Source products as well as commercial products from some of the world's largest technology companies.
 
 Microsoft's Azure DevOps family of products is a highly scalable, reliable option that is used by many organizations. Just within Microsoft itself, there are over 80,000 users of Azure DevOps.
+
+### Products
+It's a suite of Products
+- Azure Boards, proven agile tools to `plan`, `track`, and `discuss` work across your teams
+- Azure Pipelines, allows you to `build`, `test`, and `deploy` with `CI/CD` that works with any language, platform, and cloud. Connect to GitHub or any other Git provider and deploy continuously
+- Azure Repos
+- Azure Test plans
+- Azure artificats
