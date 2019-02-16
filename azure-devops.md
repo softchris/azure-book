@@ -40,3 +40,11 @@ DevOps is NOT:
 - DevOps is not a specific piece of software
 - DevOps is not a quick-fix for an organization's challenges
 - DevOps is not just a team or a job title (Although these are reasonably common in the industry)
+
+## What is Azure DevOps?
+DevOps is about people, process and products
+
+### DevOps products
+There are many well known and widely used tools used across the industry for helping achieve success using DevOps. Many of the popular tools are Open Source products as well as commercial products from some of the world's largest technology companies.
+
+Microsoft's Azure DevOps family of products is a highly scalable, reliable option that is used by many organizations. Just within Microsoft itself, there are over 80,000 users of Azure DevOps.
