@@ -63,3 +63,21 @@ It's a suite of Products
 
 1 To create an account go to [https://dev.azure.com ](https://dev.azure.com ) and click `Start free`.
 2 Sign in using your Microsoft Account, or if you do not have a Microsoft account, click Create One! and complete the steps to create a new Microsoft account
+
+### Create a new organization
+Once logged in there should be menu. In the bottom left there should be an option that should say `New organization`, like so:
+![](/assets/Screen Shot 2019-02-16 at 15.50.20.png)
+
+Once you've clicked a new organization, your new organization will be reachable on the followingURL:
+> https://dev.azure.com/[Orgname]
+
+### Create a new project
+Projects in Azure DevOps are generally synonymous with applications in your organization. It is good practice to avoid entering numbers in the project name. For example, try not to name your project something like Payroll 2.0 or Payroll 2018. A better approach would be to name your project *Payroll and then 2.0 or 2018 are most likely just branches in your source code repository and iterations for your work items.
+
+Click create new project, you should get a dialog looking like this. Try fill in the defaults, like so:
+![](/assets/Screen Shot 2019-02-16 at 15.56.29.png)
+
+Once you click `Create`, it should look something like this:
+![](/assets/Screen Shot 2019-02-16 at 16.00.16.png)
+
+
