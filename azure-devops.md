@@ -34,3 +34,9 @@ Some important points:
 - **Open-source software improves performance**, High performers are 1.75 times more likely to extensively use open-source software. They are also 1.5 times more likely to expand open-source usage in future
 - **Outsourcing by function is rarely adopted by elite performers and hurts performance**, Outsourcing can save money and provide a flexible labor pool, but must be used in the correct areas. Low-performing teams are almost four times as likely to outsource whole functions (testing, operations, etc.) then their higher-performing counterparts
 - **Continuous delivery technical practices drive high performance**, These include monitoring and observability, continuous testing, database change management, and integrating security earlier in the software development process
+
+DevOps is NOT:
+- DevOps is not a methodology
+- DevOps is not a specific piece of software
+- DevOps is not a quick-fix for an organization's challenges
+- DevOps is not just a team or a job title (Although these are reasonably common in the industry)
