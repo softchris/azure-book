@@ -21,7 +21,7 @@ It creates multidisciplinary teams that work together with shared and efficient 
 - **Continuous Delivery (CD)**, The process to build, test, configure, and deploy from a build to a production environment.
 - **Monitoring**, Use telemetry to deliver information about an application’s performance and usage patterns to aid learning as we iterate.
 
-Comparing elite performers to low performers:
+Comparing _elite performers_ to _low performers_:
 - do **46 times** more frequent code deployments
 - have **2,555 times** faster lead time from commit to deploy
 - benefit from **seven times** lower change failure rate
