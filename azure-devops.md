@@ -20,3 +20,9 @@ It creates multidisciplinary teams that work together with shared and efficient 
 - **Continuous Integration (CI)**, The process of automating the build and testing of code every time a team member commits changes to version control
 - **Continuous Delivery (CD)**, The process to build, test, configure, and deploy from a build to a production environment.
 - **Monitoring**, Use telemetry to deliver information about an application’s performance and usage patterns to aid learning as we iterate.
+
+Comparing elite performers to low performers:
+- do **46 times** more frequent code deployments
+- have **2,555 times** faster lead time from commit to deploy
+- benefit from **seven times** lower change failure rate
+- recover from incidents **2,604 times** faster
