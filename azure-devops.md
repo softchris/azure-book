@@ -26,3 +26,9 @@ Comparing _elite performers_ to _low performers_:
 - have **2,555 times** faster lead time from commit to deploy
 - benefit from **seven times** lower change failure rate
 - recover from incidents **2,604 times** faster
+
+Some important points:
+
+- **DevOps improves software delivery**, which increases competitive advantages, This enables companies to experiment with increasing customer adoption and satisfaction. Leads to better organizational performance, and often higher profitability & market share. Agility allows companies to respond to competitive threats, and pivot more quickly to keep up with compliance and regulatory requirements
+- **How you implement cloud infrastructure matters**, The cloud improves software delivery performance and teams that adopt essential cloud characteristics are **23 times** more likely to be high performers
+- **Open-source software improves performance**, High performers are 1.75 times more likely to extensively use open-source software. They are also 1.5 times more likely to expand open-source usage in future
