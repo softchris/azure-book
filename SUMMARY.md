@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Azure data storage](azure-data-storage.md)
+* [Azure DevOps](azure-devops.md)
 
 ## Concepts
 
