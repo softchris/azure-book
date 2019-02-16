@@ -56,3 +56,7 @@ It's a suite of Products
 - **Azure Repos**, provide unlimited, cloud-hosted private and public Git repos to build better code with pull requests and advanced file management
 - **Azure Test plans**, help you ship with confidence by providing manual and exploratory testing tools
 - **Azure artificats**, give you the ability to `create`, `host`, and `share` packages with your team. You can easily add artifacts to your CI/CD pipelines with a single click
+
+## Create an Azure DevOps account
+- **free**, Microsoft provides free Azure DevOps accounts for individuals, small teams and open source projects
+- **paid**, Enterprises can also sign up for Azure DevOps accounts that can scale to thousands of team members
