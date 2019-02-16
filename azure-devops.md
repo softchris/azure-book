@@ -9,3 +9,14 @@ Having a streamlined development and deployment strategy can:
 - **Reduce** delays in delivering features and avoid cost overruns
 - **Allow** teams to be more effecient with limited resources
 - **Generate** detailed and accurate performance metrics
+
+## DevOps definition
+
+> DevOps eliminates Development and Operation working in silos
+It creates multidisciplinary teams that work together with shared and efficient practices and tools
+
+
+- **Agile planning**, Ensure a prioritized backlog of work is available for the team and facilitate management for work including user stories, bugs, and more
+- **Continuous Integration (CI)**, The process of automating the build and testing of code every time a team member commits changes to version control
+- **Continuous Delivery (CD)**, The process to build, test, configure, and deploy from a build to a production environment.
+- **Monitoring**, Use telemetry to deliver information about an application’s performance and usage patterns to aid learning as we iterate.
