@@ -60,3 +60,6 @@ It's a suite of Products
 ## Create an Azure DevOps account
 - **free**, Microsoft provides free Azure DevOps accounts for individuals, small teams and open source projects
 - **paid**, Enterprises can also sign up for Azure DevOps accounts that can scale to thousands of team members
+
+1 To create an account go to [https://dev.azure.com ](https://dev.azure.com ) and click `Start free`.
+2 Sign in using your Microsoft Account, or if you do not have a Microsoft account, click Create One! and complete the steps to create a new Microsoft account
