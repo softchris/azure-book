@@ -318,8 +318,10 @@ Once it's deployed we can visit the app on the `--dns-name-label` value, like so
 
 ![](/assets/Screen Shot 2019-01-18 at 00.28.03.png)
 
+![](/assets/happydance.gif)
+
 ## Summary
-We set out to deploy an app. This time we wanted to deploy a docker container. As well know we need an docker image for that firstly. So we created one using `docker build`. 
+We set out to deploy an app. This time we wanted to deploy a docker container. For that we first needed to create a docker image. So we created one using `docker build`. 
 
 Then we realized we needed an `Container Registry`, cause it was from there we would deploy our image, i.e instantiate a docker container and deploy it.
 
