@@ -36,7 +36,11 @@ We said initially we would focus more on how to deploy rather than to write an a
 
 > git clone https://github.com/Azure-Samples/aci-helloworld.git
 
-Looking at it you can see that it is very simple Node.js application running Express:
+Looking at it you can see that it is very simple Node.js application running Express. There are two files of interest in the Repo for the sake of our demonstration:
+- app/index.js, this is the entry point to the application
+- Dockerfile, this is the Dockerfile that will help us build our application into an Image and finally will become a Container with the application within it.
+
+Lets have a look at the `app/index.js` file:
 
 ```js
 // https://github.com/Azure-Samples/aci-helloworld/blob/master/app/index.js
@@ -56,9 +60,9 @@ var listener = app.listen(process.env.PORT || 80, function() {
  console.log('listening on port ' + listener.address().port);
 });
 ```
+Above we can see that it's pretty standard Node.js + Express application, no magic here.
 
-
-In the source code there is docker image with the following content:
+Lets now have a look at the `Dockerfile`:
 
 ```
 FROM node:8.9.3-alpine
@@ -76,9 +80,11 @@ It does the following:
 - **Copies all the files**, from `./app/` to `/usr/src/app/`
 - **Sets working directory**, to `/usr/src/app`
 - **Installs our node dependencies**, using `npm install`
-- **Starts our app**, using `node /usr/src/app/index.js
-`
-## Build the image
+- **Starts our app**, using `node /usr/src/app/index.js`
+
+All in all this is a pretty standard looking `Dockerfile`.
+
+##Build the image
 
 We can use the `docker build` command to build an image. The exact command we will need to use is:
 > docker build ./aci-helloworld -t aci-tutorial-app
