@@ -20,9 +20,9 @@ In this application we will do the following:
 ## Resources
 In case you missed the links we are mentioning in this article. Here they are:
 
-- [Installing Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
-- [The tutorial this article is based on](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app)
-- [az container command](https://docs.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest#az-container-create)
+- [Installing Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?wt.mc_id=devto-blog-chnoring)
+- [The tutorial this article is based on](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app?wt.mc_id=devto-blog-chnoring)
+- [az container command](https://docs.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest#az-container-create?wt.mc_id=devto-blog-chnoring)
 - [Learn module for Container Registry](https://aka.ms/learn-container-registry)
 - [Docker tutorial series medium](https://itnext.io/docker-from-the-beginning-part-i-ae809b84f89f) or on dev.to platform [Docker tutorial series dev.to](https://dev.to/softchris/docker---from-the-beginning-part-i-28c6)
 
