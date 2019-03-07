@@ -1,4 +1,7 @@
 # Bring your containers to the Microsoft Azure Cloud 
+
+> Azure Container Instances enables deployment of Docker containers onto Azure infrastructure without provisioning any virtual machines or adopting a higher-level service.
+
 ![](/assets/air-atmosphere-beautiful-531767.jpg)
 
 Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your suggestions on topics or improvements /Chris
@@ -22,11 +25,6 @@ This article is about delivering your application to the Cloud so of course we a
 - **Scalable**, The Cloud makes it possible to easily scale horizontally and vertically, adding a new worker, not a problem, adding more servers, databases again not a problem and something we can make happen in minutes 
 - **Elastic**, imagine you are an e-commerce company with sudden surges of users in the holidays or Black Friday and so on. The Cloud can dynamically add the extra resources you need to cope with that and of course it can dynamically scale down when the number of users drop to a more normal rate
 
-
-Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your suggestions on topics or improvements /Chris
-
-
-> Azure Container Instances enables deployment of Docker containers onto Azure infrastructure without provisioning any virtual machines or adopting a higher-level service.
 ## Prerequisits
 
 You will ned the following installed
