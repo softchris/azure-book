@@ -1,4 +1,30 @@
-# Deploy a container
+# Bring your container to the Microsoft Azure Cloud 
+![](/assets/air-atmosphere-beautiful-531767.jpg)
+
+Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your suggestions on topics or improvements /Chris
+
+> It becomes more and more common today to develop as well as deliver your application in one or more containers. One of the most common containerization  software's out there is Docker. It's a great tool making it very easy to create image as well as containers and also monitor the same. Wouldn't it be great if we could continue using Docker and bring our app to the cloud
+
+In this application we will do the following:
+
+- **Explain**, why we need the cloud
+- **Clone** application source code from GitHub
+- **Create** a container image from application source
+- **Test** the image in a local Docker environment
+- **Create** a container registry
+- **Deploy** application
+
+## The promise of the cloud
+Using container technology allows us to split up our application into many services. On top of that it offers a secure and reliable option deliver the application. Now comes the next question, where do we deliver it to, On-premise or maybe to the Cloud?
+
+This article is about delivering your application to the Cloud so of course we are a little bit biased. Let me explain in a few short points why we think the Cloud is a great place for your app:
+- **Cost effective**, it's cost effective in the sense that you only pay for what you actually use. In an On Premise scenario you might pay for servers, CPU, memory and so on for what you assume will be an increase in users and usage. That's a lot of cash expenditure and you need to ask yourself do I want to spend the time to find out what I need and also spend time and money to upgrade it over time?
+- **Scalable**, The Cloud makes it possible to easily scale horizontally and vertically, adding a new worker, not a problem, adding more servers, databases again not a problem and something we can make happen in minutes 
+- **Elastic**, imagine you are an e-commerce company with sudden surges of users in the holidays or Black Friday and so on. The Cloud can dynamically add the extra resources you need to cope with that and of course it can dynamically scale down when the number of users drop to a more normal rate
+
+
+Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your suggestions on topics or improvements /Chris
+
 
 > Azure Container Instances enables deployment of Docker containers onto Azure infrastructure without provisioning any virtual machines or adopting a higher-level service.
 
