@@ -17,6 +17,16 @@ In this application we will do the following:
 - **Create** a container registry, this is a thing on Azure that store Docker images 
 - **Deploy** our application, we can create a container instance from one of our images in the Container Registry
 
+## Resources
+In case you missed the links we are mentioning in this article. Here they are:
+
+- [Installing Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
+- [The tutorial this article is based on](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app)
+- [az container command](https://docs.microsoft.com/en-us/cli/azure/container?view=azure-cli-latest#az-container-create)
+- [Learn module for Container Registry](https://aka.ms/learn-container-registry)
+- [Docker tutorial series medium](https://itnext.io/docker-from-the-beginning-part-i-ae809b84f89f) or on dev.to platform [Docker tutorial series dev.to](https://dev.to/softchris/docker---from-the-beginning-part-i-28c6)
+
+
 ## The promise of the cloud
 Using container technology allows us to split up our application into many services. On top of that it offers a secure and reliable option deliver the application. Now comes the next question, where do we deliver it to, On-premise or maybe to the Cloud?
 
@@ -205,13 +215,13 @@ To push a container image to a private registry like Azure Container Registry, y
 
 That's something you can find out by looking at the JSON output when you created your registry. You are looking for a property called `"loginServer"`. It has the format of `[your registry name].azurecr.io`. In my case that would be  "chriscontainerregistry.azurecr.io"`.
 
-
 So either you remember the name of `loginServer`, from when we created our container registry or you can always retrieve the `loginServer` later by calling this command:
 
-> az acr show --name <acrName> --query loginServer --output table
-This will give use the `loginServer` name printed in our terminal. Of course `acrName` has in our case the value `chriscontainerregistry`
+> az acr show --name [container registry name] --query loginServer --output table
 
-Let's now head back to Docker. We need to Tag the `aci-tutorial-app` image with the `loginServer` of your container registry.
+This will give use the `loginServer` name printed in our terminal. Of course `[container registry name]` wouldin our case be the value `chriscontainerregistry`, so adjust accordingly depending on your chosen name.
+
+Let's now head back to Docker. We need to _Tag_ the `aci-tutorial-app` image with the `loginServer` of your container registry.
 
 We tag it with the following command:
 > docker tag aci-tutorial-app <acrLoginServer>/aci-tutorial-app:v1
@@ -222,7 +232,7 @@ Let's break it down.
 
 So the correct command in our case, using the correct values would be:
 
-> docker tag aci-tutorial-app chriscontainerregistry.azurecr.io/aci-tutorial-app:v1
+> docker tag aci-tutorial-app [container registry name].azurecr.io/aci-tutorial-app:v1
 
 Run `docker images` command at this point, to verify it was correctly created. It should look something like this:
 
@@ -239,7 +249,7 @@ and with all the correct values in place, it would be:
 
 You may need to log in first, in which case you run the following command:
 
-> az acr login --name chriscontainerregistry
+> az acr login --name [container registry name]
 
 Carrying out the `docker push` should render the following result:
 
@@ -319,5 +329,3 @@ Lastly we told the `Container Registry` to create a container from our image and
 
 It wasn't that many steps really. I mean let's say our app consisted of 3 other services. We would only need to build an image for each, tag it, push, and create a container.
 
-### Further reading
-https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app
