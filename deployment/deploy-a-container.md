@@ -174,7 +174,7 @@ You should get an output looking like the following:
   "id": "/subscriptions/<Subscription ID>/resourceGroups/myResourceGroup/providers/Microsoft.ContainerRegistry/registries/mycontainerregistry082",
   "location": "eastus",
   "loginServer": "containerregistry.azurecr.io",
-  "name": "containerregistry",
+  "name": "**containerregistry**",
   "provisioningState": "Succeeded",
   "resourceGroup": "myResourceGroup",
   "sku": {
@@ -191,14 +191,21 @@ The important part is getting a `provisionState` back with value `Succeeded`.
 
 ### Log in to our registry
 We need to log in to our registry before we can push docker images to it. So let's log in:
-> az acr login --name <acrName>
+> az acr login --name [name of container registry]
 
 That should tell you `Login Succeeded` if all is well
+
+Your output should look something like this:
+![](/assets/Screen Shot 2019-03-07 at 13.36.46.png)
+
+Above you can see that I opted to call the registry `chriscontainerregistry` put you would have to replace that with your chosen name.
 
 ## Tag container image
 To push a container image to a private registry like Azure Container Registry, you must first tag the image with the full name of the `registry's login server`.
 
-Ok, so we need to use this name `"loginServer": "chriscontainerregistry.azurecr.io"`
+That's something you can find out by looking at the JSON output when you created your registry. You are looking for a property called `"loginServer"`. It has the format of `[your registry name].azurecr.io`. In my case that would be  "chriscontainerregistry.azurecr.io"`.
+
+
 So either you remember the name of `loginServer`, from when we created our container registry or you can always retrieve the `loginServer` later by calling this command:
 
 > az acr show --name <acrName> --query loginServer --output table
