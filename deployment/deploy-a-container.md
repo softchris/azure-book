@@ -118,7 +118,7 @@ Let's look at the arguments:
 - `-d`, this tells the container to run in the background
 - `-p`, this allows us to map ports, the argument value should be interpreted like this [external port]:[containers internal port]
 
-We can see that the external port is 8080, which means we can navigate to 
+We can see that the external port is `8080`, which means we can navigate to 
 > http://localhost:8080
 to ensure our application works.
 
@@ -142,8 +142,14 @@ That's it. Here is a screen dump of the commands we just ran:
 ## Create a container registry
 > Azure Container Registry is your private Docker registry in Azure.
 
-We need Docker, Docker Engine and Azure CLI for this to work.
-Before we can create said registry we will need a `Resource Group`, so let's create that first:
+We need `Docker`, `Docker Engine` and `Azure CLI` for this to work. We have already installed `Docker` at this point so let's see how we can install `Azure CLI`:
+
+> https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
+
+
+Before we can create said registry we will need a `Resource Group`. A Resource Group is a logical container in which we need to place all our resource like applications, databases and now Resource Group. Everything in the same group can easily and securely communicate.
+
+so let's create that first:
 > az group create --name chrisresourceGroup --location westeurope
 
 Once this `Resource Group` is created we can go back to creating our `Container Registry`.
