@@ -27,15 +27,35 @@ This article is about delivering your application to the Cloud so of course we a
 
 ## Prerequisits
 
-You will ned the following installed
-- Docker 
+You will need the following installed
+- Docker, there are different guides here for Linux, Mac and Windows, Check out the [official docs](https://docs.docker.com) to see how to install Docker for your OS 
 - Azure CLI [install](https://docs.microsoft.com/cli/azure/install-azure-cli)
 
-- Docker Engine
-
 ## Clone the application
+We said initially we would focus more on how to deploy rather than to write an application, so for that reason we are going to use a pre made application that you can pull down from here:
 
 > git clone https://github.com/Azure-Samples/aci-helloworld.git
+
+Looking at it you can see that it is very simple Node.js application running Express:
+
+```js
+// https://github.com/Azure-Samples/aci-helloworld/blob/master/app/index.js
+
+const express = require('express');
+const morgan = require('morgan');
+
+const app = express();
+app.use(morgan('combined'));
+
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html')
+});
+
+var listener = app.listen(process.env.PORT || 80, function() {
+ console.log('listening on port ' + listener.address().port);
+});
+```
 
 
 In the source code there is docker image with the following content:
