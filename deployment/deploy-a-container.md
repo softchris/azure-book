@@ -147,21 +147,21 @@ We need `Docker`, `Docker Engine` and `Azure CLI` for this to work. We have alre
 > https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
 
 
-Before we can create said registry we will need a `Resource Group`. A Resource Group is a logical container in which we need to place all our resource like applications, databases and now Resource Group. Everything in the same group can easily and securely communicate.
+Before we can create said registry we will need a `Resource Group`. A `Resource Group` is a logical container in which we need to place all our resources like applications, databases and now `Resource Group`. Everything in the same group can easily and securely communicate.
 
 so let's create that first:
-> az group create --name chrisresourceGroup --location westeurope
+> az group create --name [your name for a resource group] --location westeurope
 
 Once this `Resource Group` is created we can go back to creating our `Container Registry`.
 
 The command looks like the following:
-> az acr create --resource-group chrisresourceGroup --name chriscontainerregistry --sku Basic --admin-enabled true
+> az acr create --resource-group [your name for resource group] --name [your  name for a registry] --sku Basic --admin-enabled true
 
 Let's break it down a bit. 
 > az acr create
 
 Is the actual command for create our `Container Registry`. Then we need some arguments:
-- **--resource-group**, this should be our newly create `Resource Group` called `myResourceGroup`
+- **--resource-group**, this takes an argument that should be our newly created `Resource Group`
 - **--name**, this is the name we give our registry, e.g `containerregistry` for example
 - **--sku**, this is the price plan, we opt for the cheapest one called `Basic` 
 
