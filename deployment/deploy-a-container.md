@@ -7,7 +7,7 @@ Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your sug
 
 In this application we will do the following:
 
-- **Explain**, why we need the cloud
+- **Explain**, why we might need the cloud
 - **Clone** application source code from GitHub
 - **Create** a container image from application source
 - **Test** the image in a local Docker environment
