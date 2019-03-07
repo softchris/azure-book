@@ -85,15 +85,28 @@ It does the following:
 All in all this is a pretty standard looking `Dockerfile`.
 
 ##Build the image
+Building an image is pre step we need to do before our application can actually be started. The build step will pull in the OS image we ask for, download dependent library, copy our app code in its place and so on.
 
 We can use the `docker build` command to build an image. The exact command we will need to use is:
 > docker build ./aci-helloworld -t aci-tutorial-app
 
-The above command looks for the Dockerfile in the directory `/aci-helloworld` and creates an image called `aci-tutorial-app`
+The above command looks for the Dockerfile in the directory `/aci-helloworld` and creates an image called `aci-tutorial-app`. Running the command should yield an output looking like this:
+![](/assets/Screen Shot 2019-03-07 at 13.19.30.png)
+
+Above it's showing us all the steps that we set up in the `Dockerfile` like: 
+- bringing down the `node:8.9.3-alpine` OS image, copying our application
+- setting a `WORKDIR`, 
+- installing the dependencies by running `NPM INSTALL`, 
+- starting up the the app with `CMD node /user/scr/app/index.js`
 
 We can see our created image if we run the following command:
 
 > docker images
+
+![](/assets/Screen Shot 2019-03-07 at 13.24.06.png)
+
+Ok, then, we have an image which means we are ready for our next step; testing it locally.
+
 
 ## Test the image, by instantiating a container
 Now that we have an image, we can create a container from it, using `docker run`. The full command looks like the following:
