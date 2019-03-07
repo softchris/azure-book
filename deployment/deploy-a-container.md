@@ -1,4 +1,4 @@
-# Bring your container to the Microsoft Azure Cloud 
+# Bring your containers to the Microsoft Azure Cloud 
 ![](/assets/air-atmosphere-beautiful-531767.jpg)
 
 Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your suggestions on topics or improvements /Chris
@@ -8,11 +8,11 @@ Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your sug
 In this application we will do the following:
 
 - **Explain**, why we might need the cloud
-- **Clone** application source code from GitHub
-- **Create** a container image from application source
-- **Test** the image in a local Docker environment
-- **Create** a container registry
-- **Deploy** application
+- **Clone** application source code from GitHub, let's focus more on getting an application to the cloud rather than writing it from scratch, so let's take an existing application
+- **Create** a container image from application source, this is a pre-step we need to do 
+- **Test** the image in a local Docker environment, it's always a good practice to try out your software locally before we push it to the cloud
+- **Create** a container registry, this is a thing on Azure that store Docker images 
+- **Deploy** our application, we can create a container instance from one of our images in the Container Registry
 
 ## The promise of the cloud
 Using container technology allows us to split up our application into many services. On top of that it offers a secure and reliable option deliver the application. Now comes the next question, where do we deliver it to, On-premise or maybe to the Cloud?
@@ -27,12 +27,7 @@ Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your sug
 
 
 > Azure Container Instances enables deployment of Docker containers onto Azure infrastructure without provisioning any virtual machines or adopting a higher-level service.
-
-- **Clone** application source code from GitHub
-- **Create** a container image from application source
-- **Test** the image in a local Docker environment
-- **Create** a container registry
-- **Deploy** application
+## Prerequisits
 
 You will ned the following installed
 - Docker 
@@ -276,4 +271,3 @@ It wasn't that many steps really. I mean let's say our app consisted of 3 other 
 
 ### Further reading
 https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app
-
