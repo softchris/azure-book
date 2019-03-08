@@ -55,7 +55,33 @@ Press save and run
 
 It will ask to commit the `azure-pipelines.yaml` to master. Take **save and run** again
 
+And we get this:
+![](/assets/Screen Shot 2019-03-08 at 18.36.06.png)
 
+What did we do wrong, well click `npm install and build` to get the why:
+![](/assets/Screen Shot 2019-03-08 at 18.36.52.png)
+AHA, it's telling us we are running `npm build` and that we are missing it. Let's verify that with our actual `package.json` file:
+![](/assets/Screen Shot 2019-03-08 at 18.38.19.png)
+
+We have a `build` action but it does nothing.. So let's go to our `azure-pipelines.yaml` and remove that step, cause we don't seem to need. If we do need it in the future we can always readd it.
+
+That means we remove that from the `scripts` section of the file so:
+
+```
+- script: |
+    npm install
+    npm run build
+```
+
+becomes
+
+```
+- script: |
+   
+    npm install
+```
+Then we need to commit and push this change. After that we need to kick off another build to see if we solved it:
+![](/assets/Screen Shot 2019-03-08 at 18.41.37.png)
 
 
 
