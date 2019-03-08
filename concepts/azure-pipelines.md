@@ -83,5 +83,20 @@ becomes
 Then we need to commit and push this change. After that we need to kick off another build to see if we solved it:
 ![](/assets/Screen Shot 2019-03-08 at 18.41.37.png)
 
+We wait for the build to finish and we get:
+![](/assets/Screen Shot 2019-03-08 at 18.49.39.png)
+
+All green, and we did it!!!
+
+## Adding tests
+As we all know, a pipeline is only any good if it tells us wether we are delivering quality software. A way to know that is to add tests to your solution. What should happen IMO is:
+
+- if tests fail, the pipeline should fail and no artifact should be created
+- if tests succeed then pipeline should succeed and artifact should be created
+
+## Deploy artificact to AppService ?
+
+## Adding a badge
+
 
 
