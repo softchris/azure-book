@@ -6,8 +6,25 @@ Cresting your first pipeline
 
 ## Get sample code
 
+Create a project locally. It could be anything you want. For example a Node.js application
+
 ```
-git clone https://github.com/MicrosoftDocs/pipelines-javascript
+mkdir sample-node
+cd sample-node
+npm init -y
+npm install express --save
+touch app.js .gitignore
+```
+
+Add some code in there:
+```
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 3000
+
+app.get('/', (req, res) => res.send('Hello World!'))
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 ```
 
 
@@ -80,7 +97,12 @@ becomes
    
     npm install
 ```
-Then we need to commit and push this change. After that we need to kick off another build to see if we solved it:
+Then we need to commit and push this change. After that a new build will be kicked off:
+![](/assets/Screen Shot 2019-03-08 at 18.56.50.png)
+
+
+
+we need to kick off another build to see if we solved it:
 ![](/assets/Screen Shot 2019-03-08 at 18.41.37.png)
 
 We wait for the build to finish and we get:
