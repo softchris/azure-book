@@ -22,4 +22,6 @@ Sign in by going to:
 Click your project
 ![](/assets/Screen Shot 2019-03-08 at 17.20.29.png)
 Click **New pipeline** button
-
+![](/assets/Screen Shot 2019-03-08 at 17.23.12.png)
+Select Github
+![](/assets/pipeline-github.png)
