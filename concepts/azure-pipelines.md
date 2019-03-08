@@ -44,3 +44,7 @@ It will ask you to authorize a bunch of times more and also ask to install Azure
 
 Then it will ask you for a template
 ![](/assets/Screen Shot 2019-03-08 at 18.24.05.png)
+Go ahead and select the recommended one
+![](/assets/pipeline-template.png)
+
+
