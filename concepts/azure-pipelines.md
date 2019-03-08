@@ -7,12 +7,18 @@ Cresting your first pipeline
 ## Get sample code
 
 ```
-got clone https://github.com/MicrosoftDocs/pipelines-javascript
+git clone https://github.com/MicrosoftDocs/pipelines-javascript
 ```
+
 
 ## Get your first build
 1. Sign in to your Azure DevOps organization and navigate to your project.
 2. In your project, navigate to the Pipelines page. Then choose **New**, **New build pipeline**. 
+
+
+Before doing all this fork the repository at:
+
+> https://github.com/MicrosoftDocs/pipelines-javascript
 
 
 Sign in by going to: 
@@ -28,3 +34,13 @@ Select Github
 You might be redirected to GitHub to sign in. If so, enter your GitHub credentials
 You will also be prompted to Authorize
 ![](/assets/Screen Shot 2019-03-08 at 17.27.10.png)
+
+When the list of repositories appears, select the your desired sample app repository
+It should look something like this:
+![](/assets/Screen Shot 2019-03-08 at 17.34.43.png)
+
+It will ask you to authorize a bunch of times more and also ask to install Azure pipelines on all your repos or the selected one. 
+![](/assets/Screen Shot 2019-03-08 at 18.21.26.png)
+
+Then it will ask you for a template
+![](/assets/Screen Shot 2019-03-08 at 18.24.05.png)
