@@ -25,3 +25,6 @@ Click **New pipeline** button
 ![](/assets/Screen Shot 2019-03-08 at 17.23.12.png)
 Select Github
 ![](/assets/pipeline-github.png)
+You might be redirected to GitHub to sign in. If so, enter your GitHub credentials
+You will also be prompted to Authorize
+![](/assets/Screen Shot 2019-03-08 at 17.27.10.png)
