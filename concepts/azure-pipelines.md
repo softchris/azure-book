@@ -50,6 +50,12 @@ Go ahead and select the recommended one
 Then it's showing you the `azure-pipelines.yaml`
 ![](/assets/Screen Shot 2019-03-08 at 18.26.56.png)
 
+Press save and run
+![](/assets/Screen Shot 2019-03-08 at 18.28.08.png)
+
+It will ask to commit the `azure-pipelines.yaml` to master. Take **save and run** again
+
+
 
 
 
