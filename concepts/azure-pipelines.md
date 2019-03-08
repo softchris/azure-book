@@ -47,4 +47,9 @@ Then it will ask you for a template
 Go ahead and select the recommended one
 ![](/assets/pipeline-template.png)
 
+Then it's showing you the `azure-pipelines.yaml`
+![](/assets/Screen Shot 2019-03-08 at 18.26.56.png)
+
+
+
 
