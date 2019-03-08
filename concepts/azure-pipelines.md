@@ -56,7 +56,7 @@ Press save and run
 It will ask to commit the `azure-pipelines.yaml` to master. Take **save and run** again
 
 And we get this:
-![](/assets/Screen Shot 2019-03-08 at 18.36.06.png)
+![](/assets/pipeline-build-failure.png)
 
 What did we do wrong, well click `npm install and build` to get the why:
 ![](/assets/Screen Shot 2019-03-08 at 18.36.52.png)
