@@ -1,5 +1,7 @@
 # Azure pipelines
 
+https://docs.microsoft.com/en-gb/azure/devops/pipelines/get-started/index?view=azure-devops
+
 For CI/CD. More to come
 
 Cresting your first pipeline
@@ -134,7 +136,7 @@ let's fix the test, commit and push the change
 let's see the pipeline go green
 
 
-## Deploy artificact to AppService ?
+## Deploy artefact to AppService ?
 
 ## Adding a badge
 
