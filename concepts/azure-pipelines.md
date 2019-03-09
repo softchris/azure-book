@@ -6,7 +6,7 @@ For CI/CD. More to come
 
 Cresting your first pipeline
 
-## Get sample code
+## Produce sample code
 
 Create a project locally. It could be anything you want. For example a Node.js application
 
