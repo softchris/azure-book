@@ -28,7 +28,10 @@ measuring
 ```
 https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceId=false&returnFaceLandmarks=false&returnFaceAttributes=emotion
 ```
-specifically specify `returnFaceAttributes=emotion`
+specifically specify `returnFaceAttributes=emotion`, the payload in the POST call needs to be
+```
+{ "url": "<path to url>" }
+```
 
 # Summary
 
