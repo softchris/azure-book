@@ -33,6 +33,11 @@ specifically specify `returnFaceAttributes=emotion`, the payload in the POST cal
 { "url": "<path to url>" }
 ```
 
+You also need to specify a header, like so:
+```
+Ocp-Apim-Subscription-Key: <your-subscription-key>
+```
+
 # Summary
 
 ## Further reading
