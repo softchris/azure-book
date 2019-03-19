@@ -71,6 +71,8 @@ The response is an array, one item for each detected face
 
 ## Solution for mojifier
 
+### EmotivePoint class
+
 class EmotivePoint, with the constructor looking like:
 ```
 constructor({
@@ -103,6 +105,31 @@ distance(other) {
   }
 ```
 The internally called `distance()`  comes from the following lib `import * as distance from "euclidean-distance"`;
+
+### Face class
+The important function here is `chooseMoji()` function:
+
+```
+// excerpt Faces.ts
+
+chooseMoji(point) {
+    let closestMoji = null;
+    let closestDistance = Number.MAX_VALUE;
+    for (let moji of MOJIS) {
+      let emoPoint = moji.emotiveValues;
+      let distance = emoPoint.distance(point);
+      if (distance < closestDistance) {
+        closestMoji = moji;
+        closestDistance = distance;
+      }
+    }
+    return closestMoji;
+  }
+```
+It traverses a list of emojis and finds the emoji with the shortest distance to our point.
+
+## Face API registration
+ we can do this in the Sandbox for the LEARN Module or for real so we can use it in an app  
 
 # Summary
 
