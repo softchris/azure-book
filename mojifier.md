@@ -67,6 +67,8 @@ Essentially it's giving you two types of response back
 - where the face is in the image
 - what emotions where detected and how much of it on a sliding range of 0 to 1
 
+The response is an array, one item for each detected face
+
 # Summary
 
 ## Further reading
