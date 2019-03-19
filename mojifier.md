@@ -38,6 +38,35 @@ You also need to specify a header, like so:
 Ocp-Apim-Subscription-Key: <your-subscription-key>
 ```
 
+The response looks like the following:
+```
+[
+  {
+    "faceRectangle": {
+      "top": 207,
+      "left": 198,
+      "width": 229,
+      "height": 229
+    },
+    "faceAttributes": {
+      "emotion": {
+        "anger": 0.001,
+        "contempt": 0.014,
+        "disgust": 0,
+        "fear": 0,
+        "happiness": 0.306,
+        "neutral": 0.675,
+        "sadness": 0.003,
+        "surprise": 0.001
+      }
+    }
+  }
+]
+```
+Essentially it's giving you two types of response back
+- where the face is in the image
+- what emotions where detected and how much of it on a sliding range of 0 to 1
+
 # Summary
 
 ## Further reading
