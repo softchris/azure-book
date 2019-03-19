@@ -69,6 +69,41 @@ Essentially it's giving you two types of response back
 
 The response is an array, one item for each detected face
 
+## Solution for mojifier
+
+class EmotivePoint, with the constructor looking like:
+```
+constructor({
+    anger,
+    contempt,
+    disgust,
+    fear,
+    happiness,
+    neutral,
+    sadness,
+    surprise
+  }) {
+    this.anger = anger;
+    this.contempt = contempt;
+    this.disgust = disgust;
+    this.fear = fear;
+    this.happiness = happiness;
+    this.neutral = neutral;
+    this.sadness = sadness;
+    this.surprise = surprise;
+  }
+``` 
+
+There is also a `distance()` function in there:
+```
+distance(other) {
+    let myPoint = this.toArray();
+    let otherPoint = other.toArray();
+    return distance(myPoint, otherPoint);
+  }
+```
+The internally called `distance()`  comes from the following lib `import * as distance from "euclidean-distance"`;
+
 # Summary
 
 ## Further reading
