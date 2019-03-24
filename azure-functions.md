@@ -64,6 +64,22 @@ App name must be globally unique as it will serve as part of base URL
  check that it has a public URL and it is possible to navigate to its default page
 
  ![](/assets/Screen Shot 2019-03-24 at 01.53.19.png) 
+ 
+## Triggers
+Functions are event driven, which means they run in response to an event.
+ 
+The type of event that starts the function is called a trigger. You must configure a function with exactly one trigger.
+
+Azure supports the following:
+- **Blob storage**,Start a function when a new or updated blob is detected.
+- **Cosmos DB**, Start a function when inserts and updates are detected.
+- **Event Grid**, Start a function when an event is received from Event Grid.
+- **HTTP**, Start a function with an HTTP request.
+- Microsoft Graph Events, Start a function in response to an incoming webhook from the Microsoft Graph. Each instance of this trigger can react to one Microsoft Graph resource type.
+- **Queue storage**, Start a function when a new item is received on a queue. The queue message is provided as input to the function.
+- **Service Bus**, Start a function in response to messages from a Service Bus queue.
+- **Timer**, Start a function on a schedule.
+  
 
 
 
