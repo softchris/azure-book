@@ -22,4 +22,7 @@ Currently supports C#, F#, and JavaScript
 ## Scales and billed only when processing work
 Serverless computing helps solve the allocation problem by scaling up or down automatically, and you're only billed when your function is processing work
 
+## Stateless logic
+Stateless functions are great candidates for serverless compute; function instances are created and destroyed on demand. If state is required, it can be stored in an associated storage service.
+
 
