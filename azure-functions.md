@@ -62,7 +62,8 @@ App name must be globally unique as it will serve as part of base URL
  
  ## Verify your app
  check that it has a public URL and it is possible to navigate to its default page
- 
+
+ ![](/assets/Screen Shot 2019-03-24 at 01.53.19.png) 
 
 
 
