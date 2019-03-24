@@ -144,6 +144,10 @@ For now we will go with the `In-portal` option, we are now faced with:
 
 For now we will go with the `Webhook + API` option.
 
+This is now our coding environment:
+
+![](/assets/Screen Shot 2019-03-24 at 02.10.47.png)
+
 
 
 
