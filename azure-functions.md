@@ -25,4 +25,13 @@ Serverless computing helps solve the allocation problem by scaling up or down au
 ## Stateless logic
 Stateless functions are great candidates for serverless compute; function instances are created and destroyed on demand. If state is required, it can be stored in an associated storage service.
 
+## Event driven
+Functions are event driven. 
+
+> This means they run only in response to an event (called a "trigger"), such as receiving an HTTP request, or a message being added to a queue. 
+
+You configure a trigger as part of the function definition. This approach simplifies your code by allowing you to declare where the data comes from (trigger/input binding) and where it goes (output binding). 
+
+> You don't need to write code to watch queues, blobs, hubs, etc. You can focus purely on the business logic.
+
 
