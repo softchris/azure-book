@@ -5,6 +5,7 @@
 * [Azure DevOps](azure-devops.md)
 * [Mojifier](mojifier.md)
 * [Azure Container Instances](azure-container-instances.md)
+* [Azure functions](azure-functions.md)
 
 ## Concepts
 
