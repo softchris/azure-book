@@ -148,6 +148,21 @@ This is now our coding environment:
 
 ![](/assets/Screen Shot 2019-03-24 at 02.10.47.png)
 
+### Taking it for a spin
+We can test it in the portal or hit the URL:
+
+If we press the play button we get this:
+![](/assets/Screen Shot 2019-03-24 at 02.13.06.png)
+
+Or we click `get function URL` and test it in a browser:
+![](/assets/Screen Shot 2019-03-24 at 02.14.00.png)
+
+After you've chosen to copy the URL you head to the browser input the URL and make sure to add &name=chris. Cause if you look at your Javascript code you see that it expects the parameter `name` in either the `body` or as a URL parameter. It should look like this:
+![](/assets/Screen Shot 2019-03-24 at 02.17.32.png)
+
+
+
+
 
 
 
