@@ -162,6 +162,10 @@ Or we click `get function URL` and test it in a browser:
 After you've chosen to copy the URL you head to the browser input the URL and make sure to add &name=chris. Cause if you look at your Javascript code you see that it expects the parameter `name` in either the `body` or as a URL parameter. It should look like this:
 ![](/assets/Screen Shot 2019-03-24 at 02.17.32.png)
 
+### Monitoring
+We can also check out monitoring. It is able to provide us with all sorts of critical info such as:
+history of function executions and displays the timestamp, result code, duration, and operation ID populated by Application Insights
+
 
 
 
