@@ -124,8 +124,16 @@ Example of templates to choose from:
 - Cosmos DB trigger w/ C# or JavaScript
 - IoT Hub (Event Hub) w/ C#, F#, or JavaScript
   
+Let's create that function:
+![](/assets/Screen Shot 2019-03-24 at 02.05.11.png)
 
+Now you are faced with the choice of how to author your Function:
 
+- VS Code, this is a great choice, plenty of plugins supporting this option
+- Any editor + Core tools, a more agnostic choice
+- In-portal, you will write code in the Portal
+
+![](/assets/Screen Shot 2019-03-24 at 02.06.17.png)
   
 
 
