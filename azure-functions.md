@@ -79,6 +79,42 @@ Azure supports the following:
 - **Queue storage**, Start a function when a new item is received on a queue. The queue message is provided as input to the function.
 - **Service Bus**, Start a function in response to messages from a Service Bus queue.
 - **Timer**, Start a function on a schedule.
+
+### Bindings
+- Bindings are a declarative way to connect data and services to your function
+- Bindings know how to talk to different services
+- Each binding has a direction - your code reads data from input bindings and writes data to output bindings
+- Each function can have zero or more bindings to manage the input and output data processed by the function 
+- A trigger is a special type of input binding that has the additional capability of initiating execution
+
+> you don't have to write code in your function to connect to data sources and manage connections
+
+Sample binding definition
+
+```json
+{
+  "bindings": [
+    {
+      "name": "order",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "myqueue-items",
+      "connection": "MY_STORAGE_ACCT_APP_SETTING"
+    },
+    {
+      "name": "$return",
+      "type": "table",
+      "direction": "out",
+      "tableName": "outTable",
+      "connection": "MY_TABLE_STORAGE_ACCT_APP_SETTING"
+    }
+  ]
+}
+```
+
+  
+
+
   
 
 
