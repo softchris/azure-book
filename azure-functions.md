@@ -34,4 +34,8 @@ You configure a trigger as part of the function definition. This approach simpli
 
 > You don't need to write code to watch queues, blobs, hubs, etc. You can focus purely on the business logic.
 
+## Drawbacks
+
+- **Execution time**, timeout of 5 minutes, This timeout is configurable to a maximum of 10 minutes. If your function requires more than 10 minutes to execute, you can host it on a VM. Additionally, if your service is initiated through an HTTP request and you expect that value as an HTTP response, the timeout is further restricted to 2.5 minutes, BUT there's also an option called Durable Functions that allows you to orchestrate the executions of multiple functions without any timeout
+- **Execution frequency**, If you expect your function to be executed continuously by multiple clients, it would be prudent to estimate the usage and calculate the cost of using functions accordingly. It might be cheaper to host your service on a VM
 
