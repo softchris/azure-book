@@ -153,6 +153,8 @@ We can test it in the portal or hit the URL:
 
 If we press the play button we get this:
 ![](/assets/Screen Shot 2019-03-24 at 02.13.06.png)
+Ans on our right in the Portal we get this. As you can see we have specified a request body and we see that as well as what the function returns at the bottom of the below image: 
+![](/assets/Screen Shot 2019-03-24 at 02.20.10.png)
 
 Or we click `get function URL` and test it in a browser:
 ![](/assets/Screen Shot 2019-03-24 at 02.14.00.png)
