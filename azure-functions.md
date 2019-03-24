@@ -16,3 +16,10 @@ Approaches for this kind of architecture
 - Azure Functions
 
 > Azure Functions is a serverless application platform. Developers can host business logic that can be executed without provisioning infrastructure
+
+Currently supports C#, F#, and JavaScript
+
+## Scales and billed only when processing work
+Serverless computing helps solve the allocation problem by scaling up or down automatically, and you're only billed when your function is processing work
+
+
