@@ -113,7 +113,16 @@ Sample binding definition
 ```
 
 ## Creating a Function, for your Function app
+When adding your first function, you are presented with the Quickstart screen. This screen allows you to choose a trigger type (HTTP, Timer, or Data) and programming language (C#, JavaScript, F# or Java). Then, based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log
 
+Example of templates to choose from:
+
+- HTTP trigger w/ C#, F#, or JavaScript
+- Timer trigger w/ C#, F#, or JavaScript
+- Queue trigger w/ C#, F#, or JavaScript
+- Service Bus Queue trigger w/ C#, F#, or JavaScript
+- Cosmos DB trigger w/ C# or JavaScript
+- IoT Hub (Event Hub) w/ C#, F#, or JavaScript
   
 
 
