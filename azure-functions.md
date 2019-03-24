@@ -166,6 +166,14 @@ After you've chosen to copy the URL you head to the browser input the URL and ma
 We can also check out monitoring. It is able to provide us with all sorts of critical info such as:
 history of function executions and displays the timestamp, result code, duration, and operation ID populated by Application Insights
 
+### Streaming log window
+You're also able to add logging statements to your function for debugging in the Azure portal. The called methods for each language are passed a "logging" object, which may be used to log information to the log window
+
+To use it we call:
+```
+context.log('logging...');
+```
+
 
 
 
