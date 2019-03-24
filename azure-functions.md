@@ -14,3 +14,5 @@ Serverless compute can be thought of as a function as a service (FaaS), or a mic
 Approaches for this kind of architecture
 - Azure Logic Apps 
 - Azure Functions
+
+> Azure Functions is a serverless application platform. Developers can host business logic that can be executed without provisioning infrastructure
