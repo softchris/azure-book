@@ -3,7 +3,6 @@
 
 Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your suggestions on topics or improvements /Chris
 
-
 > Serverless compute can be thought of as a function as a service (FaaS), or a microservice that is hosted on a cloud platform
 
 
