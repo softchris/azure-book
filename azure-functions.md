@@ -58,7 +58,8 @@ App name must be globally unique as it will serve as part of base URL
  - Runtime stack, Javascript
  - Create a new storage account
  - Enable application insights
- CREATE
+ 
+Now hit the button  **CREATE**
  
  ## Verify your app
  check that it has a public URL and it is possible to navigate to its default page
