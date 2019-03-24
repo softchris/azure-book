@@ -112,6 +112,8 @@ Sample binding definition
 }
 ```
 
+## Creating a Function, for your Function app
+
   
 
 
