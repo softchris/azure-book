@@ -47,6 +47,19 @@ You configure a trigger as part of the function definition. This approach simpli
 - **storage account**, function app must be linked to a storage account. Uses this for internal operations such as logging function executions and managing execution triggers. Also function code and configuration file are stored here
 
 ## Creating a function app
+In portal
+- Create a resource / Compute / Function app
+App name must be globally unique as it will serve as part of base URL
+ - select a subscription
+ - select existing resource group
+ - select Windows for OS
+ - Hosting plan should be Consumption plan
+ - Select geography
+ - Runtime stack, Javascript
+ - Create a new storage account
+ - Enable application insights
+ CREATE
+
 
 
 
