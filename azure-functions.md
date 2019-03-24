@@ -1,4 +1,12 @@
-#Azure functions
+# Dad Jokes as a Service - Your first Azure function
+![](/assets/dawn-dramatic-dusk-1102915.jpg)
+
+Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your suggestions on topics or improvements /Chris
+
+
+> Serverless compute can be thought of as a function as a service (FaaS), or a microservice that is hosted on a cloud platform
+
+
 
 - Decide if serverless computing is right for your business need.
 - Create an Azure function app in the Azure portal.
