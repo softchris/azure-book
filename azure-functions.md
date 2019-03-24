@@ -182,6 +182,26 @@ To use it we call:
 context.log('logging...');
 ```
 
+### Authorization
+Going to the portal we can control how our function get's called but also who has the right to call it. To manage authorization we navigate like so:
+
+Integrate / Authorization level
+
+It should look something like this:
+![](/assets/Screen Shot 2019-03-24 at 22.08.02.png)
+
+As you can see the field `Authorization level` allows us to choose `Authorization`. Available options are:
+- Function, means a function specific API key is required
+- Anonymous, no API key is required
+- Admin, we need something called a *host key* to make it possible to call this function
+
+By clicking the `Manage` menu option you are able to get something looking like this which will allow you to manage both your `host` and `function` keys:
+![](/assets/Screen Shot 2019-03-24 at 22.13.58.png)
+
+### Working with parameters
+TODO
+## Build our service
+TODO
 
 
 
