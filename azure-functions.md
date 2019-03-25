@@ -8,7 +8,7 @@ Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your sug
 This is the first part of three part series:
 - Azure functions - from the beginning ( Azure portal ), part I
 , **you are here**
-- Azure functions - from the beginning ( VS Code ), part I
+- Azure functions - from the beginning ( VS Code ), part II
 , in progress
 - Azure functions - from the beginning ( Azure CLI ), part I
 , part III, in progress
