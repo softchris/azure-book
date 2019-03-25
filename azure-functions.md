@@ -82,7 +82,7 @@ In this article we will focus on the first option but in doing so we will put so
 
 ![](/assets/excited.gif)
   
-### In portal
+### Select the correct template, Function App
 Let's head to the portal and log in at 
 
 > portal.azure.com
@@ -90,7 +90,7 @@ Let's head to the portal and log in at
 Once logged select the following :
 ![](/assets/Screen Shot 2019-03-25 at 20.36.43.png)
 
-- Create a resource / Compute / Function app
+
 App name must be globally unique as it will serve as part of base URL
  - select a subscription
  - select existing resource group
