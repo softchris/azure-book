@@ -10,6 +10,9 @@ In this article we will cover the following:
 - **Function apps**, trigger and bindings
 - **Functions** in function apps, languages it supports, authoring choices, testing it out, monitoring logging and setting of authorization level, working with parameters
 
+In this article we already assume that putting your apps in the Cloud is a given. You've seen the benefits that means in terms of not having to maintain hardware, only pay for what you actually use and so on. 
+
+Now, being in the Cloud means you have options, A LOT of options in fact. You can be on the lowest level deciding exactly what memory or hard drive type your apps can run on. Then you can be on a more managed level where you are happy to create a Virtual Machine a so called VM where you can install the OS and software you need. There are still more steps on this ladder namely running your applications in App Services where you don't have a VM anymore, just a place for your code to reside and yes you can decide what OS to run this on but that's pretty much it, it's a SAAS, software as a Service platform.
 
 
 - Decide if serverless computing is right for your business need.
