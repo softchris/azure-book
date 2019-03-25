@@ -32,7 +32,7 @@ Azure has two kinds of approaches for Serverless architecture
 - [Azure Logic Apps, documentation](https://docs.microsoft.com/en-gb/azure/logic-apps/?wt.mc_id=devto-blog-chnoring) 
 - [Azure Functions](https://azure.microsoft.com/en-gb/services/functions/?wt.mc_id=devto-blog-chnoring), Azure Functions is a serverless application platform. Developers can host business logic that can be executed without provisioning infrastructure
 
-## What else is there to know about Serverless?
+### What else is there to know about Serverless?
 Is it all unicorns and rainbows?
 Well, Serverless is definitely great but there are some things we need to know about them like:
 - **They are stateless**, function instances are created and destroyed on demand. If state is required, it can be stored in an associated storage service
