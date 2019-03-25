@@ -1,4 +1,4 @@
-# Azure functions - from the beginning ( Azure portal ), part I
+# Serverless - from the beginning, Azure functions ( Azure portal ), part I
 ![](/assets/dawn-dramatic-dusk-1102915.jpg)
 
 Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your suggestions on topics or improvements /Chris
@@ -6,12 +6,9 @@ Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your sug
 > Serverless compute can be thought of as a function as a service (FaaS), or a microservice that is hosted on a cloud platform
 
 This is the first part of three part series:
-- Azure functions - from the beginning ( Azure portal ), part I
-, **you are here**
-- Azure functions - from the beginning ( VS Code ), part II
-, in progress
-- Azure functions - from the beginning ( Azure CLI ), part I
-, part III, in progress
+- Serverless - from the beginning, Azure functions ( Azure portal ), part I, **you are here**
+- Serverless - from the beginning, Azure functions ( VS Code ), part II, in progress
+- Serverless - from the beginning, Azure functions ( Azure CLI ), part III, in progress
 
 
 In this article we will cover the following:
