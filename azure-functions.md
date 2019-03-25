@@ -31,6 +31,7 @@ Azure has two kinds of approaches for Serverless architecture
 - [Azure Logic Apps, intro](https://azure.microsoft.com/en-gb/services/logic-apps/?wt.mc_id=devto-blog-chnoring) Azure Logic Apps enables you to create powerful workflows 
 - [Azure Logic Apps, documentation](https://docs.microsoft.com/en-gb/azure/logic-apps/?wt.mc_id=devto-blog-chnoring) 
 - [Azure Functions](https://azure.microsoft.com/en-gb/services/functions/?wt.mc_id=devto-blog-chnoring), Azure Functions is a serverless application platform. Developers can host business logic that can be executed without provisioning infrastructure
+- [Axure functions docs overview](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?wt.mc_id=devto-blog-chnoring)
 
 ### What else is there to know about Serverless?
 Is it all unicorns and rainbows?
@@ -54,10 +55,8 @@ In a word
 
 > Serverless computing helps solve the allocation problem by scaling up or down automatically, and you're only billed when your function is processing work
 
-
-
 ## What is a function app?
-`Functions` are hosted in an execution context called a `function app`
+`Functions` are hosted in an execution context called a `function app`. Which means what? Think of the Function app as the project you host your functions in. 
 
 Currently you can use the following languages working with Function apps, C#, F#, and JavaScript
 
