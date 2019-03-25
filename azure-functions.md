@@ -79,9 +79,9 @@ Now there are different ways of doing this we can create functions in the follow
 - **VS Code**, Using VS Code to scaffold an Azure Function app and Azure Functions using some amazing plugins made for the purpose.
 
 In this article we will focus on the first option but in doing so we will put some focus on some great concepts you need to know about, so it may be the least appealing option as a developer but the information the portal shows is great to know about, so stay with me cause we are about to do some coding next:
+
 ![](/assets/excited.gif)
   
-
 ### In portal
 Let's head to the portal and log in at 
 
