@@ -1,9 +1,18 @@
-# Dad Jokes as a Service - Your first Azure function
+# Azure functions - from the beginning ( Azure portal ), part I
 ![](/assets/dawn-dramatic-dusk-1102915.jpg)
 
 Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your suggestions on topics or improvements /Chris
 
 > Serverless compute can be thought of as a function as a service (FaaS), or a microservice that is hosted on a cloud platform
+
+This is the first part of three part series:
+- Azure functions - from the beginning ( Azure portal ), part I
+, **you are here**
+- Azure functions - from the beginning ( VS Code ), part I
+, in progress
+- Azure functions - from the beginning ( Azure CLI ), part I
+, part III, in progress
+
 
 In this article we will cover the following:
 - **Serverless**, What is Serverless and why might I need it
@@ -61,10 +70,14 @@ In a word
 Currently you can use the following languages working with Function apps, C#, F#, and JavaScript
 
 ## Pre requisites
-- **service plan**, *Consumption service plan* and *Azure App Service plan* CSP has automatic scaling and bills you when your functions are running and configurable timeout period for the execution of a function. By default, it is 5 minute, ASP allows you to avoid timeout periods by having your function run continuously on a VM that you define
-- **storage account**, function app must be linked to a storage account. Uses this for internal operations such as logging function executions and managing execution triggers. Also function code and configuration file are stored here
+Ok, there are some things that needs to exist before we can get our function up there in the cloud. Those are:
+
+- **service plan**, There are two choices of plans *Consumption service plan*, CSP and *Azure App Service plan*, ASP CSP has automatic scaling and bills you when your functions are running and configurable timeout period for the execution of a function. By default, it is 5 minute, ASP allows you to avoid timeout periods by having your function run continuously on a VM that you define
+- **storage account**, function app must be linked to a storage account. It uses this for internal operations such as logging function executions and managing execution triggers. Also function code and configuration file are stored here
 
 ## Creating a function app
+Now there are different ways of doing this 
+
 In portal
 - Create a resource / Compute / Function app
 App name must be globally unique as it will serve as part of base URL
