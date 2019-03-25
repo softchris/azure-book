@@ -91,9 +91,14 @@ Once logged select the following :
 ![](/assets/Screen Shot 2019-03-25 at 20.36.43.png)
 
 ### Make the choices in the template
-Once we've select the `Function app` template we need to select a few things. Keep the following in mind though:
+Once we've select the `Function app` template we need to select a few things. Your UI will at this point look something like this:
+![](/assets/Screen Shot 2019-03-25 at 20.47.17.png)
+
+Keep the following in mind though:
 
 >App name must be globally unique as it will serve as part of base URL
+
+
 
 Ok so the following choices will need to be made:
  - **Select a subscription**, well pick out one of the ones you have
