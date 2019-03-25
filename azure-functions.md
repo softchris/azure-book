@@ -90,16 +90,20 @@ Let's head to the portal and log in at
 Once logged select the following :
 ![](/assets/Screen Shot 2019-03-25 at 20.36.43.png)
 
+### Make the choices in the template
+Once we've select the `Function app` template we need to select a few things. Keep the following in mind though:
 
-App name must be globally unique as it will serve as part of base URL
- - select a subscription
- - select existing resource group
- - select Windows for OS
- - Hosting plan should be Consumption plan
- - Select geography
- - Runtime stack, Javascript
- - Create a new storage account
- - Enable application insights
+>App name must be globally unique as it will serve as part of base URL
+
+Ok so the following choices will need to be made:
+ - **Select a subscription**, well pick out one of the ones you have
+ - **Select a resource group**, you can choose an existing resource group or create a new one, up to you 
+ - **Select an OS**, choices here are Windows or Linux, we opt for Windows cause we need to select something :)
+ - **Select Hosting plan**, this should be *Consumption plan*, we mentioned Consumption plans earlier in this article and why it's the better choice
+ - **Select geography**, well select the region closest to you
+ - **Runtime stack**, this is the language you are going to be coding in so we select Javascript
+ - **Create a new storage account**, let's take an existing or create new one
+ - **Enable application insights**, for stats and other types of application tracking
  
 Now hit the button  **CREATE**
  
