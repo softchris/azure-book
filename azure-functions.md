@@ -16,7 +16,7 @@ In this article we already assume that putting your apps in the Cloud is a given
 Now, being in the Cloud means you have options, A LOT of options in fact. You can be on the lowest level deciding exactly what memory or hard drive type your apps can run on. Then you can be on a more managed level where you are happy to create a Virtual Machine, a so called VM, where you can install the OS and software you need. There are still more steps on this ladder namely running your applications in App Services where you don't have a VM anymore, just a place for your code to reside and yes you can decide what OS to run this on but that's pretty much it, it's a SAAS, software as a Service platform.
 BUT, there is a step above that `Serverless`.  
 
-### Introducing Serverless
+## Introducing Serverless
 So what does Serverless mean?
 Serverless is essentially a function as a service `Faas`, or a microservice that is hosted on a cloud platform. 
 
@@ -26,16 +26,26 @@ Ok, what benefits does it offer then?
 - **Managed infrastructure**, The cloud provider manages infrastructure. 
 - **Automatic scaling**, Your app is automatically scaled out or down depending on load. 
 
-Approaches for this kind of architecture
-- Azure Logic Apps 
-- Azure Functions
-
-> Azure Functions is a serverless application platform. Developers can host business logic that can be executed without provisioning infrastructure
-
 Currently supports C#, F#, and JavaScript
 
-## Scales and billed only when processing work
-Serverless computing helps solve the allocation problem by scaling up or down automatically, and you're only billed when your function is processing work
+## Serverless in Azure
+Azure has two kinds of appraoches for Serverless architecture 
+- [Azure Logic Apps, intro](https://azure.microsoft.com/en-gb/services/logic-apps/?wt.mc_id=devto-blog-chnoring) Azure Logic Apps enables you to create powerful workflows 
+- [Azure Logic Apps, documentation](https://docs.microsoft.com/en-gb/azure/logic-apps/?wt.mc_id=devto-blog-chnoring) 
+- [Azure Functions](https://azure.microsoft.com/en-gb/services/functions/?wt.mc_id=devto-blog-chnoring), Azure Functions is a serverless application platform. Developers can host business logic that can be executed without provisioning infrastructure
+
+## Serverless vs App Services
+It's easy to think that your first go-to is AppService that fits most likely with your mental model as a developers, you want to move the app that you have from On Premise to the Cloud and to do so you need to provision databases, creating your Services in App Service and that's it right? Well, most applications are seldom that simple, they tend to need to talk to a number of sub systems to maybe log in, or grab a piece of data somewhere or perform a computation. 
+
+All these side things are maybe the concern of more than one app in your echo system so it makes sense to move them out into separate services. Then you might realise you only need to call on this services very seldom like when a new user is created or there is an incoming request. Your response at that point is maybe to place that incoming message on a Queue, or insert a row in a Database or maybe create a Slack notification. 
+
+What we are saying here is that maybe we don't need to pay for all full AppService and the uptime and responsiveness it gives us, but instead we need a framework that can trigger a function based on a pre defined event and that can then carry out a computation that results in a side effect like calling another service/database/queue/whatever. 
+
+Now we have come to the sweet spot where Serverless really shines, seldom called services that needs to do something in response to some kind of event happening.
+
+In a word
+
+> Serverless computing helps solve the allocation problem by scaling up or down automatically, and you're only billed when your function is processing work
 
 ## Stateless logic
 Stateless functions are great candidates for serverless compute; function instances are created and destroyed on demand. If state is required, it can be stored in an associated storage service.
