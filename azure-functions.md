@@ -26,11 +26,6 @@ Ok, what benefits does it offer then?
 - **Managed infrastructure**, The cloud provider manages infrastructure. 
 - **Automatic scaling**, Your app is automatically scaled out or down depending on load. 
 
-Currently supports C#, F#, and JavaScript
-
-
-
-
 ## Serverless on Azure
 Azure has two kinds of approaches for Serverless architecture 
 - [Azure Logic Apps, intro](https://azure.microsoft.com/en-gb/services/logic-apps/?wt.mc_id=devto-blog-chnoring) Azure Logic Apps enables you to create powerful workflows 
@@ -39,26 +34,12 @@ Azure has two kinds of approaches for Serverless architecture
 
 ## What else is there to know about Serverless?
 Is it all unicorns and rainbows?
-Well Serverless is definitely great but there are some things we need to know about them like:
+Well, Serverless is definitely great but there are some things we need to know about them like:
 - **They are stateless**, function instances are created and destroyed on demand. If state is required, it can be stored in an associated storage service
-- **They are event driven**, they run only in response to an event (called a "trigger"), such as receiving an HTTP request, or a message being added to a queue
-- **They do have Drawbacks**, 
-
-
-
-### Event driven
-Functions are event driven. 
-
-> This means they run only in response to an event (called a "trigger"), such as receiving an HTTP request, or a message being added to a queue. 
-
-You configure a trigger as part of the function definition. This approach simplifies your code by allowing you to declare where the data comes from (trigger/input binding) and where it goes (output binding). 
-
-> You don't need to write code to watch queues, blobs, hubs, etc. You can focus purely on the business logic.
-
-### Drawbacks
-
-- **Execution time**, timeout of 5 minutes, This timeout is configurable to a maximum of 10 minutes. If your function requires more than 10 minutes to execute, you can host it on a VM. Additionally, if your service is initiated through an HTTP request and you expect that value as an HTTP response, the timeout is further restricted to 2.5 minutes, BUT there's also an option called Durable Functions that allows you to orchestrate the executions of multiple functions without any timeout
-- **Execution frequency**, If you expect your function to be executed continuously by multiple clients, it would be prudent to estimate the usage and calculate the cost of using functions accordingly. It might be cheaper to host your service on a VM
+- **They are event driven**, they run only in response to an event (called a "trigger"), such as receiving an HTTP request, or a message being added to a queue. So essentially you declare where data comes from and where it goes. You do this declaratively with something called bindings which means you don't need to code to talk to queues, blobs, hubs, only business logic is needed
+- **They do have Drawbacks**, drawbacks are in the form of limitations on *execution time* and *execution frequency*. 
+ - **timeout**, The timeout is 5 minutes, This timeout is configurable to a maximum of 10 minutes. If your function requires more than 10 minutes to execute, you can host it on a VM. Additionally, if your service is initiated through an HTTP request and you expect that value as an HTTP response, the timeout is further restricted to 2.5 minutes, BUT there's also an option called [Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?wt.mc_id=devto-blog-chnoring) that allows you to orchestrate the executions of multiple functions without any timeout
+ - **Execution frequency**, If you expect your function to be executed continuously by multiple clients, it would be prudent to estimate the usage and calculate the cost of using functions accordingly. It might be cheaper to host your service on a VM
 
 ### Serverless vs App Services
 It's easy to think that your first go-to is AppService that fits most likely with your mental model as a developers, you want to move the app that you have from On Premise to the Cloud and to do so you need to provision databases, creating your Services in App Service and that's it right? Well, most applications are seldom that simple, they tend to need to talk to a number of sub systems to maybe log in, or grab a piece of data somewhere or perform a computation. 
@@ -77,6 +58,8 @@ In a word
 
 ## What is a function app?
 `Functions` are hosted in an execution context called a `function app`
+
+Currently you can use the following languages working with Function apps, C#, F#, and JavaScript
 
 ## Pre requisites
 - **service plan**, *Consumption service plan* and *Azure App Service plan* CSP has automatic scaling and bills you when your functions are running and configurable timeout period for the execution of a function. By default, it is 5 minute, ASP allows you to avoid timeout periods by having your function run continuously on a VM that you define
