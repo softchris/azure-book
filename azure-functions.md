@@ -28,8 +28,23 @@ Ok, what benefits does it offer then?
 
 Currently supports C#, F#, and JavaScript
 
-### Stateless logic
-Stateless functions are great candidates for serverless compute; function instances are created and destroyed on demand. If state is required, it can be stored in an associated storage service.
+
+
+
+## Serverless on Azure
+Azure has two kinds of approaches for Serverless architecture 
+- [Azure Logic Apps, intro](https://azure.microsoft.com/en-gb/services/logic-apps/?wt.mc_id=devto-blog-chnoring) Azure Logic Apps enables you to create powerful workflows 
+- [Azure Logic Apps, documentation](https://docs.microsoft.com/en-gb/azure/logic-apps/?wt.mc_id=devto-blog-chnoring) 
+- [Azure Functions](https://azure.microsoft.com/en-gb/services/functions/?wt.mc_id=devto-blog-chnoring), Azure Functions is a serverless application platform. Developers can host business logic that can be executed without provisioning infrastructure
+
+## What else is there to know about Serverless?
+Is it all unicorns and rainbows?
+Well Serverless is definitely great but there are some things we need to know about them like:
+- **They are stateless**, function instances are created and destroyed on demand. If state is required, it can be stored in an associated storage service
+- **They are event driven**, they run only in response to an event (called a "trigger"), such as receiving an HTTP request, or a message being added to a queue
+- **They do have Drawbacks**, 
+
+
 
 ### Event driven
 Functions are event driven. 
@@ -45,15 +60,7 @@ You configure a trigger as part of the function definition. This approach simpli
 - **Execution time**, timeout of 5 minutes, This timeout is configurable to a maximum of 10 minutes. If your function requires more than 10 minutes to execute, you can host it on a VM. Additionally, if your service is initiated through an HTTP request and you expect that value as an HTTP response, the timeout is further restricted to 2.5 minutes, BUT there's also an option called Durable Functions that allows you to orchestrate the executions of multiple functions without any timeout
 - **Execution frequency**, If you expect your function to be executed continuously by multiple clients, it would be prudent to estimate the usage and calculate the cost of using functions accordingly. It might be cheaper to host your service on a VM
 
-
-
-## Serverless in Azure
-Azure has two kinds of appraoches for Serverless architecture 
-- [Azure Logic Apps, intro](https://azure.microsoft.com/en-gb/services/logic-apps/?wt.mc_id=devto-blog-chnoring) Azure Logic Apps enables you to create powerful workflows 
-- [Azure Logic Apps, documentation](https://docs.microsoft.com/en-gb/azure/logic-apps/?wt.mc_id=devto-blog-chnoring) 
-- [Azure Functions](https://azure.microsoft.com/en-gb/services/functions/?wt.mc_id=devto-blog-chnoring), Azure Functions is a serverless application platform. Developers can host business logic that can be executed without provisioning infrastructure
-
-## Serverless vs App Services
+### Serverless vs App Services
 It's easy to think that your first go-to is AppService that fits most likely with your mental model as a developers, you want to move the app that you have from On Premise to the Cloud and to do so you need to provision databases, creating your Services in App Service and that's it right? Well, most applications are seldom that simple, they tend to need to talk to a number of sub systems to maybe log in, or grab a piece of data somewhere or perform a computation. 
 
 All these side things are maybe the concern of more than one app in your echo system so it makes sense to move them out into separate services. Then you might realise you only need to call on this services very seldom like when a new user is created or there is an incoming request. Your response at that point is maybe to place that incoming message on a Queue, or insert a row in a Database or maybe create a Slack notification. 
