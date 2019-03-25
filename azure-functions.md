@@ -5,6 +5,11 @@ Follow me on [Twitter](https://twitter.com/chris_noring), happy to take your sug
 
 > Serverless compute can be thought of as a function as a service (FaaS), or a microservice that is hosted on a cloud platform
 
+In this article we will cover the following:
+- **Serverless**, What is Serverless and why might I need it
+- **Function apps**, trigger and bindings
+- **Functions** in function apps, languages it supports, authoring choices, testing it out, monitoring logging and setting of authorization level, working with parameters
+
 
 
 - Decide if serverless computing is right for your business need.
