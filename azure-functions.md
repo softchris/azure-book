@@ -111,6 +111,9 @@ Ok so the following choices will need to be made:
  - **Enable application insights**, for stats and other types of application tracking
  
 Now hit the button  **CREATE**
+
+This takes a while, like a few minutes. Have some coffee or other hot beverage at this point:
+![](/assets/hotbeverage.gif)
  
  ## Verify your app
  check that it has a public URL and it is possible to navigate to its default page
@@ -118,9 +121,17 @@ Now hit the button  **CREATE**
  ![](/assets/Screen Shot 2019-03-24 at 01.53.19.png)
  
 Ok great we have a default page, now what? Well it's time to add a function to our Function app.
+
+## Decide on authoring
+
+
  
 ## Creating a Function, for your Function app
-When adding your first function, you are presented with the Quickstart screen. This screen allows you to choose a trigger type (HTTP, Timer, or Data) and programming language (C#, JavaScript, F# or Java). Then, based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log
+When adding your first function, you are presented with the Quickstart screen. 
+
+
+
+This screen allows you to choose a trigger type (HTTP, Timer, or Data) and programming language (C#, JavaScript, F# or Java). Then, based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log
 
 Example of templates to choose from:
 
