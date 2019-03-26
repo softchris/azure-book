@@ -216,7 +216,10 @@ Once your function has been generated it's time to get to know your portal IDE. 
 - **Toolbar**, this let's you do things like `Save`, `Run` and get a URL for your function 
 - Right menu, this is a tabulated menu on your left that allows you to do two things:
  - **add/remove files** to your project, yes you can have a project consisting of many files. It's Node.js and commonjs so we can expect things like `require` and `module.exports` to work
- - **test**, we get help construcing requests towrds our service, both choice of HTTP method and payload
+ - **Test**, we get help constructing requests towards our service, both choice of HTTP method and payload
+- Bottom menu, this contains two different things:
+ - **Logs**, this will show you log output from your function
+ - **Console**, this is a terminal window that allows you to browse the directory your Function app project is in and allows you to do most things a terminal would allow
 
 ### Streaming log window
 You're also able to add logging statements to your function for debugging in the Azure portal. The called methods for each language are passed a "logging" object, which may be used to log information to the log window.
