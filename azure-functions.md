@@ -106,8 +106,7 @@ Once we've select the `Function app` template we need to select a few more thing
 
 Keep the following in mind though:
 
->App name must be globally unique as it will serve as part of base URL
-
+> App name must be globally unique as it will serve as part of base URL
 
 
 Ok so the following choices need to be made:
@@ -137,8 +136,8 @@ There are two UI behaviours here depending on wether you have no functions added
 
 When you create a new function there are some decisions you need to make before you can start coding like:
 
-1. Trigger type, this is about deciding what should trigger the invocation of your function like a HTTP call or maybe a change to a database row or something else
-2. Authoring, there are three ways to author your function, in VS Code, Any editor + Core Tools or In-portal 
+1. **Trigger type**, this is about deciding what should trigger the invocation of your function like a HTTP call or maybe a change to a database row or something else
+2. **Authoring**, there are three ways to author your function, in VS Code, Any editor + Core Tools or In-portal 
 
 ### Starting fresh - no functions added (yet)
 When adding your first function, you are presented with the Quickstart screen. 
