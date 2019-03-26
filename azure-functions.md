@@ -124,16 +124,15 @@ Check that it has a public URL and it is possible to navigate to its default pag
 Ok great we have a default page, now what? Well it's time to add a function to our Function app.
  
 ## Creating a Function, for your Function app
+There are two UI behaviours here depending on wether you have no functions added to your Function app, so you are starting out fresh or the second option being that you have an existing Function app with at least one function in it. 
+
+When you create a new function there are some decisions you need to make before you can start coding like:
+
+1. Trigger type, this is about deciding what should trigger the invocation of your function like a HTTP call or maybe a change to a database row or something else
+2. Authoring, there are three ways to author your function, in VS Code, Any editor + Core Tools or In-portal 
+
+### Starting fresh - no functions added (yet)
 When adding your first function, you are presented with the Quickstart screen. 
-
-Click the `New function` button and now you are face with this screen:
-![](/assets/Screen Shot 2019-03-26 at 13.35.17.png)
-
-This screen allows you to choose a trigger type (HTTP, Timer, or Data) and programming language (C#, JavaScript, F# or Java). Then, based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log
-
-We choose **HTTP Trigger**, so the first option.
-
-It's a long list of templates to choose from. Don't you feel excited that there is so much more? 
 
 At this point the following is shown in the middle of the page  
 
@@ -161,6 +160,17 @@ For now we will go with the `Webhook + API` option.
 This is now our coding environment:
 
 ![](/assets/Screen Shot 2019-03-24 at 02.10.47.png)
+
+#### Select trigger type 
+Click the `New function` button and now you are face with this screen:
+![](/assets/Screen Shot 2019-03-26 at 13.35.17.png)
+
+This screen allows you to choose a trigger type (HTTP, Timer, or Data) and programming language (C#, JavaScript, F# or Java). Then, based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log
+
+We choose **HTTP Trigger**, so the first option.
+
+It's a long list of templates to choose from. Don't you feel excited that there is so much more? 
+
 
 ### Taking it for a spin
 We can test it in the portal or hit the URL:
