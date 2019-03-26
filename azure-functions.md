@@ -38,6 +38,7 @@ Azure has two kinds of approaches for Serverless architecture
 - [Azure Logic Apps, documentation](https://docs.microsoft.com/en-gb/azure/logic-apps/?wt.mc_id=devto-blog-chnoring) 
 - [Azure Functions](https://azure.microsoft.com/en-gb/services/functions/?wt.mc_id=devto-blog-chnoring), Azure Functions is a serverless application platform. Developers can host business logic that can be executed without provisioning infrastructure
 - [Axure functions docs overview](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?wt.mc_id=devto-blog-chnoring)
+- Azure function learn modules, TODO
 
 ### What else is there to know about Serverless?
 Is it all unicorns and rainbows?
@@ -265,6 +266,9 @@ context.res = {
 ```
 
 Let's save our code and make sure to set authorization level to Anonymous because why would we want to restrict the usage of this profound function to the outside world? ;)
+
+Taking our app for a spin it now looks like this:
+![](/assets/Screen Shot 2019-03-26 at 02.36.10.png)
 
 
 ## Summary
