@@ -98,7 +98,7 @@ Let's head to the portal and log in at
 Once logged in select the following :
 ![](/assets/Screen Shot 2019-03-25 at 20.36.43.png)
 
-So thats's selecting `Create a resource`, followed by `Compute` and finally selecting the `Funcition App` template.
+So thats's selecting `Create a resource`, followed by `Compute` and finally selecting the `Function App` template.
 
 ### Make the choices in the template
 Once we've select the `Function app` template we need to select a few more things. Your UI will at this point look something like this:
@@ -148,6 +148,7 @@ At this point the following is shown in the middle of the page
 
 Let's create that function by hitting `New function`
 
+#### Select authoring type
 Now you are faced with the choice of how to author your Function:
 
 - **VS Code**, this is a great choice, plenty of plugins supporting this option
@@ -156,7 +157,10 @@ Now you are faced with the choice of how to author your Function:
 
 ![](/assets/Screen Shot 2019-03-24 at 02.06.17.png)
   
-For now we will go with the `In-portal` option, we are now faced with:
+For now we will go with the `In-portal` option 
+
+#### Select trigger type
+We are now faced with:
 - **Webhook + API**, function will run as soon as a certain URL is hit
 - **Timer**, function will run according to a schedule
 - **More templates**, there a ton more templates worth exploring
@@ -165,23 +169,29 @@ For now we will go with the `In-portal` option, we are now faced with:
 
 For now we will go with the `Webhook + API` option.
 
+It's a long list of templates to choose from. Don't you feel excited that there is so much more? :)
+
+
 This is now our coding environment:
 
 ![](/assets/Screen Shot 2019-03-24 at 02.10.47.png)
 
 ### Pre existing functions
-In this scenario we already have at least one function in our Function app. TODO add image here how we add a function
+In this scenario we already have at least one function in our Function app. You want to look for a text saying `Function +` on in the left menu, it should look like this: 
+
+![](/assets/Screen Shot 2019-03-26 at 16.27.43.png)
 
 #### Select trigger type 
-Click the `New function` button and now you are face with this screen:
+Clicking the `+` sign will present you with the following screen in the main field:
+
 ![](/assets/Screen Shot 2019-03-26 at 13.35.17.png)
 
 This screen allows you to choose a trigger type (HTTP, Timer, or Data) and programming language (C#, JavaScript, F# or Java). Then, based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log
 
 We choose **HTTP Trigger**, so the first option.
 
-It's a long list of templates to choose from. Don't you feel excited that there is so much more? 
-
+We are then faced with naming our function and doing an initial selection on authorization level (we can change that part later on)
+![](/assets/Screen Shot 2019-03-26 at 13.47.17.png)
 
 ### Taking it for a spin
 We can test it in the portal or hit the URL:
@@ -197,11 +207,16 @@ Or we click `get function URL` and test it in a browser:
 After you've chosen to copy the URL you head to the browser input the URL and make sure to add &name=chris. Cause if you look at your Javascript code you see that it expects the parameter `name` in either the `body` or as a URL parameter. It should look like this:
 ![](/assets/Screen Shot 2019-03-24 at 02.17.32.png)
 
-### Monitoring
-We can also check out monitoring. It is able to provide us with all sorts of critical info such as:
-history of function executions and displays the timestamp, result code, duration, and operation ID populated by Application Insights. To see the Monitoring view we simply click here:
-![](/assets/Screen Shot 2019-03-26 at 01.58.48.png)
-On the right we are being presented with a view showing when the function was run, success/fail, and the duration it took to run the function
+### Getting to know your portal IDE
+Once your function has been generated it's time to get to know your portal IDE. It consists of the following:
+- **Left menu**, this is placed on the left side right under your function
+ - **Integrate**, this let's you control things like allowed HTTP method, Authorization level and probably most important Inputs and Outputs, here you can configure what type of events can trigger our function but also what kind of events we can trigger in turn by returning something from the function 
+ - **Manage**, this is where we manage function keys and host key. Depending on authorization level you will need one or more of these keys in your requests to be able to call a specific function in your Function app 
+ - **Monitor**, this shows all the executions of a functions, if it went well and how long it took
+- **Toolbar**, this let's you do things like `Save`, `Run` and get a URL for your function 
+- Right menu, this is a tabulated menu on your left that allows you to do two things:
+ - **add/remove files** to your project, yes you can have a project consisting of many files. It's Node.js and commonjs so we can expect things like `require` and `module.exports` to work
+ - **test**, we get help construcing requests towrds our service, both choice of HTTP method and payload
 
 ### Streaming log window
 You're also able to add logging statements to your function for debugging in the Azure portal. The called methods for each language are passed a "logging" object, which may be used to log information to the log window.
