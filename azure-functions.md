@@ -213,7 +213,11 @@ By clicking the `Manage` menu option you are able to get something looking like 
 At least if they are a Balrog trying to use your Azure Function ;)
 
 ### Working with parameters
-TODO
+When you create new function in your Function app this is the default code you are left with. It tells us how to deal with parameters in both request URL and the BODY:
+![](/assets/Screen Shot 2019-03-26 at 02.15.48.png)
+
+Looking at the above code you see that it's reading query parameters with `req.query.[name of parameter]` and doing the same for the body with `req.body.[name of parameter]`.
+
 ## Build our service
 TODO
 
