@@ -48,7 +48,9 @@ There is so much to learn on this topic and there are some great docs as well as
  - [Chain Azure functions together](https://docs.microsoft.com/en-gb/learn/modules/chain-azure-functions-data-using-bindings/1-introduction?wt.mc_id=devto-blog-chnoring)
 
 ### What else is there to know about Serverless?
-Is it all unicorns and rainbows?
+
+>Is it all unicorns and rainbows?
+
 Well, Serverless is definitely great but there are some things we need to know about them like:
 - **They are stateless**, function instances are created and destroyed on demand. If state is required, it can be stored in an associated storage service
 - **They are event driven**, they run only in response to an event (called a "trigger"), such as receiving an HTTP request, or a message being added to a queue. So essentially you declare where data comes from and where it goes. You do this declaratively with something called bindings which means you don't need to code to talk to queues, blobs, hubs, only business logic is needed
@@ -57,7 +59,7 @@ Well, Serverless is definitely great but there are some things we need to know a
  - **Execution frequency**, If you expect your function to be executed continuously by multiple clients, it would be prudent to estimate the usage and calculate the cost of using functions accordingly. It might be cheaper to host your service on a VM
 
 ### Serverless vs App Services
-It's easy to think that your first go-to is AppService that fits most likely with your mental model as a developers, you want to move the app that you have from On Premise to the Cloud and to do so you need to provision databases, creating your Services in App Service and that's it right? Well, most applications are seldom that simple, they tend to need to talk to a number of sub systems to maybe log in, or grab a piece of data somewhere or perform a computation. 
+It's easy to think that your first go-to, for putting apps in Azure, is AppService that fits most likely with your mental model as a developers, you want to move the app that you have from On Premise to the Cloud and to do so you need to provision databases, creating your Services in App Service and that's it right? Well, most applications are seldom that simple, they tend to need to talk to a number of sub systems to maybe log in, or grab a piece of data somewhere or perform a computation. 
 
 All these side things are maybe the concern of more than one app in your echo system so it makes sense to move them out into separate services. Then you might realise you only need to call on these services very seldom like when a new user is created or there is an incoming request. Your response at that point is maybe to place that incoming message on a Queue, or insert a row in a Database or maybe create a Slack notification. 
 
@@ -71,8 +73,6 @@ In a word
 
 ## What is a function app?
 `Functions` are hosted in an execution context called a `function app`. Which means what? Think of the Function app as the project you host your functions in. 
-
-Currently you can use the following languages working with Function apps, C#, F#, and JavaScript
 
 ## Pre requisites
 Ok, there are some things that needs to exist before we can get our function up there in the cloud. Those are:
