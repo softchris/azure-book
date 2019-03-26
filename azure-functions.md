@@ -28,7 +28,7 @@ Serverless is essentially a function as a service `Faas`, or a microservice that
 
 Ok, what benefits does it offer then?
 - **Everything is functions**, Your business logic runs as functions 
-- **NO Manual provisioning*8, you don't have to manually provision or scale infrastructure. 
+- **NO Manual provisioning**, you don't have to manually provision or scale infrastructure. 
 - **Managed infrastructure**, The cloud provider manages infrastructure. 
 - **Automatic scaling**, Your app is automatically scaled out or down depending on load. 
 
