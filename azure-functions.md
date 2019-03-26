@@ -88,7 +88,7 @@ Let's head to the portal and log in at
 
 > portal.azure.com
 
-Once logged select the following :
+Once logged in select the following :
 ![](/assets/Screen Shot 2019-03-25 at 20.36.43.png)
 
 ### Make the choices in the template
