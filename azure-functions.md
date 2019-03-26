@@ -129,14 +129,17 @@ When adding your first function, you are presented with the Quickstart screen.
 Click the `New function` button and now you are face with this screen:
 ![](/assets/Screen Shot 2019-03-26 at 13.35.17.png)
 
+This screen allows you to choose a trigger type (HTTP, Timer, or Data) and programming language (C#, JavaScript, F# or Java). Then, based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log
+
 We choose **HTTP Trigger**, so the first option.
 
 It's a long list of templates to choose from. Don't you feel excited that there is so much more? 
 
-This screen allows you to choose a trigger type (HTTP, Timer, or Data) and programming language (C#, JavaScript, F# or Java). Then, based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log
-  
-Let's create that function:
+At this point the following is shown in the middle of the page  
+
 ![](/assets/Screen Shot 2019-03-24 at 02.05.11.png)
+
+Let's create that function by hitting `New function`
 
 Now you are faced with the choice of how to author your Function:
 
