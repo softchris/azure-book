@@ -214,10 +214,10 @@ Once your function has been generated it's time to get to know your portal IDE. 
  - **Manage**, this is where we manage function keys and host key. Depending on authorization level you will need one or more of these keys in your requests to be able to call a specific function in your Function app 
  - **Monitor**, this shows all the executions of a functions, if it went well and how long it took
 - **Toolbar**, this let's you do things like `Save`, `Run` and get a URL for your function 
-- Right menu, this is a tabulated menu on your left that allows you to do two things:
+- **Right menu**, this is a tabulated menu on your left that allows you to do two things:
  - **add/remove files** to your project, yes you can have a project consisting of many files. It's Node.js and commonjs so we can expect things like `require` and `module.exports` to work
  - **Test**, we get help constructing requests towards our service, both choice of HTTP method and payload
-- Bottom menu, this contains two different things:
+- **Bottom menu**, this contains two different things:
  - **Logs**, this will show you log output from your function
  - **Console**, this is a terminal window that allows you to browse the directory your Function app project is in and allows you to do most things a terminal would allow
 
