@@ -128,6 +128,7 @@ When adding your first function, you are presented with the Quickstart screen.
 
 Click the `New function` button and now you are face with this screen:
 ![](/assets/Screen Shot 2019-03-26 at 13.35.17.png)
+
 We choose **HTTP Trigger**, so the first option.
 
 It's a long list of templates to choose from. Don't you feel excited that there is so much more? 
