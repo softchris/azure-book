@@ -12,9 +12,9 @@ This is the first part of three part series:
 
 
 In this article we will cover the following:
-- **Serverless**, What is Serverless and why might I need it
-- **Function apps**, trigger and bindings
-- **Functions** in function apps, languages it supports, authoring choices, testing it out, monitoring logging and setting of authorization level, working with parameters
+- **Serverless**, What is Serverless and why it may be a good choice
+- **Function apps**, triggers and bindings
+- **Functions** in function apps, Here we will cover things like languages it supports, authoring choices, testing it out, monitoring logging and setting of authorization level and much more
 
 In this article we already assume that putting your apps in the Cloud is a given. You've seen the benefits that means in terms of not having to maintain hardware, only pay for what you actually use and so on. 
 
