@@ -127,8 +127,9 @@ Ok great we have a default page, now what? Well it's time to add a function to o
 When adding your first function, you are presented with the Quickstart screen. 
 
 Click the `New function` button and now you are face with this screen:
+![](/assets/Screen Shot 2019-03-26 at 13.35.17.png)
 
-
+It's a long list of templates to choose from. Don't you feel excited that there is so much more? 
 
 This screen allows you to choose a trigger type (HTTP, Timer, or Data) and programming language (C#, JavaScript, F# or Java). Then, based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log
 
