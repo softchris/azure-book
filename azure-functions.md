@@ -198,10 +198,7 @@ Our log statement is highlighted
 ### Authorization
 Going to the portal we can control how our function get's called but also who has the right to call it. To manage authorization we navigate like so:
 
-Integrate / Authorization level
-
-It should look something like this:
-![](/assets/Screen Shot 2019-03-24 at 22.08.02.png)
+![](/assets/Screen Shot 2019-03-26 at 02.09.23.png)
 
 As you can see the field `Authorization level` allows us to choose `Authorization`. Available options are:
 - Function, means a function specific API key is required
@@ -210,6 +207,10 @@ As you can see the field `Authorization level` allows us to choose `Authorizatio
 
 By clicking the `Manage` menu option you are able to get something looking like this which will allow you to manage both your `host` and `function` keys:
 ![](/assets/Screen Shot 2019-03-24 at 22.13.58.png)
+
+> So think about what authorization level is right for you, or in the immortal words of Gandalf
+![](/assets/youshallnotpass.gif)
+At least if they are a Balrog trying to use your Azure Function ;)
 
 ### Working with parameters
 TODO
