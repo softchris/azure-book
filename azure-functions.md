@@ -116,8 +116,8 @@ Now hit the button  **CREATE**
 This takes a while, like a few minutes. Have some coffee or other hot beverage at this point:
 ![](/assets/hotbeverage.gif)
  
- ## Verify your app
- check that it has a public URL and it is possible to navigate to its default page
+## Verify your app
+Check that it has a public URL and it is possible to navigate to its default page
 
  ![](/assets/Screen Shot 2019-03-24 at 01.53.19.png)
  
