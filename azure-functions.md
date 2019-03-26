@@ -221,7 +221,7 @@ Looking at the above code you see that it's reading query parameters with `req.q
 ## Build our service
 Ok then shall we build something more fun than a `hello world`? Ok, it's not going to be ton more fun but it's at least something you can cringe over like a colleague of mine did, look Adam you've made it into the blog post haha.
 
-Ok, we are going to build a... wait for it, drumrools, a dad jokes service. You know those really bad puns told by a parent that compels you to deny any relations to them, yes those jokes. Google is my friend, so let's start Googling for some jokes and store them in a list:
+Ok, we are going to build a... wait for it, drumrolls, a *dad jokes* service. You know those really bad puns told by a parent that compels you to deny any relations to them, yes those jokes. Google is my friend, so let's start Googling for some jokes and store them in a list:
 
 ```js
 var dadJokes = [
@@ -244,7 +244,7 @@ var punDogs = [
  "image2.jpg"      
 ]
 ```
-What I didn't give you the actual image url, you're a big developer, I'm sure you can find pictures of dogs on the Internet, or why not cats ;)
+What, I didn't give you the actual image url, you're a big developer, I'm sure you can find pictures of dogs on the Internet, or why not cats ;)
 
 Now to select a random dad joke and random image:
 
@@ -263,9 +263,6 @@ context.res = {
       body: '<h3>'+dadJokes[newNumber]+'</h3>' + '<br><img src="'+ punDogs[dogImageUrl] +'"/>'
     };
 ```
-
-
-TODO
 
 ## Adding more files
 
