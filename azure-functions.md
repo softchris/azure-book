@@ -101,7 +101,7 @@ Keep the following in mind though:
 
 
 
-Ok so the following choices will need to be made:
+Ok so the following choices need to be made:
  - **Select a subscription**, well pick out one of the ones you have
  - **Select a resource group**, you can choose an existing resource group or create a new one, up to you 
  - **Select an OS**, choices here are Windows or Linux, we opt for Windows cause we need to select something :)
