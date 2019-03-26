@@ -36,9 +36,16 @@ Ok, what benefits does it offer then?
 Azure has two kinds of approaches for Serverless architecture 
 - [Azure Logic Apps, intro](https://azure.microsoft.com/en-gb/services/logic-apps/?wt.mc_id=devto-blog-chnoring) Azure Logic Apps enables you to create powerful workflows 
 - [Azure Logic Apps, documentation](https://docs.microsoft.com/en-gb/azure/logic-apps/?wt.mc_id=devto-blog-chnoring) 
+
+## Additional resources
+There is so much to learn on this topic and there are some great docs as well as LEARN modules to help you in your learning process:
+
 - [Azure Functions](https://azure.microsoft.com/en-gb/services/functions/?wt.mc_id=devto-blog-chnoring), Azure Functions is a serverless application platform. Developers can host business logic that can be executed without provisioning infrastructure
 - [Axure functions docs overview](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?wt.mc_id=devto-blog-chnoring)
-- Azure function learn modules, TODO
+- Azure function learn modules
+ - [Create you first Azure function](https://docs.microsoft.com/en-gb/learn/modules/create-serverless-logic-with-azure-functions/?wt.mc_id=devto-blog-chnoring)
+ - [Execute Azure functions with triggers](https://docs.microsoft.com/en-gb/learn/modules/execute-azure-function-with-triggers/1-introduction?wt.mc_id=devto-blog-chnoring)
+ - [Chain Azure functions together](https://docs.microsoft.com/en-gb/learn/modules/chain-azure-functions-data-using-bindings/1-introduction?wt.mc_id=devto-blog-chnoring)
 
 ### What else is there to know about Serverless?
 Is it all unicorns and rainbows?
