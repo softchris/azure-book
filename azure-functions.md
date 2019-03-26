@@ -219,7 +219,13 @@ When you create new function in your Function app this is the default code you a
 Looking at the above code you see that it's reading query parameters with `req.query.[name of parameter]` and doing the same for the body with `req.body.[name of parameter]`.
 
 ## Build our service
+Ok then shall we build something more fun than a `hello world`? Ok, it's not going to be ton more fun but it's at least something you can cringe over like a colleague of mine did, look Adam you've made it into the blog post haha.
+
+
+
 TODO
+
+## Adding more files
 
 ## Triggers
 Functions are event driven, which means they run in response to an event.
