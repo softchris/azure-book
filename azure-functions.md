@@ -145,9 +145,9 @@ Now you are faced with the choice of how to author your Function:
 ![](/assets/Screen Shot 2019-03-24 at 02.06.17.png)
   
 For now we will go with the `In-portal` option, we are now faced with:
-- Webhook + API, function will run as soon as a certain URL is hit
-- Timer, function will run according to a schedule
-- More templates, there a ton more templates worth exploring
+- **Webhook + API**, function will run as soon as a certain URL is hit
+- **Timer**, function will run according to a schedule
+- **More templates**, there a ton more templates worth exploring
  
 ![](/assets/Screen Shot 2019-03-24 at 02.08.25.png)
 
