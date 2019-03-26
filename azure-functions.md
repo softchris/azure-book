@@ -264,56 +264,13 @@ context.res = {
     };
 ```
 
-## Adding more files
+Let's save our code and make sure to set authorization level to Anonymous because why would we want to restrict the usage of this profound function to the outside world? ;)
 
-## Triggers
-Functions are event driven, which means they run in response to an event.
+
+## Summary
+There is so much more to say on the Serverless topics. So many different ways we can trigger this function other than HTTP and integrations that are already there and waiting for you to use them. But we have to save something for future parts of this series. Hopefully you've gotten a good idea of what Serverless is and when to use it and how to create your first one of many Azure functions. See you in the next part hopefully :)
+
  
-The type of event that starts the function is called a trigger. You must configure a function with exactly one trigger.
-
-Azure supports the following:
-- **Blob storage**,Start a function when a new or updated blob is detected.
-- **Cosmos DB**, Start a function when inserts and updates are detected.
-- **Event Grid**, Start a function when an event is received from Event Grid.
-- **HTTP**, Start a function with an HTTP request.
-- Microsoft Graph Events, Start a function in response to an incoming webhook from the Microsoft Graph. Each instance of this trigger can react to one Microsoft Graph resource type.
-- **Queue storage**, Start a function when a new item is received on a queue. The queue message is provided as input to the function.
-- **Service Bus**, Start a function in response to messages from a Service Bus queue.
-- **Timer**, Start a function on a schedule.
-
-### Bindings
-- Bindings are a declarative way to connect data and services to your function
-- Bindings know how to talk to different services
-- Each binding has a direction - your code reads data from input bindings and writes data to output bindings
-- Each function can have zero or more bindings to manage the input and output data processed by the function 
-- A trigger is a special type of input binding that has the additional capability of initiating execution
-
-> you don't have to write code in your function to connect to data sources and manage connections
-
-Sample binding definition
-
-```json
-{
-  "bindings": [
-    {
-      "name": "order",
-      "type": "queueTrigger",
-      "direction": "in",
-      "queueName": "myqueue-items",
-      "connection": "MY_STORAGE_ACCT_APP_SETTING"
-    },
-    {
-      "name": "$return",
-      "type": "table",
-      "direction": "out",
-      "tableName": "outTable",
-      "connection": "MY_TABLE_STORAGE_ACCT_APP_SETTING"
-    }
-  ]
-}
-```
-
-
 
 
 
