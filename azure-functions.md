@@ -121,13 +121,11 @@ This takes a while, like a few minutes. Have some coffee or other hot beverage a
  ![](/assets/Screen Shot 2019-03-24 at 01.53.19.png)
  
 Ok great we have a default page, now what? Well it's time to add a function to our Function app.
-
-## Decide on authoring
-
-
  
 ## Creating a Function, for your Function app
 When adding your first function, you are presented with the Quickstart screen. 
+
+Click the `New function` button and now you are face with this screen:
 
 
 
@@ -182,15 +180,20 @@ After you've chosen to copy the URL you head to the browser input the URL and ma
 
 ### Monitoring
 We can also check out monitoring. It is able to provide us with all sorts of critical info such as:
-history of function executions and displays the timestamp, result code, duration, and operation ID populated by Application Insights
+history of function executions and displays the timestamp, result code, duration, and operation ID populated by Application Insights. To see the Monitoring view we simply click here:
+![](/assets/Screen Shot 2019-03-26 at 01.58.48.png)
+On the right we are being presented with a view showing when the function was run, success/fail, and the duration it took to run the function
 
 ### Streaming log window
-You're also able to add logging statements to your function for debugging in the Azure portal. The called methods for each language are passed a "logging" object, which may be used to log information to the log window
-
+You're also able to add logging statements to your function for debugging in the Azure portal. The called methods for each language are passed a "logging" object, which may be used to log information to the log window.
 To use it we call:
 ```
 context.log('logging...');
 ```
+
+This will be picked up by the `Logs` tab. `Logs` tab can be found at the bottom of the screen and can look like this:
+![](/assets/logs.png)
+Our log statement is highlighted
 
 ### Authorization
 Going to the portal we can control how our function get's called but also who has the right to call it. To manage authorization we navigate like so:
