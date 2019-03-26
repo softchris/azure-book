@@ -81,7 +81,7 @@ Ok, there are some things that needs to exist before we can get our function up 
 - **storage account**, function app must be linked to a storage account. It uses this for internal operations such as logging function executions and managing execution triggers. Also function code and configuration file are stored here
 
 ## Creating a function app
-Now there are different ways of doing this we can create functions in the following ways:
+Now there are different ways of creating a Function app, namely:
 - **Portal**, Using the Azure Portal
 - **CLI**, Using the Azure CLI
 - **VS Code**, Using VS Code to scaffold an Azure Function app and Azure Functions using some amazing plugins made for the purpose.
@@ -98,8 +98,10 @@ Let's head to the portal and log in at
 Once logged in select the following :
 ![](/assets/Screen Shot 2019-03-25 at 20.36.43.png)
 
+So thats's selecting `Create a resource`, followed by `Compute` and finally selecting the `Funcition App` template.
+
 ### Make the choices in the template
-Once we've select the `Function app` template we need to select a few things. Your UI will at this point look something like this:
+Once we've select the `Function app` template we need to select a few more things. Your UI will at this point look something like this:
 ![](/assets/Screen Shot 2019-03-25 at 20.47.17.png)
 
 Keep the following in mind though:
