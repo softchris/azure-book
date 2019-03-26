@@ -162,7 +162,7 @@ This is now our coding environment:
 ![](/assets/Screen Shot 2019-03-24 at 02.10.47.png)
 
 ### Pre existing functions
-In this scenario we already have at least one function in our Function app
+In this scenario we already have at least one function in our Function app. TODO add image here how we add a function
 
 #### Select trigger type 
 Click the `New function` button and now you are face with this screen:
