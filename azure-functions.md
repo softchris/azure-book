@@ -138,9 +138,9 @@ Let's create that function:
 
 Now you are faced with the choice of how to author your Function:
 
-- VS Code, this is a great choice, plenty of plugins supporting this option
-- Any editor + Core tools, a more agnostic choice
-- In-portal, you will write code in the Portal
+- **VS Code**, this is a great choice, plenty of plugins supporting this option
+- **Any editor** + Core tools, a more agnostic choice
+- **In-portal**, you will write code in the Portal
 
 ![](/assets/Screen Shot 2019-03-24 at 02.06.17.png)
   
