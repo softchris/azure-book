@@ -17,6 +17,10 @@ There are many ways to author a Serverless app. VS Code is one of the better one
 
 ## Resources
 
+- [Azure functions overview page](https://azure.microsoft.com/en-us/services/functions/?wt.mc_id=devto-blog-chnoring)
+- [Tutorial how to author and deploy an Azure function](https://code.visualstudio.com/tutorials/functions-extension/getting-started?wt.mc_id=devto-blog-chnoring)
+- [Doc page for Azure function extension](https://github.com/Microsoft/vscode-azurefunctions?wt.mc_id=devto-blog-chnoring)
+
 ## Dependencies and Set up
 
 There are two ways to install the dependencies we need, depending on if you are using either Windows or Mac OS. 
@@ -185,6 +189,9 @@ We can see above that if `req.query.name` or `req.body.name` is empty it should 
 We can fix this by calling the URL with an added `?name=chris`, like so:
 
 ![](/assets/func-run-browser-success.png)
+
+Let's see if we can debug this way too. First off lets set a breakpoint on the first row in `index.js` and reload the browser next:
+
 
 ## Summary
 This concludes this first part on VS Code and Azure Functions. We've learned how to generate an Azure functions project and a function and we've also learned to navigate around in our project structure and especially learned how to debug in two different ways.
