@@ -7,10 +7,10 @@
 
 This article will cover
 
-- Why VS Code as authoring env
-- Dependencies and set up
-- Hello world and running your function
-- Debugging locally and remote
+- **Why VS Code as authoring env**, there are more than one way to author Azure Functions, we have previously shown authoring in the Azure Portal but this way is probably one of the best
+- **Dependencies and set up**, There are a few dependencies that we need and it looks a little bit different depending on what OS you are on
+- **Hello world and running your function**, to get up and running we need to scaffold an Azure App, that's easily down through a command in VS Code
+- **Debugging locally**, this can be done in two different ways, either through using the built-in VS Code debugging or by using `func host start` 
 
 ## Why VS Code as authoring environment?
 There are many ways to author a Serverless app. VS Code is one of the better ones and the main reason for that is the extensions that makes things like scaffolding projects/functions and debugging, a real joy. 
