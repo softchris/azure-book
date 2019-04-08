@@ -12,7 +12,7 @@ This article will cover
 - **Hello world and running your function**, to get up and running we need to scaffold an Azure App, that's easily down through a command in VS Code
 - **Debugging locally**, this can be done in two different ways, either through using the built-in VS Code debugging or by using `func host start` 
 
-## Why VS Code as authoring environment?
+## Why use VS Code as authoring environment?
 There are many ways to author a Serverless app. VS Code is one of the better ones and the main reason for that is the extensions that makes things like scaffolding projects/functions and debugging, a real joy. 
 
 ## Resources
