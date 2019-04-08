@@ -6,6 +6,7 @@
 * [Mojifier](mojifier.md)
 * [Azure Container Instances](azure-container-instances.md)
 * [Azure functions](azure-functions.md)
+* [Azure functions III](azure-functions-iii.md)
 
 ## Concepts
 
